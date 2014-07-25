@@ -1,0 +1,38 @@
+device postencap ../eps/iracwise.eps
+xtcolors
+lweight 2
+ptype 24 3
+add_ctype grey 150 150 150
+
+data "../data/M37.WISEIRAC.txt" read {i3 1 i4 2 w3 3 w4 4}
+
+limits 6 16 -0.4 0.4 ticksize 0.2 1 0.1 0.3 
+
+expand 0.8 window 1 -100 1 85:100  ylabel \Delta [3]
+box 0 2
+expand 0.4 points w3 (i3-w3) if (w3 < 14)
+ctype grey points w3 (i3-w3) if (w3 >= 14) ctype black
+lweight 4 ltype 2 relocate -100 0 draw 100 0 ltype 0 lweight 2
+
+expand 0.8 window 1 -100 1 69:84  ylabel \Delta [4]
+xlabel [3.4]_{WISE}
+box 1 2
+expand 0.4 points w3 (i4-w4) if (w4 < 13.5)
+ctype grey points w3 (i4-w4) if (w4 >= 13.5) ctype black
+lweight 4 ltype 2 relocate -100 -0.05 draw 100 0 ltype -0.05 lweight 2
+
+
+limits -0.4 0.4 -0.4 0.4 ticksize 0.05 0.2 0.1 0.3
+
+expand 0.8 window 1 -100 1 44:59 ylabel \Delta [3]
+box 0 2
+expand 0.4 points (w3-w4) (i3-w3) if (w3 < 14)
+lweight 4 ltype 2 relocate -100 0 draw 100 0 ltype 0 lweight 2
+
+expand 0.8 window 1 -100 1 28:43 ylabel \Delta [4]
+xlabel [3.4]_{WISE} - [4.6]_{WISE}
+box 1 2
+expand 0.4 points (w3-w4) (i4-w4) if (w4 < 13.5)
+lweight 4 ltype 2 relocate -100 -0.05 draw 100 0 ltype -0.05 lweight 2
+
+

@@ -1,0 +1,81 @@
+\documentclass[11pt, final]{article}
+\usepackage{color}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{cite}
+\usepackage{url}
+\usepackage[pdftex]{graphicx}
+\setlength\parindent{.3in}
+\usepackage{mdwlist}
+\usepackage{tabularx}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\usepackage{natbib}
+\usepackage{appendix}
+
+\setcounter{secnumdepth}{3}
+
+\setlength {\textwidth}{6.5in}
+\hoffset=-1.0in
+\oddsidemargin=1.00in
+\marginparsep=0.0in
+\marginparwidth=0.0in
+ 
+\setlength {\textheight}{8.5in}
+\voffset=-1.00in
+\topmargin=1.00in
+\headheight=0.00in
+\headsep=0.00in
+\footskip=0.40in
+
+\pagestyle{fancy}
+
+\renewcommand{\headrulewidth}{0pt}
+\citestyle{aa}
+
+ \fancyhead{}
+\fancyfoot{}
+
+\bibpunct{(}{)}{,}{a}{}{;}
+ 
+\lfoot[]{Ben Thompson -- Thesis}
+\rfoot[]{\thepage}
+
+\title{Exploring Binary Population Evolution in Open Star Clusters}
+\author{Benjamin A Thompson}
+
+\begin{document}
+\maketitle\newpage
+\tableofcontents\newpage
+
+\input{sec_intro}
+
+\input{sec_questions}
+
+\input{sec_binocs}
+
+\input{sec_data}
+
+\input{sec_isochrones}
+
+%\input{sec_test}
+
+%\input{sec_radial}
+
+%\input{sec_primordial}
+
+%\input{sec_future}
+
+\appendix
+\input{app_ridgelines}
+
+\newpage
+\bibliographystyle{apj}
+\bibliography{Thompson_Thesis.bib}
+
+
+
+\end{document}

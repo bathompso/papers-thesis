@@ -1,0 +1,159 @@
+device postencap ../eps/ridgeline_m36.eps
+xtcolors
+lweight 2
+
+limits -0.39 0.39 19.1 10.9 ticksize 0.05 0.2 0.5 1
+
+# Read in all data
+data "../../../../projects/ridgeline/M36/M36.dm.at9.rsd" read {dmam 1 dmac1 2 dmac2 3 dmac3 4 dmac4 5 dmac5 6 dmac6 7 dmac7 8 dmac8 9 dmac9 10} 
+data "../../../../projects/ridgeline/M36/M36.dm.bts.rsd" read {dmbm 1 dmbc1 2 dmbc2 3 dmbc3 4 dmbc4 5 dmbc5 6 dmbc6 7 dmbc7 8 dmbc8 9 dmbc9 10} 
+data "../../../../projects/ridgeline/M36/M36.dm.syn.rsd" read {dmsm 1 dmsc1 2 dmsc2 3 dmsc3 4 dmsc4 5 dmsc5 6 dmsc6 7 dmsc7 8 dmsc8 9 dmsc9 10} 
+data "../../../../projects/ridgeline/M36/M36.pc.at9.rsd" read {pcam 1 pcac1 2 pcac2 3 pcac3 4 pcac4 5 pcac5 6 pcac6 7 pcac7 8 pcac8 9 pcac9 10} 
+data "../../../../projects/ridgeline/M36/M36.pc.bts.rsd" read {pcbm 1 pcbc1 2 pcbc2 3 pcbc3 4 pcbc4 5 pcbc5 6 pcbc6 7 pcbc7 8 pcbc8 9 pcbc9 10} 
+data "../../../../projects/ridgeline/M36/M36.pc.syn.rsd" read {pcsm 1 pcsc1 2 pcsc2 3 pcsc3 4 pcsc4 5 pcsc5 6 pcsc6 7 pcsc7 8 pcsc8 9 pcsc9 10} 
+data "../../../../projects/ridgeline/M36/M36.pv.at9.rsd" read {pvam 1 pvac1 2 pvac2 3 pvac3 4 pvac4 5 pvac5 6 pvac6 7 pvac7 8 pvac8 9 pvac9 10} 
+data "../../../../projects/ridgeline/M36/M36.pv.bts.rsd" read {pvbm 1 pvbc1 2 pvbc2 3 pvbc3 4 pvbc4 5 pvbc5 6 pvbc6 7 pvbc7 8 pvbc8 9 pvbc9 10} 
+data "../../../../projects/ridgeline/M36/M36.pv.syn.rsd" read {pvsm 1 pvsc1 2 pvsc2 3 pvsc3 4 pvsc4 5 pvsc5 6 pvsc6 7 pvsc7 8 pvsc8 9 pvsc9 10} 
+data "../../../../projects/ridgeline/M36/M36.yy.at9.rsd" read {yyam 1 yyac1 2 yyac2 3 yyac3 4 yyac4 5 yyac5 6 yyac6 7 yyac7 8 yyac8 9 yyac9 10} 
+data "../../../../projects/ridgeline/M36/M36.yy.bts.rsd" read {yybm 1 yybc1 2 yybc2 3 yybc3 4 yybc4 5 yybc5 6 yybc6 7 yybc7 8 yybc8 9 yybc9 10} 
+data "../../../../projects/ridgeline/M36/M36.yy.syn.rsd" read {yysm 1 yysc1 2 yysc2 3 yysc3 4 yysc4 5 yysc5 6 yysc6 7 yysc7 8 yysc8 9 yysc9 10}
+
+
+# Comparison to SYNTHETIC ATMOSPHERES
+ctype black expand 0.6 window -9 -100 1 75:100 box 0 2 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcsc1 pcsm if (pcsc1 > -80)	ctype orange connect pvsc1 pvsm if (pvsc1 > -80)
+	ctype royalblue connect dmsc1 dmsm if (dmsc1 > -80)	ctype purple connect yysc1 yysm if (yysc1 > -80)
+	
+ctype black expand 0.6 window -9 -100 2 75:100 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcsc2 pcsm if (pcsc2 > -80)	ctype orange connect pvsc2 pvsm if (pvsc2 > -80)
+	ctype royalblue connect dmsc2 dmsm if (dmsc2 > -80)	ctype purple connect yysc2 yysm if (yysc2 > -80)
+	
+ctype black expand 0.6 window -9 -100 3 75:100 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcsc3 pcsm if (pcsc3 > -80)	ctype orange connect pvsc3 pvsm if (pvsc3 > -80)
+	ctype royalblue connect dmsc3 dmsm if (dmsc3 > -80)	ctype purple connect yysc3 yysm if (yysc3 > -80)
+	
+ctype black expand 0.6 window -9 -100 4 75:100 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcsc4 pcsm if (pcsc4 > -80)	ctype orange connect pvsc4 pvsm if (pvsc4 > -80)
+	ctype royalblue connect dmsc4 dmsm if (dmsc4 > -80)	ctype purple connect yysc4 yysm if (yysc4 > -80)
+	
+ctype black expand 0.6 window -9 -100 5 75:100 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcsc5 pcsm if (pcsc5 > -80)	ctype orange connect pvsc5 pvsm if (pvsc5 > -80)
+	ctype royalblue connect dmsc5 dmsm if (dmsc5 > -80)	ctype purple connect yysc5 yysm if (yysc5 > -80)
+	
+ctype black expand 0.6 window -9 -100 6 75:100 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcsc6 pcsm if (pcsc6 > -80)	ctype orange connect pvsc6 pvsm if (pvsc6 > -80)
+	ctype royalblue connect dmsc6 dmsm if (dmsc6 > -80)	ctype purple connect yysc6 yysm if (yysc6 > -80)
+	
+ctype black expand 0.6 window -9 -100 7 75:100 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcsc7 pcsm if (pcsc7 > -80)	ctype orange connect pvsc7 pvsm if (pvsc7 > -80)
+	ctype royalblue connect dmsc7 dmsm if (dmsc7 > -80)	ctype purple connect yysc7 yysm if (yysc7 > -80)
+	
+ctype black expand 0.6 window -9 -100 8 75:100 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcsc8 pcsm if (pcsc8 > -80)	ctype orange connect pvsc8 pvsm if (pvsc8 > -80)
+	ctype royalblue connect dmsc8 dmsm if (dmsc8 > -80)	ctype purple connect yysc8 yysm if (yysc8 > -80)
+	
+ctype black expand 0.6 window -9 -100 9 75:100 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcsc9 pcsm if (pcsc9 > -80)	ctype orange connect pvsc9 pvsm if (pvsc9 > -80)
+	ctype royalblue connect dmsc9 dmsm if (dmsc9 > -80)	ctype purple connect yysc9 yysm if (yysc9 > -80)
+	
+	
+	
+# Comparison to ATLAS9 ATMOSPHERES
+ctype black expand 0.6 window -9 -100 1 47:72 box 0 2 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcac1 pcam if (pcac1 > -80)	ctype orange connect pvac1 pvam if (pvac1 > -80)
+	ctype royalblue connect dmac1 dmam if (dmac1 > -80)	ctype purple connect yyac1 yyam if (yyac1 > -80)
+	
+ctype black expand 0.6 window -9 -100 2 47:72 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcac2 pcam if (pcac2 > -80)	ctype orange connect pvac2 pvam if (pvac2 > -80)
+	ctype royalblue connect dmac2 dmam if (dmac2 > -80)	ctype purple connect yyac2 yyam if (yyac2 > -80)
+	
+ctype black expand 0.6 window -9 -100 3 47:72 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcac3 pcam if (pcac3 > -80)	ctype orange connect pvac3 pvam if (pvac3 > -80)
+	ctype royalblue connect dmac3 dmam if (dmac3 > -80)	ctype purple connect yyac3 yyam if (yyac3 > -80)
+	
+ctype black expand 0.6 window -9 -100 4 47:72 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcac4 pcam if (pcac4 > -80)	ctype orange connect pvac4 pvam if (pvac4 > -80)
+	ctype royalblue connect dmac4 dmam if (dmac4 > -80)	ctype purple connect yyac4 yyam if (yyac4 > -80)
+	
+ctype black expand 0.6 window -9 -100 5 47:72 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcac5 pcam if (pcac5 > -80)	ctype orange connect pvac5 pvam if (pvac5 > -80)
+	ctype royalblue connect dmac5 dmam if (dmac5 > -80)	ctype purple connect yyac5 yyam if (yyac5 > -80)
+	
+ctype black expand 0.6 window -9 -100 6 47:72 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcac6 pcam if (pcac6 > -80)	ctype orange connect pvac6 pvam if (pvac6 > -80)
+	ctype royalblue connect dmac6 dmam if (dmac6 > -80)	ctype purple connect yyac6 yyam if (yyac6 > -80)
+	
+ctype black expand 0.6 window -9 -100 7 47:72 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcac7 pcam if (pcac7 > -80)	ctype orange connect pvac7 pvam if (pvac7 > -80)
+	ctype royalblue connect dmac7 dmam if (dmac7 > -80)	ctype purple connect yyac7 yyam if (yyac7 > -80)
+	
+ctype black expand 0.6 window -9 -100 8 47:72 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	#ctype firebrick connect pcac8 pcam if (pcac8 > -80)	ctype orange connect pvac8 pvam if (pvac8 > -80)
+	#ctype royalblue connect dmac8 dmam if (dmac8 > -80)	ctype purple connect yyac8 yyam if (yyac8 > -80)
+	
+ctype black expand 0.6 window -9 -100 9 47:72 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	#ctype firebrick connect pcac9 pcam if (pcac9 > -80)	ctype orange connect pvac9 pvam if (pvac9 > -80)
+	#ctype royalblue connect dmac9 dmam if (dmac9 > -80)	ctype purple connect yyac9 yyam if (yyac9 > -80)
+	
+	
+	
+# Comparison to BT-SETTL ATMOSPHERES
+ctype black expand 0.6 window -9 -100 1 19:44 box 1 2 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcbc1 pcbm if (pcbc1 > -80)	ctype orange connect pvbc1 pvbm if (pvbc1 > -80)
+	ctype royalblue connect dmbc1 dmbm if (dmbc1 > -80)	ctype purple connect yybc1 yybm if (yybc1 > -80)
+	
+ctype black expand 0.6 window -9 -100 2 19:44 box 1 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcbc2 pcbm if (pcbc2 > -80)	ctype orange connect pvbc2 pvbm if (pvbc2 > -80)
+	ctype royalblue connect dmbc2 dmbm if (dmbc2 > -80)	ctype purple connect yybc2 yybm if (yybc2 > -80)
+	
+ctype black expand 0.6 window -9 -100 3 19:44 box 1 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcbc3 pcbm if (pcbc3 > -80)	ctype orange connect pvbc3 pvbm if (pvbc3 > -80)
+	ctype royalblue connect dmbc3 dmbm if (dmbc3 > -80)	ctype purple connect yybc3 yybm if (yybc3 > -80)
+	
+ctype black expand 0.6 window -9 -100 4 19:44 box 1 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcbc4 pcbm if (pcbc4 > -80)	ctype orange connect pvbc4 pvbm if (pvbc4 > -80)
+	ctype royalblue connect dmbc4 dmbm if (dmbc4 > -80)	ctype purple connect yybc4 yybm if (yybc4 > -80)
+	
+ctype black expand 0.6 window -9 -100 5 19:44 box 1 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcbc5 pcbm if (pcbc5 > -80)	ctype orange connect pvbc5 pvbm if (pvbc5 > -80)
+	ctype royalblue connect dmbc5 dmbm if (dmbc5 > -80)	ctype purple connect yybc5 yybm if (yybc5 > -80)
+	
+ctype black expand 0.6 window -9 -100 6 19:44 box 1 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcbc6 pcbm if (pcbc6 > -80)	ctype orange connect pvbc6 pvbm if (pvbc6 > -80)
+	ctype royalblue connect dmbc6 dmbm if (dmbc6 > -80)	ctype purple connect yybc6 yybm if (yybc6 > -80)
+	
+ctype black expand 0.6 window -9 -100 7 19:44 box 1 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcbc7 pcbm if (pcbc7 > -80)	ctype orange connect pvbc7 pvbm if (pvbc7 > -80)
+	ctype royalblue connect dmbc7 dmbm if (dmbc7 > -80)	ctype purple connect yybc7 yybm if (yybc7 > -80)
+	
+ctype black expand 0.6 window -9 -100 8 19:44 box 1 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcbc8 pcbm if (pcbc8 > -80)	ctype orange connect pvbc8 pvbm if (pvbc8 > -80)
+	ctype royalblue connect dmbc8 dmbm if (dmbc8 > -80)	ctype purple connect yybc8 yybm if (yybc8 > -80)
+	
+ctype black expand 0.6 window -9 -100 9 19:44 box 1 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+	ctype firebrick connect pcbc9 pcbm if (pcbc9 > -80)	ctype orange connect pvbc9 pvbm if (pvbc9 > -80)
+	ctype royalblue connect dmbc9 dmbm if (dmbc9 > -80)	ctype purple connect yybc9 yybm if (yybc9 > -80)
+	
+	
+	
+# Make LABELS
+window 1 1 1 1 limits 0 1 0 1 ctype black expand 0.8
+angle 0 relocate -0.05 0.87 angle 90 putlabel 5 V
+angle 0 relocate -0.05 0.59 angle 90 putlabel 5 V
+angle 0 relocate -0.05 0.31 angle 90 putlabel 5 V
+angle 0
+
+relocate 0.055 0.14 putlabel 5 \Delta U-V
+relocate 0.166 0.14 putlabel 5 \Delta B-V
+relocate 0.277 0.14 putlabel 5 \Delta V-R
+relocate 0.388 0.14 putlabel 5 \Delta V-I
+relocate 0.499 0.14 putlabel 5 \Delta V-K_S
+relocate 0.610 0.14 putlabel 5 \Delta J-K_S
+relocate 0.721 0.14 putlabel 5 \Delta H-K_S
+relocate 0.832 0.14 putlabel 5 \Delta V-[3.6]
+relocate 0.943 0.14 putlabel 5 \Delta V-[4.5]
+
+expand 1.2
+angle 0 relocate 1.02 0.87 angle 270 putlabel 5 Original
+angle 0 relocate 1.02 0.59 angle 270 putlabel 5 ATLAS9
+angle 0 relocate 1.02 0.31 angle 270 putlabel 5 BT-Settl

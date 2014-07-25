@@ -1,0 +1,44 @@
+device postencap ../eps/mosaic_quality_short.eps
+xtcolors
+ptype 24 3
+lweight 3
+
+limits 9 22 -0.01 0.12 ticksize 0.5 2 0.01 0.05
+
+data "../data/M36short.out" read {b 4 eb 5 i 6 ei 7 u 8 eu 9 v 10 ev 11}
+
+expand 1.3 window 1 -4 1 4 ylabel \sigma_U
+box 0 2 expand 0.2 points u eu
+
+expand 1.3 window 1 -4 1 3 ylabel \sigma_B
+box 0 2 expand 0.2 points b eb
+
+expand 1.3 window 1 -4 1 2 ylabel \sigma_V
+box 0 2 expand 0.2 points v ev
+
+expand 1.3 window 1 -4 1 1 ylabel \sigma_I
+xlabel Magnitude
+box 1 2 expand 0.2 points i ei
+
+
+device postencap ../eps/mosaic_quality_long.eps
+xtcolors
+ptype 24 3
+lweight 3
+
+limits 9 22 -0.01 0.12 ticksize 0.5 2 0.01 0.05
+
+data "../data/M36long.out" read {b 4 eb 5 i 6 ei 7 u 8 eu 9 v 10 ev 11}
+
+expand 1.3 window 1 -4 1 4 ylabel \sigma_U
+box 0 2 expand 0.2 points u eu
+
+expand 1.3 window 1 -4 1 3 ylabel \sigma_B
+box 0 2 expand 0.2 points b eb
+
+expand 1.3 window 1 -4 1 2 ylabel \sigma_V
+box 0 2 expand 0.2 points v ev
+
+expand 1.3 window 1 -4 1 1 ylabel \sigma_I
+xlabel Magnitude
+box 1 2 expand 0.2 points i ei

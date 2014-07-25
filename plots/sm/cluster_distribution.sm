@@ -1,0 +1,30 @@
+device postencap ../eps/cluster_distribution.eps
+xtcolors
+add_ctype grey 100 100 100
+lweight 3
+ptype 24 0
+
+expand 1.05
+window 1 -100 1 70:100
+limits 7.0 10.1 -0.7 0.5
+ticksize -1 0 0.1 0.3
+ylabel [Fe/H]
+xlabel Age (yr)
+box 1 2
+
+expand 1.5
+data "../data/ClusterDist.txt" read {Age 3 FeH 4}
+
+ctype grey points Age FeH if (FeH != 0.0 && Age < 8.615)
+ptype 4 1 points Age FeH if (FeH == 0.0)
+
+ctype black ptype 24 0 points Age FeH if (Age > 8.615)
+
+
+#relocate 9.041 -0.21 draw 9.041 0.08
+#relocate 9.447 -0.38 draw 9.447 0.05
+#relocate 9.898 -0.18 draw 9.903 0.36
+
+
+
+
