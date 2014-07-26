@@ -112,8 +112,47 @@ Comparison of observed photometry to 11 different isochrones in up to 9 colors, 
 Empirical ridgelines have been determined for several clusters: M35, M36, M37, M67 and NGC 2420. These ridgelines were created by visual inspection of various cluster CMDs, and tracing the main sequence. Values for these ridgelines, as well as a comparison to the observed CMDs, are located in appendix \ref{app:ridgelines}.
 
 \subsection{Comparison}
+Clusters for which ridgelines exist were compared to isochrone systems. Residuals were computed for all 9 available CMDs, and are shown for each cluster in subsections below.
 
 
+\subsubsection{M36}
+
+\begin{figure}
+\includegraphics[trim= 0mm 40mm 0mm 0mm, clip, width=0.99\textwidth]{../plots/eps/ridgeline_m36.eps}
+\caption{Comparison of isochrone systems to empirical ridgeline for M36 in 9 CMDs. All isochrones are 30 Myr, with [Fe/H] = +0.01, E($B-V$) = 0.22, at a distance of 1324 pc. \emph{Red:} PARSEC; \emph{Orange:} Padova. \label{fig:m36_resid}}
+\end{figure}
+
+
+\subsubsection{M35}
+
+\begin{figure}
+\includegraphics[trim= 0mm 40mm 0mm 0mm, clip, width=0.99\textwidth]{../plots/eps/ridgeline_m35.eps}
+\caption{Comparison of isochrone systems to empirical ridgeline for M35 in 9 CMDs. All isochrones are 130 Myr, with [Fe/H] = -0.21, E($B-V$) = 0.20, at a distance of 871 pc. \emph{Red:} PARSEC; \emph{Orange:} Padova; \emph{Purple:} Y$^2$. \label{fig:m35_resid}}
+\end{figure}
+
+
+\subsubsection{M37}
+
+\begin{figure}
+\includegraphics[trim= 0mm 40mm 0mm 0mm, clip, width=0.99\textwidth]{../plots/eps/ridgeline_m37.eps}
+\caption{Comparison of isochrone systems to empirical ridgeline for M37 in 7 CMDs. All isochrones are 350 Myr, with [Fe/H] = +0.08, E($B-V$) = 0.30, at a distance of 1387 pc. \emph{Red:} PARSEC; \emph{Orange:} Padova; \emph{Blue:} Dartmouth; \emph{Purple:} Y$^2$.}
+\end{figure}
+
+
+\subsubsection{NGC 2420}
+
+\begin{figure}
+\includegraphics[trim= 0mm 40mm 0mm 0mm, clip, width=0.99\textwidth]{../plots/eps/ridgeline_n2420.eps}
+\caption{Comparison of isochrone systems to empirical ridgeline for NGC 2420 in 9 CMDs. All isochrones are 2.0 Gyr, with [Fe/H] = -0.23, E($B-V$) = 0.03, at a distance of 2512 pc. \emph{Red:} PARSEC; \emph{Orange:} Padova; \emph{Blue:} Dartmouth; \emph{Purple:} Y$^2$. \label{fig:n2420_resid}}
+\end{figure}
+
+
+\subsubsection{M67}
+
+\begin{figure}
+\includegraphics[trim= 0mm 40mm 0mm 0mm, clip, width=0.99\textwidth]{../plots/eps/ridgeline_m67.eps}
+\caption{Comparison of isochrone systems to empirical ridgeline for M67 in 9 CMDs. All isochrones are 3.5 Gyr, with [Fe/H] = +0.01, E($B-V$) = 0.04, at a distance of 855 pc. \emph{Red:} PARSEC; \emph{Orange:} Padova; \emph{Blue:} Dartmouth; \emph{Purple:} Y$^2$. \label{fig:m67_resid}}
+\end{figure}
 
 
 
