@@ -5,9 +5,9 @@ lweight 2
 limits -0.39 0.39 19.1 10.9 ticksize 0.05 0.2 0.5 1
 
 # Read in all data
-data "../../../../projects/ridgeline/M36/M36.dm.at9.rsd" read {dmam 1 dmac1 2 dmac2 3 dmac3 4 dmac4 5 dmac5 6 dmac6 7 dmac7 8 dmac8 9 dmac9 10} 
-data "../../../../projects/ridgeline/M36/M36.dm.bts.rsd" read {dmbm 1 dmbc1 2 dmbc2 3 dmbc3 4 dmbc4 5 dmbc5 6 dmbc6 7 dmbc7 8 dmbc8 9 dmbc9 10} 
-data "../../../../projects/ridgeline/M36/M36.dm.syn.rsd" read {dmsm 1 dmsc1 2 dmsc2 3 dmsc3 4 dmsc4 5 dmsc5 6 dmsc6 7 dmsc7 8 dmsc8 9 dmsc9 10} 
+#data "../../../../projects/ridgeline/M36/M36.dm.at9.rsd" read {dmam 1 dmac1 2 dmac2 3 dmac3 4 dmac4 5 dmac5 6 dmac6 7 dmac7 8 dmac8 9 dmac9 10} 
+#data "../../../../projects/ridgeline/M36/M36.dm.bts.rsd" read {dmbm 1 dmbc1 2 dmbc2 3 dmbc3 4 dmbc4 5 dmbc5 6 dmbc6 7 dmbc7 8 dmbc8 9 dmbc9 10} 
+#data "../../../../projects/ridgeline/M36/M36.dm.syn.rsd" read {dmsm 1 dmsc1 2 dmsc2 3 dmsc3 4 dmsc4 5 dmsc5 6 dmsc6 7 dmsc7 8 dmsc8 9 dmsc9 10} 
 data "../../../../projects/ridgeline/M36/M36.pc.at9.rsd" read {pcam 1 pcac1 2 pcac2 3 pcac3 4 pcac4 5 pcac5 6 pcac6 7 pcac7 8 pcac8 9 pcac9 10} 
 data "../../../../projects/ridgeline/M36/M36.pc.bts.rsd" read {pcbm 1 pcbc1 2 pcbc2 3 pcbc3 4 pcbc4 5 pcbc5 6 pcbc6 7 pcbc7 8 pcbc8 9 pcbc9 10} 
 data "../../../../projects/ridgeline/M36/M36.pc.syn.rsd" read {pcsm 1 pcsc1 2 pcsc2 3 pcsc3 4 pcsc4 5 pcsc5 6 pcsc6 7 pcsc7 8 pcsc8 9 pcsc9 10} 
