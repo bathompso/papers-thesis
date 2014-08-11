@@ -98,7 +98,8 @@ ATLAS9\footnote{http://wwwuser.oat.ts.astro.it/castelli/colors.html} and BT-Sett
 
 Output from the grid is the \emph{bolometric correction} to $V$, BC$_V$. This is the difference between the star's bolometric magnitude and its magnitude in the $V$ filter: $V = M_{bol} - BC_V$. Also output are the colors of the star, all using the $V$ filter (as seen in table \ref{tab:btsettl}). Using only the four input values, all magnitudes can be determined for the star. While table \ref{tab:btsettl} only shown color terms for the Johnson-Cousins filter system, more filters are available in the atmosphere grids. BT-Settl grids contain color terms for all 17 filters used in the \textsc{binocs} routine: $UBVRIugrizJHK_S$[3.6][4.5][5.8][8.0]. ATLAS9 grids contain all filters but the IRAC mid-IR bands.
 
-In the following analysis, observed data will be compared to 11 different isochrones. The original Padova, PARSEC, and Dartmouth isochrones will be compared to the observational data. The atmosphere model included with the Y$^2$ isochrones does not contain SDSS $ugriz$ magnitudes, and will therefore not be compared to clusters with $ugriz$ optical photometry. Similarly, the online ATLAS9 color transformation does not include mid-IR magnitudes, so no systems will be compared in those bands when using grid-derived ATLAS9 atmospheres.
+In the following analysis, observed data will be compared to 11 different isochrones. The original Padova, PARSEC, and Dartmouth isochrones will be compared to the observational data. The atmosphere model included with the Y$^2$ isochrones does not contain SDSS $ugriz$ magnitudes, and will therefore not be compared to clusters with $ugriz$ optical photometry. Using the original isochrone $\log g$ and $T_\text{eff}$ values, new magnitudes are computed for ATLAS9 and BT-Settl atmospheres. The online ATLAS9 color transformation does not include mid-IR magnitudes, so no systems will be compared in those bands when using grid-derived ATLAS9 atmospheres. Additionally, ATLAS9 atmospheres are only available for stars with temperatures greater than 3500K. Star in the Dartmouth and Y$^2$ systems with temperatures below this were removed in the ATLAS9 isochrones.
+
 
 \subsection{Empirical Ridgelines}
 
@@ -122,8 +123,13 @@ Clusters for which ridgelines exist were compared to isochrone systems. Residual
 \caption{Comparison of isochrone systems to empirical ridgeline for M36 in 9 CMDs. Padova and PARSEC isochrones are 30 Myr, Y$^2$ isochrones are 100 Myr. All isochrones are [Fe/H] = +0.00, E($B-V$) = 0.22, at a distance of 1324 pc. \emph{Red:} PARSEC; \emph{Orange:} Padova. \label{fig:m36_resid}}
 \end{figure}
 
-Isochrone ridgeline residuals are shown in figure \ref{fig:m36_resid}. M36 does not have a published metallicity \citep{2002AA...389..871D}, so it was compared against solar-metallicity isochrones. Due to the young age of M36 (30 Myr), not all isochrone systems will have a similar age. Padova and PARSEC cover the young age range, and 30 Myr isochrones were used in the comparison. Y$^2$'s youngest age is 100 Myr; the highly discrepant residuals above $V \sim 11.5$ are due to Y$^2$ isochrones containing a turn-off which does not exist in the observed cluster. After interpolating Dartmouth isochrones, the youngest available age is 1 Gyr, too much older than the observed cluster to produce any useful insight. Dartmouth isochrones are therefore not shown in figure \ref{fig:m36_resid}.
+Isochrone ridgeline residuals are shown in figure \ref{fig:m36_resid}. Due to the young age of M36 (30 Myr), not all isochrone systems will have a similar age. Padova and PARSEC cover the young age range, and 30 Myr isochrones were used in the comparison. Y$^2$'s youngest age is 100 Myr; Y$^2$ isochrones contain a turn-off which does not exist in the observed cluster, leading to inflated residuals above $V \sim 12$. After interpolating Dartmouth isochrones, the youngest available age is 1 Gyr, too much older than the observed cluster to produce any useful insight. Dartmouth isochrones are therefore not shown in figure \ref{fig:m36_resid}.
 
+M36 does not have a published metallicity \citep{2002AA...389..871D}, so it was compared against solar-metallicity isochrones. As metallicity has one of the largest effects on isochrone ridgeline shape, much of the measured deviation may come from a metallicity mismatch. Until detailed chemical abundance studies are undertaken, better isochrone fits will not be available.
+
+%-- Isochrones do not deviate much between systems or atmospheres.
+%-- Lejuene color transformation in B-V is insanely off.
+%-- Optical - IR colors are extremely discrepant, predicting much bluer stars.
 
 \subsubsection{M35}
 
@@ -131,6 +137,11 @@ Isochrone ridgeline residuals are shown in figure \ref{fig:m36_resid}. M36 does 
 \includegraphics[trim= 0mm 40mm 0mm 0mm, clip, width=0.99\textwidth]{../plots/eps/ridgeline_m35.eps}
 \caption{Comparison of isochrone systems to empirical ridgeline for M35 in 9 CMDs. All isochrones are 130 Myr, with [Fe/H] = -0.21, E($B-V$) = 0.20, at a distance of 871 pc. \emph{Red:} PARSEC; \emph{Orange:} Padova; \emph{Purple:} Y$^2$. \label{fig:m35_resid}}
 \end{figure}
+
+%-- U magnitude is highly discrepant.
+%-- All isochrones agree closely, but hover just blue of observed.
+%-- BT-Settl atmospheres seem to make the already-bad optical-IR colors worse.
+%-- Strange bump near V ~ 12 in all systems and atmospheres
 
 
 \subsubsection{M37}
@@ -140,6 +151,10 @@ Isochrone ridgeline residuals are shown in figure \ref{fig:m36_resid}. M36 does 
 \caption{Comparison of isochrone systems to empirical ridgeline for M37 in 7 CMDs. All isochrones are 350 Myr, with [Fe/H] = +0.08, E($B-V$) = 0.30, at a distance of 1387 pc. \emph{Red:} PARSEC; \emph{Orange:} Padova; \emph{Blue:} Dartmouth; \emph{Purple:} Y$^2$.}
 \end{figure}
 
+%-- Except for NIR colors, which have a very small range to begin with, Padova and PARSEC isochrones deviate greatly to the blue.
+%-- For most CMDs, Dartmouth matches observation to within 0.2, especially with BT-Settl atmospheres
+%-- BT-Settl atmospheres seem to slightly improve the fits of Y^2 and Dartmouth sets.
+
 
 \subsubsection{NGC 2420}
 
@@ -147,6 +162,10 @@ Isochrone ridgeline residuals are shown in figure \ref{fig:m36_resid}. M36 does 
 \includegraphics[trim= 0mm 40mm 0mm 0mm, clip, width=0.99\textwidth]{../plots/eps/ridgeline_n2420.eps}
 \caption{Comparison of isochrone systems to empirical ridgeline for NGC 2420 in 9 CMDs. All isochrones are 2.0 Gyr, with [Fe/H] = -0.23, E($B-V$) = 0.03, at a distance of 2512 pc. \emph{Red:} PARSEC; \emph{Orange:} Padova; \emph{Blue:} Dartmouth; \emph{Purple:} Y$^2$. \label{fig:n2420_resid}}
 \end{figure}
+
+%-- BT-Settl atmospheres accurately predict u magnitudes, which are greatly off in for other atmospheres.
+%-- BT-Settl atmospheres seem to improve all system fits.
+%-- As before, systems consistently predict bluer colors.
 
 
 \subsubsection{M67}
@@ -156,7 +175,9 @@ Isochrone ridgeline residuals are shown in figure \ref{fig:m36_resid}. M36 does 
 \caption{Comparison of isochrone systems to empirical ridgeline for M67 in 9 CMDs. All isochrones are 3.5 Gyr, with [Fe/H] = +0.01, E($B-V$) = 0.04, at a distance of 855 pc. \emph{Red:} PARSEC; \emph{Orange:} Padova; \emph{Blue:} Dartmouth; \emph{Purple:} Y$^2$. \label{fig:m67_resid}}
 \end{figure}
 
-
+%-- u magnitudes are not accurately predicted by any isochrone / atmosphere combination.
+%-- Dartmouth + BT-Settl isochrones fit excellently, to within 0.1 for nearly all CMDs
+%-- Use of ATLAS9 atmospheres make the fit worse over original atmosphere models
 
 
 
