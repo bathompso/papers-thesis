@@ -50,11 +50,11 @@ ctype black expand 0.6 window -9 -100 7 75:100 box 0 0 ctype black ltype 2 reloc
 	
 ctype black expand 0.6 window -9 -100 8 75:100 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
 	ctype firebrick connect pcsc8 pcsm if (pcsc8 > -80)	ctype orange connect pvsc8 pvsm if (pvsc8 > -80)
-	ctype royalblue connect dmsc8 dmsm if (dmsc8 > -80)	ctype purple connect yysc8 yysm if (yysc8 > -80)
+	ctype royalblue connect dmsc8 dmsm if (dmsc8 > -80)	#ctype purple connect yysc8 yysm if (yysc8 > -80)
 	
 ctype black expand 0.6 window -9 -100 9 75:100 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
 	ctype firebrick connect pcsc9 pcsm if (pcsc9 > -80)	ctype orange connect pvsc9 pvsm if (pvsc9 > -80)
-	ctype royalblue connect dmsc9 dmsm if (dmsc9 > -80)	ctype purple connect yysc9 yysm if (yysc9 > -80)
+	ctype royalblue connect dmsc9 dmsm if (dmsc9 > -80)	#ctype purple connect yysc9 yysm if (yysc9 > -80)
 	
 	
 	

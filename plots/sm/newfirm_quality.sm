@@ -1,6 +1,6 @@
 device postencap ../eps/newfirm_quality.eps
 xtcolors
-ptype 24 3
+ptype 1 0
 lweight 3
 
 limits 12 19.4 -0.01 0.18 ticksize 0.2 1 0.01 0.05

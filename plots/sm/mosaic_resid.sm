@@ -1,6 +1,6 @@
 device postencap ../eps/mosaic_resid.eps
 xtcolors
-ptype 24 3
+ptype 1 0
 lweight 3
 
 limits 10.1 19.9 -0.38 0.38 ticksize 0.5 1 0.05 0.1

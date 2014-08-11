@@ -1,6 +1,6 @@
 device postencap ../eps/isocompare_cmd.eps
 xtcolors
-ptype 24 0
+ptype 1 0
 lweight 2
 
 #### Cluster Parameters ########################
@@ -45,7 +45,7 @@ ctype black expand 0.9 window -3 2 1 2 limits -0.2 2.4 26 10 ticksize 0.1 0.5 0.
 xlabel g-r
 ylabel g
 box 1 2
-expand 0.2 points (g-r) g
+lweight 3 points (g-r) g
 	lweight 3
 	ctype firebrick connect (pcg-pcr+ESGSR) (pcg+d+ASG) if (pcage == pccl)
 	ctype orange    connect (pvg-pvr+ESGSR) (pvg+d+ASG) if (pvage == pvcl)
@@ -57,7 +57,7 @@ expand 0.2 points (g-r) g
 ctype black expand 0.9 window -3 2 2 2 limits 0.2 7.7 26 10 ticksize 0.2 1.0 0.5 2
 xlabel g-K
 box 1 0
-expand 0.2 points (g-k) g
+lweight 3 points (g-k) g
 	lweight 3
 	ctype firebrick connect (pcg-pck+ESGK) (pcg+d+ASG) if (pcage == pccl)
 	ctype orange    connect (pvg-pvk+ESGK) (pvg+d+ASG) if (pvage == pvcl)
@@ -69,7 +69,7 @@ expand 0.2 points (g-k) g
 ctype black expand 0.9 window -3 2 3 2 limits -0.1 1.6 26 10 ticksize 0.1 0.5 0.5 2
 xlabel J-K
 box 1 0
-expand 0.2 points (j-k) g if (j < 80)
+lweight 3 points (j-k) g if (j < 80)
 	lweight 3
 	ctype firebrick connect (pcj-pck+EJK) (pcg+d+ASG) if (pcage == pccl)
 	ctype orange    connect (pvj-pvk+EJK) (pvg+d+ASG) if (pvage == pvcl)

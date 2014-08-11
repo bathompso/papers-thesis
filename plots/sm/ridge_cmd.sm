@@ -1,6 +1,6 @@
 device postencap ../eps/ridge_cmd.eps
 xtcolors
-ptype 24 0
+ptype 1 0
 lweight 2
 
 
@@ -11,20 +11,20 @@ ctype black expand 0.9 window -3 2 1 2 limits -0.2 2.4 24 10 ticksize 0.1 0.5 0.
 xlabel g-r
 ylabel r
 box 1 2
-expand 0.2 points (g-r) r
+lweight 3 points (g-r) r
 lweight 3 ctype cyan connect fgr fr if (fgr > -1000) lweight 2
 
 
 ctype black expand 0.9 window -3 2 2 2 limits 0.2 7.7 24 10 ticksize 0.2 1.0 0.5 2
 xlabel g-K
 box 1 0
-expand 0.2 points (g-k) r
+lweight 3 points (g-k) r
 lweight 3 ctype cyan connect fgk fr if (fgk > -1000) lweight 2
 
 
 ctype black expand 0.9 window -3 2 3 2 limits -0.1 1.6 24 10 ticksize 0.1 0.5 0.5 2
 xlabel J-K
 box 1 0
-expand 0.2 points (j-k) r if (j < 80)
+lweight 3 points (j-k) r if (j < 80)
 lweight 3 ctype cyan connect fjk fr if (fjk > -1000) lweight 2
 
