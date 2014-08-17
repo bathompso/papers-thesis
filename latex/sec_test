@@ -1,0 +1,35 @@
+\section{BINOCS Testing}\label{sec:testing}
+
+When the \textsc{binocs} code was introduced in \S\ref{sec:binocs_code}, several parameters were assumed: the number of iterations of the fitting, the required number of ``good'' filters, and the threshold to consider a magnitude ``good.'' Each of these parameters were tested, and the results are shown below.
+
+\subsection{Number of Iterations}\label{sec:iterations_test}
+
+The \textsc{binocs} fitting is iterated a number of times to produce best-fit masses and uncertainties. This process has random elements (sampling of gaussian error distribution), and will not necessarily produce the same result every time. However, if there are enough iterations of the fitting, the final results (median) will not vary greatly. Running excess iterations beyond this will use more computing time, but not enhance the results in any meaningful way.
+
+To determine the minimum number of iterations required, the \textsc{binocs} code with varying numbers of iterations: 3, 10, 30, 90, 150, 200, 300, 400, 500, 600, 700, 1200. For each number of iterations, the \textsc{binocs} code was run five times. Using these five runs, a ``\% uncertainty'', $\Sigma$, was computed for each star. $\Sigma$ is defined as the standard deviation of all five resulting masses divided by the average of the resulting masses for which the star is classified as a member. $\Sigma$'s for primary and secondary mass determinations are computed independently. Stars that were classified as non-member stars in all five runs (and hence not given any best-fit masses) were removed from the set.
+
+\begin{figure} \centering
+\includegraphics[trim = 0mm 65mm 0mm 0mm, clip, width=0.46\textwidth]{../plots/eps/iterations_M67.eps}
+\includegraphics[trim = 0mm 65mm 0mm 0mm, clip, width=0.46\textwidth]{../plots/eps/iterations_M37.eps}
+\caption{Results of the number of iterations test on M67 and M37. Circles correspond to $\Sigma$'s for primary masses, while squares correspond to secondary mass $\Sigma$'s. Solid lines show median $\Sigma$, dashed lines show 95$^{\text{th}}$ percentile. Grey line denotes average 10\% uncertainty between runs.\label{fig:iterations_test}}
+\end{figure}
+
+The M67 and M37 datasets were run through the test, and median and 95$^{\text{th}}$ percentile $\sigma$'s were computed for each number of iterations. Results are plotted in figure \ref{fig:iterations_test}. For primary star masses, there is very little shift between runs ($<3$\%), regardless of the number of iterations completed. For secondary star mass determinations, the median $\Sigma$ is also quite small, staying below 5\% for all iteration values.
+
+In order to ensure that a majority of stellar mass determinations are roughly constant between runs, we require the 95$^{\text{th}}$ percentile $\Sigma$ to be less than 0.1: on average, there will be a less than a 10\% difference in derived stellar masses between runs for 95\% of stars in the dataset. Using 200 iterations of the \textsc{binocs} fitting will satisfy this requirement (as seen in figure \ref{fig:iterations_test}), and is chosen as the ideal number of iterations in the final computations.
+
+
+\subsection{Number of Required Filters}\label{sec:filters_test}
+
+While a comprehensive sampling of the SED over all 12 filters ($UBVRI$ or $ugriz$, $JHK_S$, [3.6][4.5][5.8][8.0]) is ideal, it is often impractical to obtain quality photometry in this number of bands for every cluster we wish to study. In practice, the \textsc{binocs} code will have to produce accurate results using a less-than-ideal number of filters.
+
+
+\subsection{Good Filter Threshold}\label{sec:threshold_test}
+
+In addition to generating accurate mass estimates for cluster stars, the \textsc{binocs} method can mark stars as non-members if they do not have the required number of ``good'' filters for \emph{any} model. Therefore, the threshold which defines whether a filter is ``good'' will adjust the level of field star contamination within the sample. The smaller the threshold, the less contamination from true non-member stars. Conversely, if the threshold is too stringent, many legitimate member stars may be discarded from the sample, due to intrinsic observational uncertainties.
+
+%%% Define distance modulus!!!
+
+To test for the optimal threshold level, an input catalog was created similarly to that used in \S\ref{sec:filters_test}. Then, this input catalog was copied three times: one at the same distance as the cluster, one shifted a distance modulus of 0.8 closer, and one shifted a distance modulus of 0.8 further than the cluster. As the magnitude difference between the single-star main sequence and equal-mass binary sequence is 0.753, there should be no natural degeneracies between the three copies of the input library.
+
+The \textsc{binocs} code was run on this input for various values of the threshold. After the run was complete, two numbers were computed: the percentage of member stars (from the copy of the library at the cluster's distance) that were classified as non-members, and the percentage of non-member stars (from the other two copies of the library) that were classified as members. The best-fit threshold value is chosen such that the sum of these two values is at a minimum.
