@@ -1,12 +1,12 @@
 \section{BINOCS Testing}\label{sec:testing}
 
-When the \textsc{binocs} code was introduced in \S\ref{sec:binocs_code}, several parameters were assumed: the number of iterations of the fitting, the required number of ``good'' filters, and the threshold to consider a magnitude ``good.'' Each of these parameters were tested, and the results are shown below.
+When the \binocs code was introduced in \S\ref{sec:binocs_code}, several parameters were assumed: the number of iterations of the fitting, the required number of ``good'' filters, and the threshold to consider a magnitude ``good.'' Each of these parameters were tested, and the results are shown below.
 
 \subsection{Number of Iterations}\label{sec:iterations_test}
 
-The \textsc{binocs} fitting is iterated a number of times to produce best-fit masses and uncertainties. This process has random elements (sampling of gaussian error distribution), and will not necessarily produce the same result every time. However, if there are enough iterations of the fitting, the final results (median) will not vary greatly. Running excess iterations beyond this will use more computing time, but not enhance the results in any meaningful way.
+The \binocs fitting is iterated a number of times to produce best-fit masses and uncertainties. This process has random elements (sampling of gaussian error distribution), and will not necessarily produce the same result every time. However, if there are enough iterations of the fitting, the final results (median) will not vary greatly. Running excess iterations beyond this will use more computing time, but not enhance the results in any meaningful way.
 
-To determine the minimum number of iterations required, the \textsc{binocs} code with varying numbers of iterations: 3, 10, 30, 90, 150, 200, 300, 400, 500, 600, 700, 1200. For each number of iterations, the \textsc{binocs} code was run five times. Using these five runs, a ``\% uncertainty'', $\Sigma$, was computed for each star. $\Sigma$ is defined as the standard deviation of all five resulting masses divided by the average of the resulting masses for which the star is classified as a member. $\Sigma$'s for primary and secondary mass determinations are computed independently. Stars that were classified as non-member stars in all five runs (and hence not given any best-fit masses) were removed from the set.
+To determine the minimum number of iterations required, the \binocs code with varying numbers of iterations: 3, 10, 30, 90, 150, 200, 300, 400, 500, 600, 700, 1200. For each number of iterations, the \binocs code was run five times. Using these five runs, a ``\% uncertainty'', $\Sigma$, was computed for each star. $\Sigma$ is defined as the standard deviation of all five resulting masses divided by the average of the resulting masses for which the star is classified as a member. $\Sigma$'s for primary and secondary mass determinations are computed independently. Stars that were classified as non-member stars in all five runs (and hence not given any best-fit masses) were removed from the set.
 
 \begin{figure} \centering
 \includegraphics[trim = 0mm 65mm 0mm 0mm, clip, width=0.46\textwidth]{../plots/eps/iterations_M67.eps}
@@ -16,20 +16,84 @@ To determine the minimum number of iterations required, the \textsc{binocs} code
 
 The M67 and M37 datasets were run through the test, and median and 95$^{\text{th}}$ percentile $\sigma$'s were computed for each number of iterations. Results are plotted in figure \ref{fig:iterations_test}. For primary star masses, there is very little shift between runs ($<3$\%), regardless of the number of iterations completed. For secondary star mass determinations, the median $\Sigma$ is also quite small, staying below 5\% for all iteration values.
 
-In order to ensure that a majority of stellar mass determinations are roughly constant between runs, we require the 95$^{\text{th}}$ percentile $\Sigma$ to be less than 0.1: on average, there will be a less than a 10\% difference in derived stellar masses between runs for 95\% of stars in the dataset. Using 200 iterations of the \textsc{binocs} fitting will satisfy this requirement (as seen in figure \ref{fig:iterations_test}), and is chosen as the ideal number of iterations in the final computations.
+In order to ensure that a majority of stellar mass determinations are roughly constant between runs, we require the 95$^{\text{th}}$ percentile $\Sigma$ to be less than 0.1: on average, there will be a less than a 10\% difference in derived stellar masses between runs for 95\% of stars in the dataset. Using 200 iterations of the \binocs fitting will satisfy this requirement (as seen in figure \ref{fig:iterations_test}), and is chosen as the ideal number of iterations in the final computations.
 
 
 \subsection{Number of Required Filters}\label{sec:filters_test}
 
-While a comprehensive sampling of the SED over all 12 filters ($UBVRI$ or $ugriz$, $JHK_S$, [3.6][4.5][5.8][8.0]) is ideal, it is often impractical to obtain quality photometry in this number of bands for every cluster we wish to study. In practice, the \textsc{binocs} code will have to produce accurate results using a less-than-ideal number of filters.
+While a comprehensive sampling of the SED over all 12 filters ($UBVRI$ or $ugriz$) is ideal, it is often impractical to obtain quality photometry in this number of bands for every cluster we wish to study. In practice, the \binocs code will have to produce accurate results using a less-than-ideal number of filters.
+
+During each run of the \binocs code, a model library of all synthetic single and binary stars is generated. If this model library is fed into the code as an input, it \emph{should} return the exact masses of the original models. Requiring fewer filters to be ``good'' will reduce the mass accuracy of the \binocs code. By comparing the resulting best-fit masses of each model star to the true values, mass uncertainty can be determined for each number of required filters.
+
+To aid in the resampling routines of the \binocs code, model stars in the input were given observational uncertainties derived from the cluster's photometry. Using the cluster's merged datafile, average photometric uncertainties were determined for all available filters, in bins of width 0.5 mag. Stars in the model library were then assigned magnitude errors equal to 2 $\times$ the uncertainty in the corresponding magnitude bin. To simulate observed data, the magnitudes were then randomly shifted using a gaussian error distribution with $\sigma =$ the magnitude's uncertainty (2 $\times$ the original bin average). By overestimating the observational uncertainties for the model stars, the error in mass estimates will be similarly enhanced, providing generous upper bounds on the mass uncertainty of the observed data.
+
+After randomization, only certain filters were passed through as input to the \binocs fitting. Filter combinations used in this test are shown in the first column of table \ref{tab:filters_test_M67}. Each filter combination was run 5 times, and each time the \% error in the best-fit primary and secondary masses was recorded. After all 5 runs, results were binned into steps of 0.1 in mass ratio, and the average \% error + 1 standard deviation is presented in tables \ref{tab:filters_test_M67} and \ref{tab:filters_test_M37}. This test, like that in \S\ref{sec:iterations_test}, was run on M67 and M37 datasets.
+
+\begin{table*} \centering \small
+\begin{tabular}{|l|ccccccccccc|c|}
+\multicolumn{1}{c}{} & \multicolumn{11}{c}{Mass Ratio} & \multicolumn{1}{c}{} \\
+\multicolumn{1}{c}{Filters} & 0.0 & 0.1 & 0.2 & 0.3 & 0.4 & 0.5 & 0.6 & 0.7 & 0.8 & 0.9 & \multicolumn{1}{c}{1.0} & 
+	\multicolumn{1}{c}{\multirow{8}{*}{\vspace{-0.7cm}\begin{turn}{-90}1$\sigma$ \% Error in $M_{\text{pri}}$ \end{turn}}} \\ \hline \hline
+101: $.g......$[3.6]... &   1.0 &   0.0 &   0.1 &   0.4 &   0.9 &   1.2 &   1.7 &   2.1 &   2.2 &   2.4 &   7.1 & \\
+111: $.g...J..$[3.6]... &   1.0 &   0.1 &   0.1 &   0.4 &   0.8 &   1.1 &   1.5 &   1.7 &   1.9 &   2.2 &   7.0 & \\
+202: $.gr.....$[3.6][4.5].. &   0.7 &   0.0 &   0.1 &   0.3 &   0.6 &   1.1 &   1.4 &   1.5 &   1.8 &   2.3 &   6.0 & \\
+211: $.gr..J..$[3.6]... &   0.7 &   0.0 &   0.1 &   0.3 &   0.6 &   0.9 &   1.3 &   1.4 &   1.6 &   2.0 &   5.8 & \\
+222: $.gr..J.K_S$[3.6][4.5].. &   0.8 &   0.0 &   0.1 &   0.3 &   0.5 &   0.9 &   1.2 &   1.4 &   1.6 &   2.1 &   5.3 & \\
+322: $.gri.J.K_S$[3.6][4.5].. &   0.7 &   0.0 &   0.1 &   0.3 &   0.5 &   0.8 &   1.2 &   1.3 &   1.6 &   2.1 &   4.9 & \\
+332: $.gri.JHK_S$[3.6][4.5].. &   0.7 &   0.0 &   0.1 &   0.3 &   0.5 &   0.8 &   1.1 &   1.3 &   1.6 &   2.1 &   4.9 & \\
+532: $ugrizJHK_S$[3.6][4.5].. &   0.5 &   0.0 &   0.1 &   0.3 &   0.4 &   0.8 &   0.8 &   1.0 &   1.3 &   1.8 &   3.9 & 
+	\multirow{8}{*}{\vspace{-0.7cm}\begin{turn}{-90}1$\sigma$ \% Error in $M_{\text{sec}}$ \end{turn}} \\ \hline \hline
+101: $.g......$[3.6]... & ... &  41.2 &  26.8 &  22.1 &  26.5 &  22.3 &  16.8 &  12.4 &  10.3 &  11.6 &  11.7 & \\
+111: $.g...J..$[3.6]... & ... &  34.2 &  23.5 &  18.7 &  23.3 &  20.3 &  14.4 &  10.7 &   8.1 &   9.6 &   9.9 & \\
+202: $.gr.....$[3.6][4.5].. & ... &  37.3 &  22.2 &  18.6 &  19.2 &  17.6 &  13.0 &   8.9 &   6.6 &   8.1 &   7.1 & \\
+211: $.gr..J..$[3.6]... & ... &  31.7 &  21.5 &  17.0 &  21.5 &  17.6 &  12.6 &   9.0 &   6.4 &   7.8 &   9.8 & \\
+222: $.gr..J.K_S$[3.6][4.5].. & ... &  27.4 &  17.5 &  14.5 &  14.9 &  12.8 &   9.6 &   7.0 &   5.3 &   6.3 &   7.0 & \\
+322: $.gri.J.K_S$[3.6][4.5].. & ... &  26.7 &  16.6 &  13.2 &  13.8 &  10.9 &   8.6 &   6.5 &   4.9 &   6.0 &   6.5 & \\
+332: $.gri.JHK_S$[3.6][4.5].. & ... &  27.1 &  15.2 &  13.0 &  12.9 &  10.2 &   8.1 &   6.1 &   4.5 &   5.6 &   6.5 & \\
+532: $ugrizJHK_S$[3.6][4.5].. & ... &  25.7 &  13.8 &  11.9 &   9.0 &   6.6 &   4.7 &   3.7 &   3.1 &   3.3 &   4.9 & \\ \hline
+\end{tabular}
+\caption{1$\sigma$ \% errors in mass estimates for the M67 synthetic dataset, in various combinations of filters. \label{tab:filters_test_M67}}
+\end{table*}
+
+\begin{table*} \centering \small
+\begin{tabular}{|l|ccccccccccc|c|}
+\multicolumn{1}{c}{} & \multicolumn{11}{c}{Mass Ratio} & \multicolumn{1}{c}{} \\
+\multicolumn{1}{c}{Filters} & 0.0 & 0.1 & 0.2 & 0.3 & 0.4 & 0.5 & 0.6 & 0.7 & 0.8 & 0.9 & \multicolumn{1}{c}{1.0} & 
+	\multicolumn{1}{c}{\multirow{8}{*}{\vspace{-0.7cm}\begin{turn}{-90}1$\sigma$ \% Error in $M_{\text{pri}}$ \end{turn}}} \\ \hline \hline
+101: $.g......$[3.6]... &   1.0 &   0.2 &   0.5 &   1.1 &   1.1 &   1.6 &   2.3 &   2.8 &   3.0 &   3.8 &   7.6 & \\
+111: $.g...J..$[3.6]... &   0.9 &   0.2 &   0.5 &   1.1 &   1.1 &   1.2 &   1.9 &   2.4 &   2.6 &   3.3 &   6.7 & \\
+202: $.gr.....$[3.6][4.5].. &   1.0 &   0.2 &   0.5 &   0.9 &   0.8 &   1.1 &   1.7 &   2.1 &   2.5 &   3.4 &   7.6 & \\
+211: $.gr..J..$[3.6]... &   0.7 &   0.2 &   0.4 &   0.9 &   0.9 &   1.1 &   1.7 &   2.1 &   2.4 &   3.1 &   6.3 & \\
+222: $.gr..J.K_S$[3.6][4.5].. &   0.8 &   0.2 &   0.4 &   0.8 &   0.7 &   0.9 &   1.5 &   1.8 &   2.2 &   3.1 &   6.5 & \\
+322: $.gri.J.K_S$[3.6][4.5].. &   0.8 &   0.2 &   0.4 &   0.8 &   0.7 &   0.9 &   1.4 &   1.8 &   2.2 &   3.0 &   6.6 & \\
+332: $.gri.JHK_S$[3.6][4.5].. &   0.7 &   0.2 &   0.4 &   0.8 &   0.7 &   0.9 &   1.3 &   1.7 &   2.2 &   3.0 &   6.8 & \\
+532: $ugrizJHK_S$[3.6][4.5].. &   ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... & 
+	\multirow{8}{*}{\vspace{-0.7cm}\begin{turn}{-90}1$\sigma$ \% Error in $M_{\text{sec}}$ \end{turn}} \\ \hline \hline
+101: $.g......$[3.6]... & ... &  67.7 &  58.8 &  43.6 &  27.7 &  19.6 &  16.0 &  13.6 &  10.9 &  10.3 &  14.5 & \\
+111: $.g...J..$[3.6]... & ... &  46.3 &  45.1 &  37.3 &  22.9 &  14.4 &  12.1 &  10.5 &   8.1 &   7.5 &  10.4 & \\
+202: $.gr.....$[3.6][4.5].. & ... &  52.9 &  47.5 &  35.3 &  20.3 &  15.3 &  12.4 &  10.0 &   7.9 &   7.5 &  12.5 & \\
+211: $.gr..J..$[3.6]... & ... &  48.5 &  42.9 &  34.2 &  20.1 &  13.6 &  11.5 &   9.5 &   7.3 &   6.6 &   9.3 & \\
+222: $.gr..J.K_S$[3.6][4.5].. & ... &  43.3 &  38.1 &  30.6 &  17.2 &  11.6 &   9.7 &   8.1 &   6.7 &   6.4 &  10.1 & \\
+322: $.gri.J.K_S$[3.6][4.5].. & ... &  43.6 &  37.9 &  29.4 &  16.2 &  11.3 &   9.4 &   7.8 &   6.4 &   6.0 &  10.0 & \\
+332: $.gri.JHK_S$[3.6][4.5].. & ... &  38.6 &  35.0 &  28.1 &  16.0 &  10.6 &   9.0 &   7.4 &   6.1 &   5.8 &  10.6 & \\
+532: $ugrizJHK_S$[3.6][4.5].. & ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... & \\ \hline
+\end{tabular}
+\caption{Same as table \ref{tab:filters_test_M67}, but for the M37 dataset. The `532' filter combination does not exist, as only $gri$ optical photometry is available for M37. \label{tab:filters_test_M37}}
+\end{table*}
+
+
+
+
+
+
 
 
 \subsection{Good Filter Threshold}\label{sec:threshold_test}
 
-In addition to generating accurate mass estimates for cluster stars, the \textsc{binocs} method can mark stars as non-members if they do not have the required number of ``good'' filters for \emph{any} model. Therefore, the threshold which defines whether a filter is ``good'' will adjust the level of field star contamination within the sample. The smaller the threshold, the less contamination from true non-member stars. Conversely, if the threshold is too stringent, many legitimate member stars may be discarded from the sample, due to intrinsic observational uncertainties.
+In addition to generating accurate mass estimates for cluster stars, the \binocs method can mark stars as non-members if they do not have the required number of ``good'' filters for \emph{any} model. Therefore, the threshold which defines whether a filter is ``good'' will adjust the level of field star contamination within the sample. The smaller the threshold, the less contamination from true non-member stars. Conversely, if the threshold is too stringent, many legitimate member stars may be discarded from the sample, due to intrinsic observational uncertainties.
 
 %%% Define distance modulus!!!
 
 To test for the optimal threshold level, an input catalog was created similarly to that used in \S\ref{sec:filters_test}. Then, this input catalog was copied three times: one at the same distance as the cluster, one shifted a distance modulus of 0.8 closer, and one shifted a distance modulus of 0.8 further than the cluster. As the magnitude difference between the single-star main sequence and equal-mass binary sequence is 0.753, there should be no natural degeneracies between the three copies of the input library.
 
-The \textsc{binocs} code was run on this input for various values of the threshold. After the run was complete, two numbers were computed: the percentage of member stars (from the copy of the library at the cluster's distance) that were classified as non-members, and the percentage of non-member stars (from the other two copies of the library) that were classified as members. The best-fit threshold value is chosen such that the sum of these two values is at a minimum.
+The \binocs code was run on this input for various values of the threshold. After the run was complete, two numbers were computed: the percentage of member stars (from the copy of the library at the cluster's distance) that were classified as non-members, and the percentage of non-member stars (from the other two copies of the library) that were classified as members. The best-fit threshold value is chosen such that the sum of these two values is at a minimum.

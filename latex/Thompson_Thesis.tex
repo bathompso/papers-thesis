@@ -15,6 +15,7 @@
 \usepackage{multirow}
 \usepackage{natbib}
 \usepackage{appendix}
+\usepackage{rotating}
 
 \setcounter{secnumdepth}{3}
 
@@ -36,13 +37,14 @@
 \renewcommand{\headrulewidth}{0pt}
 \citestyle{aa}
 
- \fancyhead{}
+\fancyhead{}
 \fancyfoot{}
 
 \bibpunct{(}{)}{,}{a}{}{;}
  
 \lfoot[]{Ben Thompson -- Thesis}
 \rfoot[]{\thepage}
+\newcommand{\binocs}[0]{\textsc{binocs}\ }
 
 \title{Exploring Binary Population Evolution in Open Star Clusters}
 \author{Benjamin A Thompson}
