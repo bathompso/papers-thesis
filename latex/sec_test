@@ -16,7 +16,7 @@ To determine the minimum number of iterations required, the \binocs code with va
 
 The M67 and M37 datasets were run through the test, and median and 95$^{\text{th}}$ percentile $\sigma$'s were computed for each number of iterations. Results are plotted in figure \ref{fig:iterations_test}. For primary star masses, there is very little shift between runs ($<3$\%), regardless of the number of iterations completed. For secondary star mass determinations, the median $\Sigma$ is also quite small, staying below 5\% for all iteration values.
 
-In order to ensure that a majority of stellar mass determinations are roughly constant between runs, we require the 95$^{\text{th}}$ percentile $\Sigma$ to be less than 0.1: on average, there will be a less than a 10\% difference in derived stellar masses between runs for 95\% of stars in the dataset. Using 200 iterations of the \binocs fitting will satisfy this requirement (as seen in figure \ref{fig:iterations_test}), and is chosen as the ideal number of iterations in the final computations.
+In order to ensure that a majority of stellar mass determinations are roughly constant between runs, we require the 95$^{\text{th}}$ percentile $\Sigma$ to be less than 0.1: on average, there will be a less than a 10\% difference in derived stellar masses between runs for 95\% of stars in the dataset. Using 500 iterations of the \binocs fitting will satisfy this requirement (as seen in figure \ref{fig:iterations_test}), and is chosen as the ideal number of iterations in the final computations.
 
 
 \subsection{Number of Required Filters}\label{sec:filters_test}
