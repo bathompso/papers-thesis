@@ -36,10 +36,10 @@ set EKB2 =  0.197 * ebv set EB1B2 =  0.045 * ebv
 #######################
 
 data "../data/NGC2099.Trimmed.txt" read {g 16 r 18 j 24 k 28}
-data "../../../../projects/isochrones/new/iso_p008.pc.syn.dat" read {pcage 1 pcg 14 pcr 15 pcj 18 pck 20}
-data "../../../../projects/isochrones/new/iso_p008.pv.syn.dat" read {pvage 1 pvg 14 pvr 15 pvj 18 pvk 20}
-data "../../../../projects/isochrones/isosets/dartmouth/base/iso_p007.syn.dat" read {dmage 1 dmg 14 dmr 15 dmj 18 dmk 20}
-#data "../../../../projects/isochrones/isosets/yaleyonsei/iso_p008.at9.dat" read {yyage 1 yyg 14 yyr 15 yyj 18 yyk 20}
+data "../data/isochrones/new/iso_p008.pc.syn.dat" read {pcage 1 pcg 14 pcr 15 pcj 18 pck 20}
+data "../data/isochrones/new/iso_p008.pv.syn.dat" read {pvage 1 pvg 14 pvr 15 pvj 18 pvk 20}
+data "../data/isochrones/dartmouth/iso_p007.syn.dat" read {dmage 1 dmg 14 dmr 15 dmj 18 dmk 20}
+#data "../data/isochrones/yaleyonsei/iso_p008.at9.dat" read {yyage 1 yyg 14 yyr 15 yyj 18 yyk 20}
 
 ctype black expand 0.9 window -3 2 1 2 limits -0.2 2.4 26 10 ticksize 0.1 0.5 0.5 2
 xlabel g-r

@@ -37,7 +37,7 @@ $K$ & $U-V$ & $B-V$ & $V-R$ & $V-I$ & $V-K_S$ & $J-K_S$ & $H-K_S$ & $V-$[3.6] & 
 16.2 &      &      &      &      &      & 1.00 & 0.35 &      &      \\ 
 16.4 &      &      &      &      &      & 1.00 & 0.35 &      &      \\ \hline 
 \end{tabular}
-\caption{Empirical ridgelines for M35. \label{tab:m36ridge}}
+\caption{Empirical ridgelines for M36. \label{tab:m36ridge}}
 \end{table}
 
 
@@ -86,7 +86,7 @@ $V$ & $U-V$ & $B-V$ & $V-R$ & $V-I$ & $V-K_S$ & $J-K_S$ & $H-K_S$ & $V-$[3.6] & 
 18.8 &      & 1.60 &      & 2.04 & 4.30 & 1.02 & 0.24 & 4.48 & 4.44 \\ 
 19.0 &      & 1.65 &      & 2.16 & 4.40 & 1.01 & 0.25 & 4.60 & 4.65 \\ \hline
 \end{tabular}
-\caption{Empirical ridgelines for M36. \label{tab:m35ridge}}
+\caption{Empirical ridgelines for M35. \label{tab:m35ridge}}
 \end{table}
 
 

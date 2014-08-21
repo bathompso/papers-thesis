@@ -5,18 +5,18 @@ lweight 2
 limits -0.39 0.39 15.1 9.9 ticksize 0.05 0.2 0.5 1
 
 # Read in all data
-data "../../../../projects/ridgeline/M35/M35.dm.at9.rsd" read {dmam 1 dmac1 2 dmac2 3 dmac3 4 dmac4 5 dmac5 6 dmac6 7 dmac7 8 dmac8 9 dmac9 10} 
-data "../../../../projects/ridgeline/M35/M35.dm.bts.rsd" read {dmbm 1 dmbc1 2 dmbc2 3 dmbc3 4 dmbc4 5 dmbc5 6 dmbc6 7 dmbc7 8 dmbc8 9 dmbc9 10} 
-data "../../../../projects/ridgeline/M35/M35.dm.syn.rsd" read {dmsm 1 dmsc1 2 dmsc2 3 dmsc3 4 dmsc4 5 dmsc5 6 dmsc6 7 dmsc7 8 dmsc8 9 dmsc9 10} 
-data "../../../../projects/ridgeline/M35/M35.pc.at9.rsd" read {pcam 1 pcac1 2 pcac2 3 pcac3 4 pcac4 5 pcac5 6 pcac6 7 pcac7 8 pcac8 9 pcac9 10} 
-data "../../../../projects/ridgeline/M35/M35.pc.bts.rsd" read {pcbm 1 pcbc1 2 pcbc2 3 pcbc3 4 pcbc4 5 pcbc5 6 pcbc6 7 pcbc7 8 pcbc8 9 pcbc9 10} 
-data "../../../../projects/ridgeline/M35/M35.pc.syn.rsd" read {pcsm 1 pcsc1 2 pcsc2 3 pcsc3 4 pcsc4 5 pcsc5 6 pcsc6 7 pcsc7 8 pcsc8 9 pcsc9 10} 
-data "../../../../projects/ridgeline/M35/M35.pv.at9.rsd" read {pvam 1 pvac1 2 pvac2 3 pvac3 4 pvac4 5 pvac5 6 pvac6 7 pvac7 8 pvac8 9 pvac9 10} 
-data "../../../../projects/ridgeline/M35/M35.pv.bts.rsd" read {pvbm 1 pvbc1 2 pvbc2 3 pvbc3 4 pvbc4 5 pvbc5 6 pvbc6 7 pvbc7 8 pvbc8 9 pvbc9 10} 
-data "../../../../projects/ridgeline/M35/M35.pv.syn.rsd" read {pvsm 1 pvsc1 2 pvsc2 3 pvsc3 4 pvsc4 5 pvsc5 6 pvsc6 7 pvsc7 8 pvsc8 9 pvsc9 10} 
-data "../../../../projects/ridgeline/M35/M35.yy.at9.rsd" read {yyam 1 yyac1 2 yyac2 3 yyac3 4 yyac4 5 yyac5 6 yyac6 7 yyac7 8 yyac8 9 yyac9 10} 
-data "../../../../projects/ridgeline/M35/M35.yy.bts.rsd" read {yybm 1 yybc1 2 yybc2 3 yybc3 4 yybc4 5 yybc5 6 yybc6 7 yybc7 8 yybc8 9 yybc9 10} 
-data "../../../../projects/ridgeline/M35/M35.yy.syn.rsd" read {yysm 1 yysc1 2 yysc2 3 yysc3 4 yysc4 5 yysc5 6 yysc6 7 yysc7 8 yysc8 9 yysc9 10}
+data "../data/ridgeline/M35.dm.at9.rsd" read {dmam 1 dmac1 2 dmac2 3 dmac3 4 dmac4 5 dmac5 6 dmac6 7 dmac7 8 dmac8 9 dmac9 10} 
+data "../data/ridgeline/M35.dm.bts.rsd" read {dmbm 1 dmbc1 2 dmbc2 3 dmbc3 4 dmbc4 5 dmbc5 6 dmbc6 7 dmbc7 8 dmbc8 9 dmbc9 10} 
+data "../data/ridgeline/M35.dm.syn.rsd" read {dmsm 1 dmsc1 2 dmsc2 3 dmsc3 4 dmsc4 5 dmsc5 6 dmsc6 7 dmsc7 8 dmsc8 9 dmsc9 10} 
+data "../data/ridgeline/M35.pc.at9.rsd" read {pcam 1 pcac1 2 pcac2 3 pcac3 4 pcac4 5 pcac5 6 pcac6 7 pcac7 8 pcac8 9 pcac9 10} 
+data "../data/ridgeline/M35.pc.bts.rsd" read {pcbm 1 pcbc1 2 pcbc2 3 pcbc3 4 pcbc4 5 pcbc5 6 pcbc6 7 pcbc7 8 pcbc8 9 pcbc9 10} 
+data "../data/ridgeline/M35.pc.syn.rsd" read {pcsm 1 pcsc1 2 pcsc2 3 pcsc3 4 pcsc4 5 pcsc5 6 pcsc6 7 pcsc7 8 pcsc8 9 pcsc9 10} 
+data "../data/ridgeline/M35.pv.at9.rsd" read {pvam 1 pvac1 2 pvac2 3 pvac3 4 pvac4 5 pvac5 6 pvac6 7 pvac7 8 pvac8 9 pvac9 10} 
+data "../data/ridgeline/M35.pv.bts.rsd" read {pvbm 1 pvbc1 2 pvbc2 3 pvbc3 4 pvbc4 5 pvbc5 6 pvbc6 7 pvbc7 8 pvbc8 9 pvbc9 10} 
+data "../data/ridgeline/M35.pv.syn.rsd" read {pvsm 1 pvsc1 2 pvsc2 3 pvsc3 4 pvsc4 5 pvsc5 6 pvsc6 7 pvsc7 8 pvsc8 9 pvsc9 10} 
+data "../data/ridgeline/M35.yy.at9.rsd" read {yyam 1 yyac1 2 yyac2 3 yyac3 4 yyac4 5 yyac5 6 yyac6 7 yyac7 8 yyac8 9 yyac9 10} 
+data "../data/ridgeline/M35.yy.bts.rsd" read {yybm 1 yybc1 2 yybc2 3 yybc3 4 yybc4 5 yybc5 6 yybc6 7 yybc7 8 yybc8 9 yybc9 10} 
+data "../data/ridgeline/M35.yy.syn.rsd" read {yysm 1 yysc1 2 yysc2 3 yysc3 4 yysc4 5 yysc5 6 yysc6 7 yysc7 8 yysc8 9 yysc9 10}
 
 
 # Comparison to SYNTHETIC ATMOSPHERES
