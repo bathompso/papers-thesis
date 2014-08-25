@@ -38,7 +38,7 @@ Current cluster binary studies are carried out using one of two methods, each of
 \subsubsection{Two-Band Photometry} \label{sec:twoBand}
 Binary stars will be brighter than a single star with the same mass as the primary, due to additional flux from the secondary star. In addition, the star's color will be shifted by the smaller (and hence redder) star. When plotted on a CMD, main sequence binary stars will be offset above and to the right from the single star main sequence. Considering the special case of an equal-mass binary system, the binary system will have the same color as a component single star, but will be twice as bright. Using equation \eqref{eq:MagSystem}, we find the difference in magnitudes:
 
-\begin{equation}
+\begin{equation}\label{eq:binaryMagDiff}
 m_S - m_B = -2.5 \log_{10} \left( \frac{F_S}{F_B} \right) = -2.5 \log_{10} \left( \frac{F_S}{2 F_S} \right) = 0.753
 \end{equation}
 

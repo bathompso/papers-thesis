@@ -27,7 +27,7 @@ During each run of the \binocs code, a model library of all synthetic single and
 
 To aid in the resampling routines of the \binocs code, model stars in the input were given observational uncertainties derived from the cluster's photometry. Using the cluster's merged datafile, average photometric uncertainties were determined for all available filters, in bins of width 0.5 mag. Stars in the model library were then assigned magnitude errors equal to 2 $\times$ the uncertainty in the corresponding magnitude bin. To simulate observed data, the magnitudes were then randomly shifted using a gaussian error distribution with $\sigma =$ the magnitude's uncertainty (2 $\times$ the original bin average). By overestimating the observational uncertainties for the model stars, the error in mass estimates will be similarly enhanced, providing generous upper bounds on the mass uncertainty of the observed data.
 
-After randomization, only certain filters were passed through as input to the \binocs fitting. Filter combinations used in this test are shown in the first column of table \ref{tab:filters_test_M67}. Each filter combination was run 5 times, and each time the \% error in the best-fit primary and secondary masses was recorded. After all 5 runs, results were binned into steps of 0.1 in mass ratio, and the average \% error + 1 standard deviation is presented in tables \ref{tab:filters_test_M67} and \ref{tab:filters_test_M37}. This test, like that in \S\ref{sec:iterations_test}, was run on M67 and M37 datasets.
+After randomization, only certain filters were passed through as input to the \binocs fitting. Filter combinations used in this test are shown in the first column of table \ref{tab:filters_test_M67}. Each filter combination was run 5 times, and each time the \% error in the best-fit primary and secondary masses was recorded. After all 5 runs, results were binned into steps of 0.1 in mass ratio, and the average \% error + 1 standard deviation is presented in tables \ref{tab:filters_test_M67} and \ref{tab:filters_test_M37}. This test, like that in \S\ref{sec:iterations_test}, was run on M67 and M37 datasets. For both clusters, the results were limited to systems where the primary was less massive than 2 M$_\odot$. Above this level, the massive flux of the primary begins to massively skew secondary mass determinations for small mass-ratios.
 
 \begin{table} \centering \small
 \begin{tabular}{|l|ccccccccccc|c|} \hline
@@ -60,43 +60,43 @@ After randomization, only certain filters were passed through as input to the \b
 \multicolumn{1}{|c|}{} & \multicolumn{11}{c}{Mass Ratio} & \multicolumn{1}{c|}{} \\
 \multicolumn{1}{|c|}{Filter Combinations} & 0.0 & 0.1 & 0.2 & 0.3 & 0.4 & 0.5 & 0.6 & 0.7 & 0.8 & 0.9 & \multicolumn{1}{c}{1.0} & 
 	\multicolumn{1}{c|}{\multirow{8}{*}{\vspace{-0.7cm}\begin{turn}{-90}1$\sigma$ \% Error in $M_{\text{pri}}$ \end{turn}}} \\ \hline \hline
-101: $.g......$[3.6]... &   1.1 &   0.2 &   0.5 &   1.0 &   1.1 &   1.5 &   2.2 &   2.6 &   2.9 &   4.0 &   7.6 & \\
-111: $.g...J..$[3.6]... &   1.0 &   0.2 &   0.5 &   1.0 &   1.0 &   1.3 &   1.7 &   2.2 &   2.5 &   3.6 &   7.2 & \\
-202: $.gr.....$[3.6][4.5].. &   1.0 &   0.2 &   0.4 &   0.8 &   0.7 &   1.1 &   1.6 &   2.0 &   2.4 &   3.4 &   6.9 & \\
-211: $.gr..J..$[3.6]... &   0.9 &   0.1 &   0.4 &   0.8 &   0.8 &   1.1 &   1.5 &   2.1 &   2.3 &   3.3 &   6.7 & \\
-222: $.gr..J.K_S$[3.6][4.5].. &   0.8 &   0.2 &   0.3 &   0.7 &   0.7 &   0.9 &   1.4 &   1.8 &   2.1 &   3.1 &   5.8 & \\
-322: $.gri.J.K_S$[3.6][4.5].. &   0.8 &   0.2 &   0.3 &   0.7 &   0.7 &   0.9 &   1.3 &   1.7 &   2.0 &   3.0 &   5.8 & \\
-332: $.gri.JHK_S$[3.6][4.5].. &   0.8 &   0.2 &   0.3 &   0.6 &   0.7 &   0.9 &   1.2 &   1.7 &   1.9 &   2.9 &   5.9 & \\
+101: $.g......$[3.6]... &   1.1 &   0.2 &   0.3 &   0.7 &   1.3 &   1.9 &   2.6 &   3.1 &   3.6 &   5.3 &   7.9 & \\
+111: $.g...J..$[3.6]... &   1.0 &   0.2 &   0.3 &   0.7 &   1.0 &   1.4 &   1.9 &   2.7 &   2.9 &   4.5 &   7.7 & \\
+202: $.gr.....$[3.6][4.5].. &   1.0 &   0.2 &   0.3 &   0.6 &   0.9 &   1.3 &   1.9 &   2.5 &   3.0 &   4.7 &   7.2 & \\
+211: $.gr..J..$[3.6]... &   0.9 &   0.1 &   0.3 &   0.6 &   0.9 &   1.2 &   1.7 &   2.5 &   2.7 &   4.2 &   7.2 & \\
+222: $.gr..J.K_S$[3.6][4.5].. &   0.8 &   0.2 &   0.2 &   0.5 &   0.7 &   1.0 &   1.5 &   2.1 &   2.4 &   3.8 &   6.3 & \\
+322: $.gri.J.K_S$[3.6][4.5].. &   0.8 &   0.2 &   0.2 &   0.5 &   0.8 &   1.0 &   1.5 &   2.1 &   2.4 &   3.7 &   6.2 & \\
+332: $.gri.JHK_S$[3.6][4.5].. &   0.8 &   0.2 &   0.2 &   0.4 &   0.7 &   1.0 &   1.4 &   2.0 &   2.2 &   3.4 &   6.5 & \\
 532: $ugrizJHK_S$[3.6][4.5].. &   ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... & 
 	\multirow{8}{*}{\vspace{-0.7cm}\begin{turn}{-90}1$\sigma$ \% Error in $M_{\text{sec}}$ \end{turn}} \\ \hline \hline
-101: $.g......$[3.6]... & ... &  67.6 &  59.4 &  42.5 &  26.7 &  18.7 &  16.2 &  13.1 &  10.6 &  10.3 &  14.7 & \\
-111: $.g...J..$[3.6]... & ... &  52.0 &  46.9 &  35.9 &  21.6 &  14.4 &  11.7 &  10.1 &   7.9 &   8.0 &  11.7 & \\
-202: $.gr.....$[3.6][4.5].. & ... &  50.7 &  46.1 &  32.8 &  20.4 &  14.5 &  12.0 &  10.2 &   7.8 &   7.8 &  11.9 & \\
-211: $.gr..J..$[3.6]... & ... &  50.3 &  44.5 &  32.7 &  19.4 &  13.3 &  11.0 &   9.5 &   7.2 &   7.0 &  10.4 & \\
-222: $.gr..J.K_S$[3.6][4.5].. & ... &  35.1 &  37.2 &  28.4 &  17.7 &  11.3 &   9.2 &   8.0 &   6.2 &   6.6 &   9.2 & \\
-322: $.gri.J.K_S$[3.6][4.5].. & ... &  34.7 &  35.8 &  27.7 &  16.6 &  10.9 &   8.8 &   7.7 &   5.9 &   6.2 &   8.7 & \\
-332: $.gri.JHK_S$[3.6][4.5].. & ... &  32.8 &  33.8 &  26.6 &  16.0 &  10.6 &   8.1 &   7.3 &   5.7 &   6.0 &   8.4 & \\
+101: $.g......$[3.6]... & ... &  67.6 &  51.5 &  35.5 &  27.4 &  21.8 &  18.5 &  14.8 &  11.6 &  12.0 &  13.8 & \\
+111: $.g...J..$[3.6]... & ... &  52.0 &  36.3 &  26.4 &  19.2 &  14.4 &  12.2 &  10.4 &   7.7 &   8.3 &  11.2 & \\
+202: $.gr.....$[3.6][4.5].. & ... &  50.7 &  35.6 &  25.7 &  20.7 &  16.2 &  12.9 &  10.8 &   8.8 &   9.2 &  10.6 & \\
+211: $.gr..J..$[3.6]... & ... &  50.3 &  35.9 &  26.2 &  18.2 &  13.0 &  11.2 &   9.5 &   7.0 &   7.4 &   9.9 & \\
+222: $.gr..J.K_S$[3.6][4.5].. & ... &  35.1 &  24.1 &  17.8 &  14.4 &  10.5 &   8.6 &   7.3 &   5.7 &   6.3 &   8.1 & \\
+322: $.gri.J.K_S$[3.6][4.5].. & ... &  34.7 &  23.5 &  17.6 &  14.2 &  10.3 &   8.1 &   6.9 &   5.5 &   6.0 &   7.4 & \\
+332: $.gri.JHK_S$[3.6][4.5].. & ... &  32.8 &  21.7 &  15.8 &  13.0 &   9.7 &   7.3 &   6.2 &   5.0 &   5.5 &   8.2 & \\
 532: $ugrizJHK_S$[3.6][4.5].. & ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... & \\ \hline
 \end{tabular}
 \caption{Same as table \ref{tab:filters_test_M67}, but for the M37 dataset. The `532' filter combination does not exist, as only $gri$ optical photometry is available for M37. \label{tab:filters_test_M37}}
 \end{table}
 
-At first glance, it is obvious that mass estimates are wildly inaccurate for mass ratios less than 0.3. Due to other considerations (described in \S\ref{sec:minq}), these stars will be removed from the comparison, and so they are ignored in this test as well. There is a large jump in accuracy between the `211' and `222' filter combinations, more than 5\% for some mass ratios. Using `222,' or a more stringent filter requirement will give primary masses to better than 10\% and secondary masses to within 20\%. This level of accuracy is acceptable, and allows inclusion of clusters that do not have full near-IR ($JHK_S$) photometry. Requiring more filters only marginally increases the accuracy (less than 2.5\% in M37), but excludes many clusters from analysis.
+At first glance, it is obvious that mass estimates are wildly inaccurate for mass ratios less than 0.3. Due to other considerations (described in \S\ref{sec:minq}), these stars will be removed from the comparison, and so they are ignored in this test as well. There is a large jump in accuracy between the `211' and `222' filter combinations, more than 5\% for some mass ratios. Using `222,' or a more stringent filter requirement will give primary masses to better than 10\% and secondary masses to within 20\%. This level of accuracy is acceptable, and allows inclusion of clusters that do not have full near-IR ($JHK_S$) photometry. Requiring more filters only marginally increases the accuracy (less than 2.5\% in M37), but excludes more clusters from analysis.
 
 \begin{table} \centering
 \begin{tabular}{|l|cc|} \hline
  & \multicolumn{2}{c|}{\# of Stars} \\
 Cluster & Original Dataset & `222' Trimmed \\ \hline \hline 
-NGC 1960 (M36) & 58,011 & 7012 \\
-NGC 2168 (M35) & 53,196 & 7607 \\
-NGC 2099 (M37) & 39,405 & 3373 \\
-NGC 2420	   & 17,725 & 1224 \\
-NGC 2682 (M67) & 14,339 & 1178 \\ \hline
+NGC 1960 (M36) & 58,011 & 7,012 \\
+NGC 2168 (M35) & 53,196 & 7,607 \\
+NGC 2099 (M37) & 39,405 & 3,373 \\
+NGC 2420	   & 17,725 & 1,224 \\
+NGC 2682 (M67) & 14,339 & 1,178 \\ \hline
 \end{tabular}
 \parbox{0.75\textwidth}{\caption{Comparison, for clusters in analysis set, of number of stars in original merged datasets to those which have the requisite photometry. \label{tab:222starcounts}}}
 \end{table}
 
-Original star counts, as well as the number of stars available after the `222' cut are shown for all clusters in analysis set in table \ref{tab:222starcounts}. In many cases, the datasets cover different areas around the cluster, only overlapping in smaller regions. These extra sources, which have photometry from only one source, are removed after the filter cut. This effect is enhanced in M35, M36 and M37, which lie in the plane of the galaxy. 
+Original star counts, as well as the number of stars available after the `222' cut are shown for all clusters in the analysis set in table \ref{tab:222starcounts}. In many cases, the individual photometry datasets cover different areas around the cluster, only overlapping in smaller regions. These extra sources, which have photometry from only one source, are removed after the filter cut. This effect is enhanced in M35, M36 and M37, which lie in the plane of the galaxy. 
 
 
 
@@ -105,6 +105,6 @@ Original star counts, as well as the number of stars available after the `222' c
 
 In addition to generating accurate mass estimates for cluster stars, the \binocs method can mark stars as non-members if they do not have the required number of ``good'' filters for \emph{any} model. Therefore, the threshold which defines whether a filter is ``good'' will adjust the level of field star contamination within the sample. The smaller the threshold, the less contamination from true non-member stars. Conversely, if the threshold is too stringent, many legitimate member stars may be discarded from the sample, due to intrinsic observational uncertainties.
 
-To test for the optimal threshold level, an input catalog was created similarly to that used in \S\ref{sec:filters_test}. Then, this input catalog was copied three times: one as an exact copy, one where all magnitudes were shifted down by 0.8 mags, and one where all magnitudes were shifted up by 0.8 mags. The shifted copies symbolize field contamination in front of and behind the cluster; shifting magnitudes down move stars closer, while shifting magnitudes up move stars further away. The magnitude different between the single-star main sequence and equal-mass binary sequence is 0.753, so there should be no natural degeneracies between the three copies of the input library.
+To test for the optimal threshold level, an input catalog was created similarly to that used in \S\ref{sec:filters_test}. Then, this input catalog was copied three times: one as an exact copy, one where all magnitudes were shifted down by 0.8 mags, and one where all magnitudes were shifted up by 0.8 mags. The shifted copies symbolize field contamination in front of and behind the cluster (refer to \eqref{eq:MagnitudeDistanceRel} in \S\ref{sec:introAstrophysics}); shifting magnitudes down move stars closer, while shifting magnitudes up move stars further away. The magnitude different between the single-star main sequence and equal-mass binary sequence is 0.753 (from \eqref{eq:binaryMagDiff}), so there should be no natural degeneracies between the three copies of the input library.
 
 The \binocs code was run on this input for various values of the threshold. After the run was complete, two numbers were computed: the percentage of member stars (from the copy of the library at the cluster's distance) that were classified as non-members, and the percentage of non-member stars (from the other two copies of the library) that were classified as members. The best-fit threshold value is chosen such that the sum of these two values is at a minimum.
