@@ -1,0 +1,24 @@
+device postencap ../eps/threshold_M67.eps
+xtcolors
+lweight 2
+
+data "../data/threshold_M67.txt" read {thresh 1 pctmiss 2 pctcont 3}
+
+expand 1.1
+window -100 -100 1:93 70:100 limits 4.5 27.5 -5 105 ticksize 1 5 5 20
+ylabel %
+xlabel Threshold Value
+box 1 2
+
+ltype 1 connect (thresh) pctmiss ltype 0 
+#expand 1.4 ptype 4 0 points (thresh) pctcont 
+ltype 2 connect (thresh) pctcont
+
+ltype 0 connect (thresh) (pctmiss+pctcont)
+
+window 1 1 1 1 limits 0 1 0 1 expand 0.99
+ltype 1 relocate 0.62 0.97 draw 0.66 0.97 relocate 0.67 0.97 ltype 0 putlabel 6 % Missed
+ltype 2 relocate 0.62 0.93 draw 0.66 0.93 relocate 0.67 0.93 ltype 0 putlabel 6 % Contamination
+ltype 0 relocate 0.62 0.89 draw 0.66 0.89 relocate 0.67 0.89 ltype 0 putlabel 6 % Total
+
+

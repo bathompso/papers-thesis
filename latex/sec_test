@@ -99,12 +99,23 @@ NGC 2682 (M67) & 14,339 & 1,178 \\ \hline
 Original star counts, as well as the number of stars available after the `222' cut are shown for all clusters in the analysis set in table \ref{tab:222starcounts}. In many cases, the individual photometry datasets cover different areas around the cluster, only overlapping in smaller regions. These extra sources, which have photometry from only one source, are removed after the filter cut. This effect is enhanced in M35, M36 and M37, which lie in the plane of the galaxy. 
 
 
-
-
 \subsection{Good Filter Threshold}\label{sec:threshold_test}
 
 In addition to generating accurate mass estimates for cluster stars, the \binocs method can mark stars as non-members if they do not have the required number of ``good'' filters for \emph{any} model. Therefore, the threshold which defines whether a filter is ``good'' will adjust the level of field star contamination within the sample. The smaller the threshold, the less contamination from true non-member stars. Conversely, if the threshold is too stringent, many legitimate member stars may be discarded from the sample, due to intrinsic observational uncertainties.
 
-To test for the optimal threshold level, an input catalog was created similarly to that used in \S\ref{sec:filters_test}. Then, this input catalog was copied three times: one as an exact copy, one where all magnitudes were shifted down by 0.8 mags, and one where all magnitudes were shifted up by 0.8 mags. The shifted copies symbolize field contamination in front of and behind the cluster (refer to \eqref{eq:MagnitudeDistanceRel} in \S\ref{sec:introAstrophysics}); shifting magnitudes down move stars closer, while shifting magnitudes up move stars further away. The magnitude different between the single-star main sequence and equal-mass binary sequence is 0.753 (from \eqref{eq:binaryMagDiff}), so there should be no natural degeneracies between the three copies of the input library.
+To test for the optimal threshold level, an input catalog was created similarly to that used in \S\ref{sec:filters_test}, keeping magnitudes for $griJHK_S$[3.6][4.5] filters. Then, this input catalog was copied three times: one as an exact copy, one where all magnitudes were shifted down by 0.8 mags, and one where all magnitudes were shifted up by 0.8 mags. The shifted copies symbolize field contamination in front of and behind the cluster (refer to \eqref{eq:MagnitudeDistanceRel} in \S\ref{sec:introAstrophysics}); shifting magnitudes down move stars closer, while shifting magnitudes up move stars further away. The magnitude different between the single-star main sequence and equal-mass binary sequence is 0.753 (from \eqref{eq:binaryMagDiff}), so there should be no natural degeneracies between the three copies of the input library.
 
 The \binocs code was run on this input for various values of the threshold. After the run was complete, two numbers were computed: the percentage of member stars (from the copy of the library at the cluster's distance) that were classified as non-members, and the percentage of non-member stars (from the other two copies of the library) that were classified as members. The best-fit threshold value is chosen such that the sum of these two values is at a minimum.
+
+\begin{figure} \centering
+\includegraphics[trim = 3mm 125mm 22mm 0mm, clip, width=0.85\textwidth]{../plots/eps/threshold_M67.eps}
+\caption{\% contamination and \% of stars missed in M67 synthetic dataset, for various threshold levels. \label{fig:threshold_test_M67}}
+\end{figure}
+
+The test was run using the M67 synthetic dataset. Results are shown in figure \ref{fig:threshold_test_M67}. The threshold with the minimum errors is 10, which is chosen to be the optimal threshold for science runs.
+
+
+\subsection{Minimum Mass Ratio}\label{sec:minq}
+
+
+\subsection{Comparison to RV}\label{sec:rv_comparison}
