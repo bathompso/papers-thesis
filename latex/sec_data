@@ -349,7 +349,7 @@ NGC 1912 (M38)				& MOSAIC						& NEWFIRM							&								\\ \hline
 NGC 1960 (M36)				& MOSAIC						& NEWFIRM							& \citet{2000AA...357..471S}	\\ \hline
 NGC 2099 (M37)				& \citet{2008ApJ...675.1233H}	& NEWFIRM							& 								\\ \hline
 NGC 2158					& MOSAIC						& \emph{NEWFIRM}					& 								\\ \hline
-NGC 2168 (M35)				& MOSAIC						& NEWFIRM							& 								\\ \hline
+NGC 2168 (M35)				& MOSAIC						& NEWFIRM							& \citet{Geller:2010hn}			\\ \hline
 NGC 2420					& \citet{2009ApJ...700..523A}	& 									&								\\ \hline
 \multirow{2}{*}{NGC 2682}	& \citet{2009ApJ...700..523A}	& \multirow{2}{*}{NEWFIRM}			& \citet{Mathieu:1997tk}		\\
 							& \citet{2008AA...484..609Y}	&									& \citet{2008AA...484..609Y}	\\ \hline
@@ -359,5 +359,5 @@ NGC 6819					& \citet{2009AJ....138..159H}	&									& \citet{2009AJ....138..159
 \caption{Available data for all clusters in this project. Names in italics represent observed data that has not yet been reduced. \label{table:clusters}}
 \end{table}
 
-While this project's main focus is on the \binocs routine and binary detection, its contribution to open cluster photometry should not be understated. Despite being very important astronomical objects, there is a dearth of published photometric data on open clusters. Despite being observed dozens of times in the optical, for nearly all of these open clusters the only IR photometry available is from 2MASS and WISE, which barely reach below the turn-off. Providing deep, wide-field photometry, especially in the IR, for these standard open clusters will aid many avenues of research in the astronomical community.
+While this project's main focus is on the \binocs routine and binary detection, its contribution to open cluster photometry should not be understated. Despite being very important astronomical objects, there is a dearth of published photometric data on open clusters. While many of these clusters have been observed dozens of times in the optical, the only IR photometry available is from 2MASS and WISE, which barely reaches below the turn-off. Providing deep, wide-field photometry, especially in the IR, for these standard open clusters will aid many avenues of research in the astronomical community.
 

@@ -1,0 +1,23 @@
+device postencap ../eps/minq_M37.eps
+xtcolors
+lweight 3
+add_ctype grey 150 150 150
+
+data "../data/minq_M37.txt" read {mass 1 minq_synth 2 minq_mod 3 minq_tot 4}
+
+expand 1.3
+window 1 -100 1 70:100 limits 0.1 3.6 0 1 ticksize 0.1 0.5 0.05 0.2 box 1 2
+ylabel Mass Ratio
+xlabel Primary Mass (M_\odot)
+
+ctype grey connect mass minq_tot
+
+ctype black
+ltype 2 connect mass minq_synth if (minq_synth > 0)
+ltype 1 connect mass minq_mod 
+
+expand 1.1
+window 1 1 1 1 limits 0 1 0 1
+ltype 1 relocate 0.77 0.81 draw 0.81 0.81 relocate 0.82 0.81 putlabel 6 Min Model
+ltype 2 relocate 0.77 0.77 draw 0.81 0.77 relocate 0.82 0.77 putlabel 6 Synthetic
+ltype 0 ctype grey relocate 0.77 0.73 draw 0.81 0.73 ctype black relocate 0.82 0.73 putlabel 6 Total
