@@ -145,8 +145,8 @@ Minimum mass ratios for M37 and M67 are shown in figures \ref{fig:minq_M37} and 
 While internal checks of the \binocs code have been completed, the results must be compared to an outside source for verfication. As mentioned in \S\ref{sec:PastRV}, RV studies are the most detailed way to study binary systems in clusters, and the \binocs code should produce consistent results. Two clusters in the analysis set, M67 and M35, have published RV data: \citet{Mathieu:1997tk} and \citet{Geller:2010hn}, respectively. A comparison between these RV studies and the clusters' \binocs results is shown in figures \ref{fig:rv_M35} and \ref{fig:rv_M67}.
 
 \begin{figure}
-	\parbox{0.56\textwidth}{\includegraphics[trim = 3mm 108mm 75mm 0mm, clip, width=0.54\textwidth]{../plots/eps/rv_M35.eps}}
-	\parbox{0.3\textwidth}{
+	\parbox{0.62\textwidth}{\includegraphics[trim = 3mm 108mm 75mm 0mm, clip, width=0.6\textwidth]{../plots/eps/rv_M35.eps}}
+	\parbox{0.3\textwidth}{ \scriptsize
 		\begin{tabular}{|c|ccc|} \hline
 		 & \multicolumn{3}{c|}{\binocs} \\
 		RV & Single & Binary & Non-Member \\ \hline
@@ -158,8 +158,8 @@ While internal checks of the \binocs code have been completed, the results must 
 \end{figure}
 
 \begin{figure}
-	\parbox{0.56\textwidth}{\includegraphics[trim = 3mm 108mm 75mm 0mm, clip, width=0.54\textwidth]{../plots/eps/rv_M67.eps}}
-	\parbox{0.3\textwidth}{
+	\parbox{0.62\textwidth}{\includegraphics[trim = 3mm 108mm 75mm 0mm, clip, width=0.6\textwidth]{../plots/eps/rv_M67.eps}}
+	\parbox{0.3\textwidth}{ \scriptsize
 		\begin{tabular}{|c|ccc|} \hline
 		 & \multicolumn{3}{c|}{\binocs} \\
 		RV & Single & Binary & Non-Member \\ \hline
