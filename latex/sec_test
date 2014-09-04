@@ -143,11 +143,19 @@ Minimum mass ratios for M37 and M67 are shown in figures \ref{fig:minq_M37} and 
 
 \subsection{Comparison to RV}\label{sec:rv_comparison}
 
+<<<<<<< HEAD
 While internal checks of the \binocs code have been completed, the results must be compared to an outside source for verfication. As mentioned in \S\ref{sec:PastRV}, RV studies are the most detailed way to study binary systems in clusters, and the \binocs code should produce consistent results. Two clusters in the analysis set, M67 and M35, have published RV data: \citet{Mathieu:1997tk} and \citet{Geller:2010hn}, respectively. A comparison between these RV studies and the clusters' \binocs results are explored in the subsections below.
 
 \subsubsection{Binary Detection}
 
 A comparison of \binocs and RV multiplicity determinations is shown in figures \ref{fig:rv_M35} and \ref{fig:rv_M67}.
+=======
+While internal checks of the \binocs code have been completed, the results must be compared to an outside source for verfication. As mentioned in \S\ref{sec:PastRV}, RV studies are the most detailed way to study binary systems in clusters, and the \binocs code should produce consistent results. Two clusters in the analysis set, M67 and M35, have published RV data: \citet{Mathieu:1997tk} and \citet{Geller:2010hn}, respectively. 
+
+\subsubsection{Binary Detection}
+
+A comparison of binary / single determinations between RV studies and the \binocs results is shown in figures \ref{fig:rv_M35} and \ref{fig:rv_M67}.
+>>>>>>> FETCH_HEAD
 
 \begin{figure}
 	\parbox{0.62\textwidth}{\includegraphics[trim = 3mm 108mm 75mm 0mm, clip, width=0.6\textwidth]{../plots/eps/rv_M35.eps}}
@@ -193,6 +201,13 @@ This scenario is the converse to the previous two points, and can account for th
 
 
 \subsubsection{Mass Accuracy}
+
+
+\subsubsection{Mass Determination}
+
+
+
+
 
 
 
