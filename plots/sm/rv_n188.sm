@@ -1,0 +1,30 @@
+device postencap ../eps/rv_n188.eps
+xtcolors
+lweight 3 ptype 24 3
+add_ctype grey 150 150 150
+
+data "../data/rv_n188.txt" read {id 1 mp 3 mpe 4 ms 5 mse 6 tp 7 ts 8}
+
+expand 0.8 window 1 -3 1 3 limits 1 11 0.2 1.3 ticksize 1 1 0.1 0.4
+xlabel Star ID
+ylabel Mass Ratio
+box 0 2
+
+expand 1.3 points (id+0.5) (ts/tp)
+ctype grey points (id+0.5) (ms/mp)
+error_y (id+0.5) (ms/mp) (ms/mp*sqrt((mpe/mp)*(mpe/mp)+(mse/ms)*(mse/ms)))
+
+
+
+# Put in star labels
+ctype black expand 0.9 window 1 1 1 1 limits 1 11 0 1
+relocate 1.5 0.65 putlabel 5 4411
+relocate 2.5 0.65 putlabel 5 4506
+relocate 3.5 0.65 putlabel 5 4705
+relocate 4.5 0.65 putlabel 5 4732
+relocate 5.5 0.65 putlabel 5 4962
+relocate 6.5 0.65 putlabel 5 4986
+relocate 7.5 0.65 putlabel 5 5080
+relocate 8.5 0.65 putlabel 5 5147
+relocate 9.5 0.65 putlabel 5 5710
+relocate 10.5 0.65 putlabel 5 5762

@@ -4,8 +4,8 @@ lweight 2
 add_ctype grey 150 150 150
 ptype 1 0
 
-data "../data/NGC2168.222.txt--results.txt" read {v 6 k 16 bn 21 rv 22 mpri 23 msec 25}
-data "../data/NGC2168.222.txt--binary.txt" read {obn 21 orv 22 ompri 23 omsec 25}
+data "../data/NGC2168.332.txt--results.txt" read {v 6 k 16 bn 21 rv 22 mpri 23 msec 25}
+data "../data/NGC2168.332.txt--binary.txt" read {obn 21 orv 22 ompri 23 omsec 25}
 
 # Create new arrays for mass ratio plotting
 set good_v = v if (ompri > 0 && orv == 1)
@@ -31,7 +31,7 @@ ctype royalblue points (v-k) v if (rv == 1 && bn == 1 && v-k < 3)
 ctype darkgreen points (v-k) v if (rv == 2 && bn == 2 && v-k < 3)
 
 lweight 2 expand 0.9 ptype 24 0 ctype black
-points (good_v-good_k) good_v if (good_s/good_p < 0.3 && good_s/good_p > 0)
+points (good_v-good_k) good_v if (good_s/good_p < 0.3 && good_s/good_p > 0.2)
 
 window 1 1 1 1 limits 0 1 0 1
 expand 1.2 ptype 4 3 ctype royalblue points (0.415) (0.97) ctype black expand 0.7 relocate 0.43 0.97 putlabel 6 RV: S, SED: S

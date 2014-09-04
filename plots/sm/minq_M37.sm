@@ -14,7 +14,7 @@ ctype grey connect mass minq_tot
 
 ctype black
 ltype 2 connect mass minq_synth if (minq_synth > 0)
-ltype 1 connect mass minq_mod 
+ltype 1 connect mass minq_mod if (minq_mod > 0)
 
 expand 1.1
 window 1 1 1 1 limits 0 1 0 1

@@ -2,6 +2,7 @@
 
 When the \binocs code was introduced in \S\ref{sec:binocs_code}, several parameters were assumed: the number of iterations of the fitting, the required number of ``good'' filters, and the threshold to consider a magnitude ``good.'' Each of these parameters were tested, and the results are shown below.
 
+
 \subsection{Number of Iterations}\label{sec:iterations_test}
 
 The \binocs fitting is iterated a number of times to produce best-fit masses and uncertainties. This process has random elements (sampling of gaussian error distribution), and will not necessarily produce the same result every time. However, if there are enough iterations of the fitting, the final results (median) will not vary greatly. Running excess iterations beyond this will use more computing time, but not enhance the results in any meaningful way.
@@ -16,7 +17,7 @@ To determine the minimum number of iterations required, the \binocs code with va
 
 The M67 and M37 datasets were run through the test, and median and 95$^{\text{th}}$ percentile $\sigma$'s were computed for each number of iterations. Results are plotted in figure \ref{fig:iterations_test}. For primary star masses, there is very little shift between runs ($<3$\%), regardless of the number of iterations completed. For secondary star mass determinations, the median $\Sigma$ is also quite small, staying below 5\% for all iteration values.
 
-In order to ensure that a majority of stellar mass determinations are roughly constant between runs, we require the 95$^{\text{th}}$ percentile $\Sigma$ to be less than 0.1: on average, there will be a less than a 10\% difference in derived stellar masses between runs for 95\% of stars in the dataset. Using 500 iterations of the \binocs fitting will satisfy this requirement (as seen in figure \ref{fig:iterations_test}), and is chosen as the ideal number of iterations in the final computations.
+In order to ensure that a majority of stellar mass determinations are roughly constant between runs, we require the 95$^{\text{th}}$ percentile $\Sigma$ to be less than 0.1: on average, there will be a less than a 10\% difference in derived stellar masses between runs for 95\% of stars in the dataset. Using 200 iterations of the \binocs fitting will satisfy this requirement (as seen in figure \ref{fig:iterations_test}), and is chosen as the ideal number of iterations in the final computations.
 
 
 \subsection{Good Filter Threshold}\label{sec:threshold_test}
@@ -142,7 +143,11 @@ Minimum mass ratios for M37 and M67 are shown in figures \ref{fig:minq_M37} and 
 
 \subsection{Comparison to RV}\label{sec:rv_comparison}
 
-While internal checks of the \binocs code have been completed, the results must be compared to an outside source for verfication. As mentioned in \S\ref{sec:PastRV}, RV studies are the most detailed way to study binary systems in clusters, and the \binocs code should produce consistent results. Two clusters in the analysis set, M67 and M35, have published RV data: \citet{Mathieu:1997tk} and \citet{Geller:2010hn}, respectively. A comparison between these RV studies and the clusters' \binocs results is shown in figures \ref{fig:rv_M35} and \ref{fig:rv_M67}.
+While internal checks of the \binocs code have been completed, the results must be compared to an outside source for verfication. As mentioned in \S\ref{sec:PastRV}, RV studies are the most detailed way to study binary systems in clusters, and the \binocs code should produce consistent results. Two clusters in the analysis set, M67 and M35, have published RV data: \citet{Mathieu:1997tk} and \citet{Geller:2010hn}, respectively. A comparison between these RV studies and the clusters' \binocs results are explored in the subsections below.
+
+\subsubsection{Binary Detection}
+
+A comparison of \binocs and RV multiplicity determinations is shown in figures \ref{fig:rv_M35} and \ref{fig:rv_M67}.
 
 \begin{figure}
 	\parbox{0.62\textwidth}{\includegraphics[trim = 3mm 108mm 75mm 0mm, clip, width=0.6\textwidth]{../plots/eps/rv_M35.eps}}
@@ -150,8 +155,8 @@ While internal checks of the \binocs code have been completed, the results must 
 		\begin{tabular}{|c|ccc|} \hline
 		 & \multicolumn{3}{c|}{\binocs} \\
 		RV & Single & Binary & Non-Member \\ \hline
-		\multirow{2}{*}{Single} & \multirow{2}{*}{105} & \multirow{2}{*}{96} & \multirow{2}{*}{11} \\ & & & \\
-		\multirow{2}{*}{Binary} & \multirow{2}{*}{2}  & \multirow{2}{*}{29} & \multirow{2}{*}{3} \\ & & & \\ \hline
+		\multirow{2}{*}{Single} & \multirow{2}{*}{113} & \multirow{2}{*}{98} & \multirow{2}{*}{40} \\ & & & \\
+		\multirow{2}{*}{Binary} & \multirow{2}{*}{8}  & \multirow{2}{*}{31} & \multirow{2}{*}{6} \\ & & & \\ \hline
 		\end{tabular}
 	}
 \caption{\emph{Left:} CMD comparison of RV and \binocs SED-fitting results for M35. Stars considered in comparison are those within dashed line limits. Color of dot indicates which cell of table star belongs to. Black circles indicate RV singles which were marked as \binocs best-fit binaries with mass ratios $< 0.3$. \emph{Right:} Confusion matrix between RV and \binocs results for M35.\label{fig:rv_M35}}
@@ -163,8 +168,8 @@ While internal checks of the \binocs code have been completed, the results must 
 		\begin{tabular}{|c|ccc|} \hline
 		 & \multicolumn{3}{c|}{\binocs} \\
 		RV & Single & Binary & Non-Member \\ \hline
-		\multirow{2}{*}{Single} & \multirow{2}{*}{67} & \multirow{2}{*}{60} & \multirow{2}{*}{22} \\ & & & \\
-		\multirow{2}{*}{Binary} & \multirow{2}{*}{7}  & \multirow{2}{*}{28} & \multirow{2}{*}{13} \\ & & & \\ \hline
+		\multirow{2}{*}{Single} & \multirow{2}{*}{88} & \multirow{2}{*}{36} & \multirow{2}{*}{25} \\ & & & \\
+		\multirow{2}{*}{Binary} & \multirow{2}{*}{6}  & \multirow{2}{*}{28} & \multirow{2}{*}{14} \\ & & & \\ \hline
 		\end{tabular}
 	}
 \caption{Same as figure \ref{fig:rv_M35}, but for M67. \label{fig:rv_M67}}
@@ -172,7 +177,7 @@ While internal checks of the \binocs code have been completed, the results must 
 
 To avoid complications from the turn-off, and poor faint data in the RV studies, the comparison is limited to a specific magnitude range. For M35, stars with $14.2 \le V \le 16.5$ are considered, while stars with $14.2 \le g \le 16.0$ are considered for M67.
 
-The \binocs method detects many RV binaries, with 58\% being detected in M67, and 85\% being detected in M35. The \binocs code shows a lower match when detecting RV singles, with only 49\% and 45\% of RV singles being detected in M35 and M67, respectively. Ths fact there is some mismatch between methods (and more mismatch for RV singles) is, in fact, expected:
+The \binocs method detects many RV binaries, with 58\% being detected in M67, and 69\% being detected in M35. The \binocs code shows a lower match when detecting RV singles, with only 45\% and 59\% of RV singles being detected in M35 and M67, respectively. Ths fact there is some mismatch between methods (and more mismatch for RV singles) is, in fact, expected:
 
 \begin{itemize}
 \item \textbf{Inclination:} Binary systems can form with any inclination with respect to Earth. For binary systems with a high inclination angle, RV studies will not detect any significant shifts in RV, and therefore classify the system as a single. \textsc{binocs}, on the other hand will have no trouble detecting these types of systems, as the flux increase can be detected regardless of inclination. 
@@ -184,7 +189,10 @@ This is most likely the major factor in the mismatch between RV and \binocs resu
 This scenario is the converse to the previous two points, and can account for the fact that the \binocs code does not detect all RV binaries.
 \end{itemize}
 
-\noindent RV studies and the \binocs code are complementary techniques, but still show a significant amount of agreement between results.
+\noindent RV studies and the \binocs code are complementary techniques, but still show a significant amount of agreement between results. This agreement is improved greatly by capping the minimum mass ratio at 0.3. For M67, 48 RV single stars were initially classified as binaries with $0.2 \le q \le 0.3$, which is between the synthetic minimum mass ratio and the hard floor that was introduced. Without this minimum mass ratio floor, \binocs would only detect 27\% of RV single stars in M67.
+
+
+\subsubsection{Mass Accuracy}
 
 
 
