@@ -1,11 +1,11 @@
-device postencap ../eps/rv_m67.eps
+device postencap ../eps/rv_n6819.eps
 xtcolors
 lweight 2
 add_ctype grey 150 150 150
 ptype 1 0
 
-data "../data/NGC2682.332.txt--results.txt" read {g 10 k 16 bn 21 rv 22 mpri 23 msec 25}
-data "../data/NGC2682.332.txt--binary.txt" read {obn 21 orv 22 ompri 23 omsec 25}
+data "../data/NGC6819.332.txt--results.txt" read {g 10 k 16 bn 21 rv 22 mpri 23 msec 25}
+data "../data/NGC6819.332.txt--binary.txt" read {obn 21 orv 22 ompri 23 omsec 25}
 
 # Create new arrays for mass ratio plotting
 set good_g = g if (ompri > 0 && orv == 1)
@@ -14,7 +14,7 @@ set good_p = ompri if (ompri > 0 && orv == 1)
 set good_s = omsec if (ompri > 0 && orv == 1)
 
 expand 0.9
-window -100 -100 1:60 60:100 limits 1.3 3.7 16.5 13
+window -100 -100 1:60 60:100 limits 1.3 3.7 17.5 13
 xlabel g-K_S
 ylabel g
 box 1 2

@@ -1,4 +1,4 @@
-device postencap ../eps/rv_M35.eps
+device postencap ../eps/rv_m35.eps
 xtcolors
 lweight 2
 add_ctype grey 150 150 150

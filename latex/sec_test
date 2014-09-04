@@ -143,22 +143,14 @@ Minimum mass ratios for M37 and M67 are shown in figures \ref{fig:minq_M37} and 
 
 \subsection{Comparison to RV}\label{sec:rv_comparison}
 
-<<<<<<< HEAD
-While internal checks of the \binocs code have been completed, the results must be compared to an outside source for verfication. As mentioned in \S\ref{sec:PastRV}, RV studies are the most detailed way to study binary systems in clusters, and the \binocs code should produce consistent results. Two clusters in the analysis set, M67 and M35, have published RV data: \citet{Mathieu:1997tk} and \citet{Geller:2010hn}, respectively. A comparison between these RV studies and the clusters' \binocs results are explored in the subsections below.
+While internal checks of the \binocs code have been completed, the results must be compared to an outside source for verfication. As mentioned in \S\ref{sec:PastRV}, RV studies are the most detailed way to study binary systems in clusters, and the \binocs code should produce consistent results. A comparison between these RV studies and the clusters' \binocs results are explored in the subsections below.
 
 \subsubsection{Binary Detection}
 
-A comparison of \binocs and RV multiplicity determinations is shown in figures \ref{fig:rv_M35} and \ref{fig:rv_M67}.
-=======
-While internal checks of the \binocs code have been completed, the results must be compared to an outside source for verfication. As mentioned in \S\ref{sec:PastRV}, RV studies are the most detailed way to study binary systems in clusters, and the \binocs code should produce consistent results. Two clusters in the analysis set, M67 and M35, have published RV data: \citet{Mathieu:1997tk} and \citet{Geller:2010hn}, respectively. 
-
-\subsubsection{Binary Detection}
-
-A comparison of binary / single determinations between RV studies and the \binocs results is shown in figures \ref{fig:rv_M35} and \ref{fig:rv_M67}.
->>>>>>> FETCH_HEAD
+Two clusters in the analysis set, M67 and M35, have published RV data: \citet{Mathieu:1997tk} and \citet{Geller:2010hn}, respectively. A comparison of binary / single determinations between these RV studies and the \binocs results is shown in figures \ref{fig:rv_M35} and \ref{fig:rv_M67}.
 
 \begin{figure}
-	\parbox{0.62\textwidth}{\includegraphics[trim = 3mm 108mm 75mm 0mm, clip, width=0.6\textwidth]{../plots/eps/rv_M35.eps}}
+	\parbox{0.62\textwidth}{\includegraphics[trim = 3mm 108mm 75mm 0mm, clip, width=0.6\textwidth]{../plots/eps/rv_m35.eps}}
 	\parbox{0.3\textwidth}{ \scriptsize
 		\begin{tabular}{|c|ccc|} \hline
 		 & \multicolumn{3}{c|}{\binocs} \\
@@ -171,7 +163,7 @@ A comparison of binary / single determinations between RV studies and the \binoc
 \end{figure}
 
 \begin{figure}
-	\parbox{0.62\textwidth}{\includegraphics[trim = 3mm 108mm 75mm 0mm, clip, width=0.6\textwidth]{../plots/eps/rv_M67.eps}}
+	\parbox{0.62\textwidth}{\includegraphics[trim = 3mm 108mm 75mm 0mm, clip, width=0.6\textwidth]{../plots/eps/rv_m67.eps}}
 	\parbox{0.3\textwidth}{ \scriptsize
 		\begin{tabular}{|c|ccc|} \hline
 		 & \multicolumn{3}{c|}{\binocs} \\
@@ -200,12 +192,21 @@ This scenario is the converse to the previous two points, and can account for th
 \noindent RV studies and the \binocs code are complementary techniques, but still show a significant amount of agreement between results. This agreement is improved greatly by capping the minimum mass ratio at 0.3. For M67, 48 RV single stars were initially classified as binaries with $0.2 \le q \le 0.3$, which is between the synthetic minimum mass ratio and the hard floor that was introduced. Without this minimum mass ratio floor, \binocs would only detect 27\% of RV single stars in M67.
 
 
-\subsubsection{Mass Accuracy}
-
-
 \subsubsection{Mass Determination}
 
+While not a part of the analysis set due to the lack of deep near-IR photometry, the clusters NGC 188 and NGC 6819 have also been the subject of detailed RV studies \citep[respectively]{2008AJ....135.2264G, 2009AJ....138..159H}. 
 
+Of the 1046 stars studied, 13 were \emph{double-lined} binaries. Further followup on these stars, published in \citet{2009AJ....137.3743G}, characterized the orbits of these double-lined binaries, and produced accurate binary mass ratios (see \S\ref{sec:specBinary} and \eqref{eq:massratio}). Similarly, NGC 6819 stars were followed up in \citet{2014AJ....148...38M}, and 15 double-lined binaries were detected. The RV-determined mass ratios are compared to those from \binocs in figures \ref{fig:rv_n188} and \ref{fig:rv_n6819}.
+
+\begin{figure} \centering
+\includegraphics[trim = 3mm 125mm 3mm 0mm, clip, width=0.95\textwidth]{../plots/eps/rv_mass_n188.eps}
+\caption{\emph{Left:} NGC 188 CMD in $B-V$. Black circles are double-lined binaries. \emph{Right:} Comparison of RV mass ratios (black) to \binocs (grey) for NGC 188 double-lined binaries. \label{fig:rv_n188}}
+\end{figure}
+
+\begin{figure} \centering
+\includegraphics[trim = 3mm 125mm 3mm 0mm, clip, width=0.95\textwidth]{../plots/eps/rv_mass_n6819.eps}
+\caption{\emph{Left:} NGC 6819 CMD in $g-r$. Black circles are double-lined binaries. \emph{Right:} Comparison of RV mass ratios (black) to \binocs (grey) for NGC 6819 double-lined binaries. \label{fig:rv_n6819}}
+\end{figure}
 
 
 

@@ -1,0 +1,37 @@
+device postencap ../eps/rv_mass_n6819.eps
+xtcolors
+lweight 3
+add_ctype grey 150 150 150
+
+data "../data/rv_n6819.txt" read {id 1 mq 3 mqe 4 tq 5 bing 6 binr 7}
+data "../data/NGC6819.KIC.txt" read {g 6 r 8}
+
+expand 0.8 window -100 -3 1:23 3 limits 0.3 1.15 17.5 13 ticksize 0.05 0.2 0.2 1
+xlabel g-r
+ylabel g
+box 1 2
+ptype 1 0 ctype grey points (g-r) g
+ptype 24 0 ctype black points (bing-binr) binr
+
+
+
+expand 0.8 window -100 -3 35:100 3 limits 1 9 0.2 1.3 ticksize 1 1 0.1 0.4
+xlabel Star ID
+ylabel Mass Ratio
+box 0 2
+
+ptype 24 3
+expand 1.3 points (id+0.5) tq
+ctype grey points (id+0.5) mq
+error_y (id+0.5) mq mqe
+
+# Put in star labels
+ctype black expand 0.8 window -100 1 35:100 1 limits 1 9 0 1
+relocate 1.5 0.65 putlabel 5  11004
+relocate 2.5 0.65 putlabel 5  12006
+relocate 3.5 0.65 putlabel 5  14005
+relocate 4.5 0.65 putlabel 5  17003
+relocate 5.5 0.65 putlabel 5  25010
+relocate 6.5 0.65 putlabel 5  37013
+relocate 7.5 0.65 putlabel 5  38008
+relocate 8.5 0.65 putlabel 5  42007

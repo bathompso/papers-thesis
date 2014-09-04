@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Thompson_Thesis.aux
+The style file: apj.bst
+Database file #1: Thompson_Thesis.bib.bib
+Warning--string name "n/a" is undefined
+--line 112 of file Thompson_Thesis.bib.bib
+Warning--string name "n/a" is undefined
+--line 415 of file Thompson_Thesis.bib.bib
+Warning--string name "n/a" is undefined
+--line 518 of file Thompson_Thesis.bib.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--empty publisher in Carroll:UvmD7hOR
+You've used 61 entries,
+            3086 wiz_defined-function locations,
+            1031 strings with 19432 characters,
+and the built_in function-call counts, 31388 in all, are:
+= -- 2529
+> -- 2533
+< -- 21
++ -- 851
+- -- 924
+* -- 2782
+:= -- 5971
+add.period$ -- 61
+call.type$ -- 61
+change.case$ -- 442
+chr.to.int$ -- 64
+cite$ -- 62
+duplicate$ -- 1155
+empty$ -- 1735
+format.name$ -- 1007
+if$ -- 6154
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 61
+newline$ -- 187
+num.names$ -- 244
+pop$ -- 491
+preamble$ -- 1
+purify$ -- 440
+quote$ -- 0
+skip$ -- 955
+stack$ -- 0
+substring$ -- 1269
+swap$ -- 2
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 543
+warning$ -- 1
+while$ -- 230
+width$ -- 0
+write$ -- 611
+(There were 4 warnings)
