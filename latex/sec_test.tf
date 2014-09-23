@@ -196,17 +196,25 @@ This scenario is the converse to the previous two points, and can account for th
 
 While not a part of the analysis set due to the lack of deep near-IR photometry, the clusters NGC 188 and NGC 6819 have also been the subject of detailed RV studies \citep[respectively]{2008AJ....135.2264G, 2009AJ....138..159H}. 
 
-Of the 1046 stars studied, 13 were \emph{double-lined} binaries. Further followup on these stars, published in \citet{2009AJ....137.3743G}, characterized the orbits of these double-lined binaries, and produced accurate binary mass ratios (see \S\ref{sec:specBinary} and \eqref{eq:massratio}). Similarly, NGC 6819 stars were followed up in \citet{2014AJ....148...38M}, and 15 double-lined binaries were detected. The RV-determined mass ratios are compared to those from \binocs in figures \ref{fig:rv_n188} and \ref{fig:rv_n6819}.
+Of the 1046 stars studied in NGC 188, 13 were \emph{double-lined} binaries. Further follow-up on these stars, published in \citet{2009AJ....137.3743G}, characterized the orbits of these double-lined binaries, and produced accurate binary mass ratios (see \S\ref{sec:specBinary} and \eqref{eq:massratio}). Similarly, NGC 6819 stars were followed up in \citet{2014AJ....148...38M}, and 15 double-lined binaries were detected. The RV-determined mass ratios are compared to those from \binocs in figures \ref{fig:rv_n188} and \ref{fig:rv_n6819}.
 
 \begin{figure} \centering
-\includegraphics[trim = 3mm 125mm 3mm 0mm, clip, width=0.95\textwidth]{../plots/eps/rv_mass_n188.eps}
-\caption{\emph{Left:} NGC 188 CMD in $B-V$. Black circles are double-lined binaries. \emph{Right:} Comparison of RV mass ratios (black) to \binocs (grey) for NGC 188 double-lined binaries. \label{fig:rv_n188}}
+\includegraphics[trim = 3mm 125mm 3mm 0mm, clip, width=0.99\textwidth]{../plots/eps/rv_mass_n188.eps}
+\caption{\emph{Left:} NGC 188 CMD in $B-V$. Solid line is isochrone used to generate models for \binocs fitting. Dashed line is equal-mass binary sequence. Black circles are double-lined binaries. \emph{Right:} Comparison of RV mass ratios (black) from \citet{2009AJ....137.3743G} to \binocs (grey) for NGC 188 double-lined binaries. \label{fig:rv_n188}}
 \end{figure}
 
 \begin{figure} \centering
-\includegraphics[trim = 3mm 125mm 3mm 0mm, clip, width=0.95\textwidth]{../plots/eps/rv_mass_n6819.eps}
-\caption{\emph{Left:} NGC 6819 CMD in $g-r$. Black circles are double-lined binaries. \emph{Right:} Comparison of RV mass ratios (black) to \binocs (grey) for NGC 6819 double-lined binaries. \label{fig:rv_n6819}}
+\includegraphics[trim = 3mm 125mm 3mm 0mm, clip, width=0.99\textwidth]{../plots/eps/rv_mass_n6819.eps}
+\caption{Same as figure \ref{fig:rv_n188} for NGC 6819. RV data from \citet{2014AJ....148...38M} \label{fig:rv_n6819}}
 \end{figure}
+
+There are several highly discrepant mass ratio determinations in NGC 188 and NGC 6819. Many of these double-lined stars lie near the turn-off of each cluster, where the single star main sequence and equal mass binary sequence overlap (as seen in the left hand panels of figures \ref{fig:rv_n188} and \ref{fig:rv_n6819}). In these regions, there are natural degeneracies, and the \binocs code cannot accurately determine parameters. Stars 4962 and 4986 in NGC 188 and star 37013 lie extremely close to these degeneracies and therefore exhibit large errors with respect to the RV results.
+
+Ignoring those stars very close to the crossing of single star main sequence and equal mass binary sequence, there is close agreement between RV and \binocs mass ratios. Including the quoted uncertainties in mass from \binocs (uncertainties from the RV surveys are negligible), mass ratios largely agree to within 10\%. \\
+
+\noindent Combining this 10\% mass ratio accuracy with the previous conclusion that \binocs results are largely agreeing with RV multiplicity determinations, it is clear that the \binocs code is producing accurate results that can be extrapolated to lower-mass stars.
+
+
 
 
 

@@ -1,0 +1,18 @@
+device postencap ../eps/degrijs.eps
+xtcolors
+lweight 3
+ptype 24 3
+add_ctype grey 150 150 150
+
+data "../data/degrijs.dat" read {er 1 eq 2 ee 3}
+
+expand 1.4 window 1 -100 1 50:100 limits 0 11.0 0.00 0.50  ticksize 0.5 2 0.05 0.1
+ylabel Cumulative Binary Fraction
+xlabel r (pc)
+box 1 2
+
+
+ctype black expand 1.9 ptype 24 3 points (er) eq
+error_y (er) eq ee
+
+

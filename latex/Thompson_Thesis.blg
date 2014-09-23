@@ -1,55 +1,55 @@
-This is BibTeX, Version 0.99d (TeX Live 2013)
+This is BibTeX, Version 0.99d (TeX Live 2010)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Thompson_Thesis.aux
 The style file: apj.bst
 Database file #1: Thompson_Thesis.bib.bib
 Warning--string name "n/a" is undefined
---line 112 of file Thompson_Thesis.bib.bib
+--line 123 of file Thompson_Thesis.bib.bib
 Warning--string name "n/a" is undefined
---line 415 of file Thompson_Thesis.bib.bib
+--line 437 of file Thompson_Thesis.bib.bib
 Warning--string name "n/a" is undefined
---line 518 of file Thompson_Thesis.bib.bib
+--line 540 of file Thompson_Thesis.bib.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty publisher in Carroll:UvmD7hOR
-You've used 61 entries,
+You've used 65 entries,
             3086 wiz_defined-function locations,
-            1031 strings with 19432 characters,
-and the built_in function-call counts, 31388 in all, are:
-= -- 2529
-> -- 2533
-< -- 21
-+ -- 851
-- -- 924
-* -- 2782
-:= -- 5971
-add.period$ -- 61
-call.type$ -- 61
-change.case$ -- 442
-chr.to.int$ -- 64
-cite$ -- 62
-duplicate$ -- 1155
-empty$ -- 1735
-format.name$ -- 1007
-if$ -- 6154
+            1057 strings with 20199 characters,
+and the built_in function-call counts, 33258 in all, are:
+= -- 2692
+> -- 2661
+< -- 22
++ -- 895
+- -- 972
+* -- 2936
+:= -- 6325
+add.period$ -- 65
+call.type$ -- 65
+change.case$ -- 472
+chr.to.int$ -- 68
+cite$ -- 66
+duplicate$ -- 1229
+empty$ -- 1846
+format.name$ -- 1057
+if$ -- 6524
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 61
-newline$ -- 187
-num.names$ -- 244
-pop$ -- 491
+missing$ -- 65
+newline$ -- 199
+num.names$ -- 260
+pop$ -- 521
 preamble$ -- 1
-purify$ -- 440
+purify$ -- 470
 quote$ -- 0
-skip$ -- 955
+skip$ -- 1017
 stack$ -- 0
-substring$ -- 1269
+substring$ -- 1350
 swap$ -- 2
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 543
+type$ -- 579
 warning$ -- 1
-while$ -- 230
+while$ -- 246
 width$ -- 0
-write$ -- 611
+write$ -- 651
 (There were 4 warnings)
