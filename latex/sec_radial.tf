@@ -66,20 +66,20 @@ Due to the higher density within the core of the cluster, there is a higher freq
 \noindent The \citet{2013ApJ...765....4D} results indicate a cluster whose age is $< 1 t_{th}(0)$, which is supported by the cluster's $15-30$ Myr age and \citeauthor{2013ApJ...779...30G}'s N-Body simulation results. The question still remains: how did two independent studies arrive to different results about the same cluster? We will use \binocs results from our open cluster analysis set to produce similar binary radial profiles for a range of cluster ages. Using this age range, the discrepancy between NGC 1818 studies can be reconciled.
 
 
-\subsection{Binary Radial Profiles}
+\subsection{BINOCS Radial Profiles} \label{sec:binaryProfiles}
 
 The \binocs code was run on all of the clusters in the analysis set, and the resulting binary / single determinations were used to create binary radial distributions of each open cluster. To do this, stars were first sorted according to their distance from the cluster center. Then, stars were separated into bins containing a specified number of stars, and the binary fraction and average radius from the cluster center for this bin were calculated. The number of stars in each bin was chosen to maximize the signal-to-noise of the binary fraction calculation by including as many stars as possible, while still preserving the radial resolution. To account for uncertainties in multiplicity determinations, the \binocs code was run 10 times for each clusters, and an average binary fraction for each bin was determined using all 10 runs. An uncertainty on the binary fraction was computed using the standard deviation between the results of all 10 runs.
 
-\begin{figure} \centering
-\includegraphics[trim = 0mm 5mm 0mm 0mm, clip, width=0.8\textwidth]{../plots/eps/radial_all.eps}
-\parbox{0.82\textwidth}{\caption{Binary radial distributions for all clusters in the analysis set. Arrow marks the first datapoint where the binary fraction increases, indicating a shift between mass segregated stars and not. \label{fig:radial_all}}}
+\begin{figure}[h!] \centering
+\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=0.8\textwidth]{../plots/eps/radial_all.eps}
+\parbox{0.82\textwidth}{\caption{Binary radial distributions for all clusters in the analysis set. Arrow marks the first datapoint where the binary fraction increases beyond the measured uncertainty, indicating a shift between mass segregated stars and not. \label{fig:radial_all}}}
 \end{figure}
 
 Radial profiles for all 5 clusters in the analysis set are shown in figure \ref{fig:radial_all}. To account for the variation in cluster size and mass, radii are normalized to put all clusters on a common system. For each system, the first datapoint where the binary fraction increases --- indicative of the interface between mass segregation and not --- is marked with an arrow. As was seen in the \citeauthor{2013ApJ...779...30G} N-Body simulations, this interface location shifts outward with cluster age. Overall, the \binocs results seem to be consistent with the N-Body simulations.
 
 Both \citet{1998MNRAS.300..857E} and \citet{2013ApJ...765....4D} employed two-band detection, which is only effective within a small mass window in NGC 1818. In their paper, \citeauthor{2013ApJ...765....4D} admit that outside of this small mass region ``...the CMD is too steep to easily disentangle single from binary stars and blends. In addition, toward fainter magnitudes, photometric errors start to dominate any potential physical differences...'' 
 
-With \textsc{binocs}, the entire mass range of the cluster can be explored, which can lead to useful insights. For each cluster, binary radial distributions were computed for each of the classical \emph{spectral classes}. Mass ranges for each of the spectral classes considered are shown in table \ref{tab:spectralClass}.
+With \textsc{binocs}, the entire mass range of the cluster can be explored, which can lead to useful insights. For each cluster, binary radial distributions were computed for each of the classical \emph{stellar spectral classes}. Mass ranges for each of the spectral classes considered are shown in table \ref{tab:spectralClass}.
 
 \begin{table} \centering
 \begin{tabular}{|cc|} \hline
@@ -93,24 +93,85 @@ K & 0.2 - 0.8 \\ \hline
 \end{table}
 
 
+\subsubsection{NGC 1960 (M36)}
+
+\begin{figure}[h!] \centering
+\includegraphics[trim = 0mm 70mm 0mm 0mm, clip, width=0.8\textwidth]{../plots/eps/radial_m36.eps}
+\caption{Binary radial distributions for various spectral classes in M36. \label{fig:radial_m36}}
+\end{figure}
+
+Binary radial distributions for young open cluster M36 (30 Myr), as well as for individual spectral classes within the cluster, are shown in figure \ref{fig:radial_m35}. The overall binary distribution of M36, as well as those for A- and F-class stars, matches closely to that of a young, un-segregated cluster. Except for the most centrally located bin, binary percentage slowly increases with radius. Overall, M36 appears to validate the results of \citep{2013ApJ...765....4D}, with young clusters exhibiting an increasing binary fraction with radius.
+
+
 \subsubsection{NGC 2168 (M35)}
 
-\begin{figure} \centering
-\includegraphics[trim = 0mm 40mm 0mm 0mm, clip, width=0.8\textwidth]{../plots/eps/radial_m35.eps}
+\begin{figure}[h!] \centering
+\includegraphics[trim = 0mm 70mm 0mm 0mm, clip, width=0.8\textwidth]{../plots/eps/radial_m35.eps}
 \caption{Binary radial distributions for various spectral classes in M35. \label{fig:radial_m35}}
 \end{figure}
 
-Binary radial distriutions for young open cluster M35 (130 Myr), as well as for individual spectral classes within the cluster, are shown in figure \ref{fig:radial_m35}. The overall binary distribution of M35, as well as those for F and G-class stars, matches qualitatively to a cluster with an age of $1 t_{rh}(0)$. There is a very small region of stars which appear to be mass segregated, beyond which the majority of the cluster still looks unsegregated.
-
-M35's A-class star distribution is much more erratic, and does not conform to any of the qualitative shapes in figure \ref{fig:nbody_n1818}. With only 80 A-class stars in M35, the plot begins to suffer from variation due to low number statistics. Overall, however, M35 appears to have a uniform cluster age of $1 t_{rh}(0)$ across all mass ranges.
+The cluster M35 is slightly older than M36, and the radial distributions shown in figure \ref{fig:radial_m35} follow this fact. While a majority of the distributions still have increasing binary fraction with radius, there is a clear central area where stars have become mass segregated, with a much more prominent peak at the center than in M36. As in M36, the overall binary distribution matches very closely to the single mass range distributions.
 
 
-\subsubsection{NGC 2682 (M67)}
+\subsubsection{NGC 2099 (M37)}
 
-\begin{figure} \centering
-\includegraphics[trim = 0mm 40mm 0mm 0mm, clip, width=0.8\textwidth]{../plots/eps/radial_m67.eps}
-\caption{Binary radial distributions for various spectral classes in M67. \label{fig:radial_m67}}
+\begin{figure}[h!] \centering
+\includegraphics[trim = 0mm 35mm 0mm 0mm, clip, width=0.8\textwidth]{../plots/eps/radial_m37.eps}
+\caption{Binary radial distributions for various spectral classes in M37. \label{fig:radial_m37}}
 \end{figure}
+
+Binary distributions for M37, which is even more evolved than M36 and M35, is shown in figure \ref{fig:radial_m37}. \citet{2001AJ....122.3239K} determined the relaxation time of M37 to be $\sim 300$ Myr, giving M37 an age of 2.33 $t_{rh}(0)$, which qualitatively matches with the overall M37 distribution as determined by \textsc{binocs}. The individual mass ranges, however, show varying distributions.
+
+The A-class star distribution matches more closely to a 3 $t_{rh}(0)$ distribution, with the central concetration of binaries higher than that on the edge. The F-class star distribution is slightly younger, matching a 2 $t_{rh}(0)$ distribution, with the edge binary frequency matching that of the central region. Lastly, the G-class star distribution matches much more closely to the distributions seen in M36 and M35. A majority of the G-class star distribution has increasing binary frequency with radius.
+
+
+\subsubsection{NGC 2420}
+
+\begin{figure}[h!] \centering
+\includegraphics[trim = 0mm 70mm 0mm 0mm, clip, width=0.8\textwidth]{../plots/eps/radial_n2420.eps}
+\caption{Binary radial distributions for various spectral classes in NGC 2420. \label{fig:radial_n2420}}
+\end{figure}
+
+The cluster NGC 2420 is much older (2 Gyr) than the previous clusters. The \textsc{binocs}-derived binary distributions for NGC 2420 are shown in figure \ref{fig:radial_n2420}. After 2 Gyr, the cluster is mostly mass segregated, with binary fraction decreasing with radius. Unlike M37, the individual mass-range distributions closely match the overall cluster distribution.
+
+
+\subsection{Comparison to NGC 1818}
+
+The new \binocs binary radial distributions can compared to those derived from the two NGC 1818 publications. The individual A-, F- and G-class star distributions from M37 are compared to the results of \citet{1998MNRAS.300..857E} and \citet{2013ApJ...765....4D} in figure \ref{fig:m37_comparison}. To inter-compare the results from two clusters with different sizes, the x-axes have been scaled to multiples of cluster's core radius: 2 pc for NGC 1818, and 2.3 pc for M37 \citep{2001AJ....122.3239K}. Similarly, the overall binary percentages are different between the clusters, and necessitates scaling along the y-axis. This is done in an arbitrary way, and the scaling factors are indicated in each plot's legend.
+
+\begin{figure}[h] \centering
+\includegraphics[trim = 0mm 80mm 0mm 0mm, clip, width=0.48\textwidth]{../plots/eps/elson_m37.eps}
+\includegraphics[trim = 0mm 80mm 0mm 0mm, clip, width=0.48\textwidth]{../plots/eps/degrijs_m37.eps}
+\caption{Comparison of \textsc{binocs}-derived M37 binary distributions (grey) to that of NGC 1818 (black). \emph{Left:} Comparison to figure 4 of \citet{1998MNRAS.300..857E}. \emph{Right:} Comparison to figure 3 of \citet{2013ApJ...765....4D}. \label{fig:m37_comparison}}
+\end{figure}
+
+
+
+In addition to scaling, the plots from the NGC 1818 were not sampled in the same way as those in \S\ref{sec:binaryProfiles}. To match \citeauthor{1998MNRAS.300..857E}'s results, binary percentages were re-computed for M37 in 0.88 pc-wide bins to match the data from the original figure. Similarly, \emph{cumulative} binary percentages were computed for M37 in steps of 1 pc to match the original figure in \citet{2013ApJ...765....4D}.
+
+In the left-hand panel of figure \ref{fig:m37_comparison}, while none of the M37 distributions match exactly, the A- and F-class star distributions seem to have the right shape. Additionally, looking at figure \ref{fig:nbody_n1818}, the barrier between inner regions, where binaries are mass segregated, and outer regions where they are not, moves outward with time. It would appear that the NGC 1818 stars studied by \citet{1998MNRAS.300..857E} are ``older'' than those in M37. Importantly, however, the \citeauthor{1998MNRAS.300..857E} binary distribution does not match M37's G-class star distribution at all.
+
+Oppositely, \citet{2013ApJ...765....4D}'s binary distribution \emph{does} match M37's G-class star distribution in the right hand panel of figure \ref{fig:m37_comparison}, but not the distribution of A- or F-class stars. While all three distributions match the outer parts of the cluster (where the cumulative fraction is basically constant), the dip in the inner regions is only reproduced M37's G-class stars.
+
+While the results of \citet{1998MNRAS.300..857E} and \citet{2013ApJ...765....4D} indicate that NGC 1818 is non-uniform, the above results show NGC 1818 is not unique. If only A-class stars were studied in M37, one may conclude that the cluster has some mass segregation, whereas if only G-class stars were studied, the conclusion would be that there is no mass segregation at all!
+
+
+\subsection{Discussion}
+
+The M37 results illustrate a critical point: for a cluster where all stars have a common \emph{chronological} age, each mass range may have a different \emph{dynamical} age. This is not unexpected, as the gravitational interaction cross-section should increase with increasing stellar mass. More massive stars should therefore experience a higher frequency of interactions, leading to quicker energy transfer and mass segregation. With M37 as a quide, NGC 1818's results need not conflict: the 2 -- 5.5 M$_\odot$ stars studied by \citeauthor{1998MNRAS.300..857E} may have had enough time in NGC 1818's $\sim$ 30 Myr lifespan to have become completely mass segregated, while the 1.3 -- 1.6 M$_\odot$ stars analyzed by \citep{2013ApJ...765....4D} have not.
+
+It is important to note why M37 is the only cluster to show disparities between mass ranges. While the mass range accessible by \binocs 
+
+While clusters are often treated as uniform objects, it is obvious from this analysis that ensemble properties cannot always be assumed. Binary migration, and perhaps mass segregation for single stars as well, seems to happen on varying timescales depending on mass. It will be important for N-body simulations to model these varying timescales, and assess how they might affect cluster dynamics.
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,26 @@
+device postencap ../eps/elson_m37.eps
+xtcolors
+lweight 4
+ptype 24 3
+add_ctype grey 150 150 150
+
+data "../data/elson.dat" read {er 1 eq 2 ee 3}
+data "../data/radial_m37_elson.dat" read {allr 1 allq 2 alle 3 kr 4 kq 5 ke 6 gr 7 gq 8 ge 9 fr 10 fq 11 fe 12 ar 13 aq 14 ae 15}
+
+expand 1.4 window 1 -100 1 50:100 limits 0 3 0.05 0.5  ticksize 0.1 0.5 0.05 0.1
+ylabel Binary Fraction
+xlabel r / r_c
+box 1 2
+
+ctype grey ltype 0 connect (ar/2.3) (aq/2.2) if (ar > 0) ltype 0
+ctype grey ltype 1 connect (fr/2.3) (fq/2.0) if (fr > 0) ltype 0
+ctype grey ltype 2 connect (gr/2.3) (gq/1.8) if (gr > 0) ltype 0
+ctype black ptype 24 3 expand 1.2 points (er/2) eq error_y (er/2) eq ee
+
+
+expand 1.2 window 1 1 1 1 limits 0 1 0 1
+ctype grey ltype 0 relocate 0.74 0.95 draw 0.82 0.95 relocate 0.90 0.95 ctype black ltype 0 putlabel 5 A / 2.2
+ctype grey ltype 1 relocate 0.74 0.90 draw 0.82 0.90 relocate 0.90 0.90 ctype black ltype 0 putlabel 5 F / 2.0
+ctype grey ltype 2 relocate 0.74 0.85 draw 0.82 0.85 relocate 0.90 0.85 ctype black ltype 0 putlabel 5 G / 1.8
+
+

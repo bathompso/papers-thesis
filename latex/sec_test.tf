@@ -36,84 +36,34 @@ The \binocs code was run on this input for various values of the threshold. Afte
 The test was run using the M67 synthetic dataset. Results are shown in figure \ref{fig:threshold_test_M67}. The threshold with the minimum total error is 10, which is chosen to be the optimal threshold for science runs.
 
 
-%\subsection{Number of Required Filters}\label{sec:filters_test}
-%
-%While a comprehensive sampling of the SED over all 12 filters ($UBVRI$ or $ugriz$) is ideal, it is often impractical to obtain quality photometry in %this number of bands for every cluster we wish to study. In practice, the \binocs code will have to produce accurate results using a less-than-ideal %number of filters.
-%
-%During each run of the \binocs code, a model library of all synthetic single and binary stars is generated. If this model library is fed into the %code as an input, it \emph{should} return the exact masses of the original models. Requiring fewer filters to be ``good'' will reduce the mass %accuracy of the \binocs code. By comparing the resulting best-fit masses of each model star to the true values, mass uncertainty can be determined %for each number of required filters.
-%
-%To aid in the resampling routines of the \binocs code, model stars in the input were given observational uncertainties derived from the cluster's %photometry. Using the cluster's merged datafile, average photometric uncertainties were determined for all available filters, in bins of width 0.5 %mag. Stars in the model library were then assigned magnitude errors equal to 2 $\times$ the uncertainty in the corresponding magnitude bin. To %simulate observed data, the magnitudes were then randomly shifted using a gaussian error distribution with $\sigma =$ the magnitude's uncertainty (2 $%\times$ the original bin average). By overestimating the observational uncertainties for the model stars, the error in mass estimates will be %similarly enhanced, providing generous upper bounds on the mass uncertainty of the observed data.
-%
-%After randomization, only certain filters were passed through as input to the \binocs fitting. Filter combinations used in this test are shown in the %first column of table \ref{tab:filters_test_M67}. Each filter combination was run 5 times, and each time the \% error in the best-fit primary and %secondary masses was recorded. After all 5 runs, results were binned into steps of 0.1 in mass ratio, and the average \% error + 1 standard deviation %is presented in tables \ref{tab:filters_test_M67} and \ref{tab:filters_test_M37}. This test, like that in \S\ref{sec:iterations_test}, was run on M67 %and M37 datasets. For both clusters, the results were limited to systems where the primary was less massive than 2 M$_\odot$. Above this level, the %massive flux of the primary begins to massively skew secondary mass determinations for small mass-ratios.
-%
-%\begin{table} \centering \small
-%\begin{tabular}{|l|ccccccccccc|c|} \hline
-%\multicolumn{1}{|c|}{} & \multicolumn{11}{c}{Mass Ratio} & \multicolumn{1}{c|}{} \\
-%\multicolumn{1}{|c|}{Filter Combinations} & 0.0 & 0.1 & 0.2 & 0.3 & 0.4 & 0.5 & 0.6 & 0.7 & 0.8 & 0.9 & \multicolumn{1}{c}{1.0} & 
-%	\multicolumn{1}{c|}{\multirow{8}{*}{\vspace{-0.7cm}\begin{turn}{-90}1$\sigma$ \% Error in $M_{\text{pri}}$ \end{turn}}} \\ \hline \hline
-%101: $.g......$[3.6]... &   1.0 &   0.0 &   0.2 &   0.5 &   0.8 &   1.2 &   1.6 &   2.0 &   2.0 &   2.3 &   7.6 & \\
-%111: $.g...J..$[3.6]... &   0.9 &   0.0 &   0.1 &   0.4 &   0.7 &   1.1 &   1.3 &   1.7 &   1.7 &   2.2 &   7.0 & \\
-%202: $.gr.....$[3.6][4.5].. &   0.9 &   0.0 &   0.1 &   0.3 &   0.7 &   1.0 &   1.5 &   1.6 &   1.7 &   2.2 &   6.8 & \\
-%211: $.gr..J..$[3.6]... &   0.8 &   0.0 &   0.1 &   0.3 &   0.6 &   0.9 &   1.2 &   1.3 &   1.5 &   2.0 &   5.8 & \\
-%222: $.gr..J.K_S$[3.6][4.5].. &   0.8 &   0.0 &   0.1 &   0.3 &   0.5 &   0.7 &   1.2 &   1.3 &   1.5 &   2.2 &   5.5 & \\
-%322: $.gri.J.K_S$[3.6][4.5].. &   0.7 &   0.0 &   0.1 &   0.3 &   0.5 &   0.7 &   1.2 &   1.3 &   1.5 &   2.1 &   5.4 & \\
-%332: $.gri.JHK_S$[3.6][4.5].. &   0.5 &   0.0 &   0.1 &   0.3 &   0.5 &   0.7 &   1.1 &   1.2 &   1.4 &   2.1 &   5.3 & \\
-%532: $ugrizJHK_S$[3.6][4.5].. &   0.3 &   0.0 &   0.1 &   0.2 &   0.3 &   0.5 &   0.9 &   0.9 &   1.2 &   1.7 &   3.2 & 
-%	\multirow{8}{*}{\vspace{-0.7cm}\begin{turn}{-90}1$\sigma$ \% Error in $M_{\text{sec}}$ \end{turn}} \\ \hline \hline
-%101: $.g......$[3.6]... & ... &  48.7 &  26.2 &  23.5 &  27.1 &  21.6 &  16.1 &  12.1 &   9.7 &  10.8 &  11.8 & \\
-%111: $.g...J..$[3.6]... & ... &  31.9 &  21.4 &  20.7 &  23.4 &  19.0 &  13.7 &  10.0 &   8.2 &   9.7 &   9.4 & \\
-%202: $.gr.....$[3.6][4.5].. & ... &  35.9 &  20.3 &  17.7 &  20.6 &  16.9 &  12.4 &   8.8 &   6.6 &   7.0 &  11.6 & \\
-%211: $.gr..J..$[3.6]... & ... &  33.0 &  20.1 &  19.2 &  20.6 &  16.4 &  11.8 &   8.0 &   6.3 &   7.5 &   7.5 & \\
-%222: $.gr..J.K_S$[3.6][4.5].. & ... &  27.9 &  16.0 &  15.3 &  14.8 &  12.5 &   9.3 &   6.4 &   5.1 &   5.9 &   6.9 & \\
-%322: $.gri.J.K_S$[3.6][4.5].. & ... &  28.8 &  16.0 &  14.3 &  13.3 &  11.2 &   8.4 &   5.5 &   4.6 &   5.6 &   7.2 & \\
-%332: $.gri.JHK_S$[3.6][4.5].. & ... &  27.1 &  15.1 &  12.9 &  11.9 &  10.3 &   7.5 &   5.4 &   4.3 &   5.4 &   7.1 & \\
-%532: $ugrizJHK_S$[3.6][4.5].. & ... &  25.4 &  13.2 &  11.8 &   8.7 &   6.0 &   4.6 &   3.2 &   2.7 &   3.5 &   3.6 & \\ \hline
-%\end{tabular}
-%\caption{1$\sigma$ \% errors in mass estimates for the M67 synthetic dataset, in various combinations of filters. \label{tab:filters_test_M67}}
-%\end{table}
-%
-%\begin{table} \centering \small
-%\begin{tabular}{|l|ccccccccccc|c|} \hline
-%\multicolumn{1}{|c|}{} & \multicolumn{11}{c}{Mass Ratio} & \multicolumn{1}{c|}{} \\
-%\multicolumn{1}{|c|}{Filter Combinations} & 0.0 & 0.1 & 0.2 & 0.3 & 0.4 & 0.5 & 0.6 & 0.7 & 0.8 & 0.9 & \multicolumn{1}{c}{1.0} & 
-%	\multicolumn{1}{c|}{\multirow{8}{*}{\vspace{-0.7cm}\begin{turn}{-90}1$\sigma$ \% Error in $M_{\text{pri}}$ \end{turn}}} \\ \hline \hline
-%101: $.g......$[3.6]... &   1.1 &   0.2 &   0.3 &   0.7 &   1.3 &   1.9 &   2.6 &   3.1 &   3.6 &   5.3 &   7.9 & \\
-%111: $.g...J..$[3.6]... &   1.0 &   0.2 &   0.3 &   0.7 &   1.0 &   1.4 &   1.9 &   2.7 &   2.9 &   4.5 &   7.7 & \\
-%202: $.gr.....$[3.6][4.5].. &   1.0 &   0.2 &   0.3 &   0.6 &   0.9 &   1.3 &   1.9 &   2.5 &   3.0 &   4.7 &   7.2 & \\
-%211: $.gr..J..$[3.6]... &   0.9 &   0.1 &   0.3 &   0.6 &   0.9 &   1.2 &   1.7 &   2.5 &   2.7 &   4.2 &   7.2 & \\
-%222: $.gr..J.K_S$[3.6][4.5].. &   0.8 &   0.2 &   0.2 &   0.5 &   0.7 &   1.0 &   1.5 &   2.1 &   2.4 &   3.8 &   6.3 & \\
-%322: $.gri.J.K_S$[3.6][4.5].. &   0.8 &   0.2 &   0.2 &   0.5 &   0.8 &   1.0 &   1.5 &   2.1 &   2.4 &   3.7 &   6.2 & \\
-%332: $.gri.JHK_S$[3.6][4.5].. &   0.8 &   0.2 &   0.2 &   0.4 &   0.7 &   1.0 &   1.4 &   2.0 &   2.2 &   3.4 &   6.5 & \\
-%532: $ugrizJHK_S$[3.6][4.5].. &   ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... & 
-%	\multirow{8}{*}{\vspace{-0.7cm}\begin{turn}{-90}1$\sigma$ \% Error in $M_{\text{sec}}$ \end{turn}} \\ \hline \hline
-%101: $.g......$[3.6]... & ... &  67.6 &  51.5 &  35.5 &  27.4 &  21.8 &  18.5 &  14.8 &  11.6 &  12.0 &  13.8 & \\
-%111: $.g...J..$[3.6]... & ... &  52.0 &  36.3 &  26.4 &  19.2 &  14.4 &  12.2 &  10.4 &   7.7 &   8.3 &  11.2 & \\
-%202: $.gr.....$[3.6][4.5].. & ... &  50.7 &  35.6 &  25.7 &  20.7 &  16.2 &  12.9 &  10.8 &   8.8 &   9.2 &  10.6 & \\
-%211: $.gr..J..$[3.6]... & ... &  50.3 &  35.9 &  26.2 &  18.2 &  13.0 &  11.2 &   9.5 &   7.0 &   7.4 &   9.9 & \\
-%222: $.gr..J.K_S$[3.6][4.5].. & ... &  35.1 &  24.1 &  17.8 &  14.4 &  10.5 &   8.6 &   7.3 &   5.7 &   6.3 &   8.1 & \\
-%322: $.gri.J.K_S$[3.6][4.5].. & ... &  34.7 &  23.5 &  17.6 &  14.2 &  10.3 &   8.1 &   6.9 &   5.5 &   6.0 &   7.4 & \\
-%332: $.gri.JHK_S$[3.6][4.5].. & ... &  32.8 &  21.7 &  15.8 &  13.0 &   9.7 &   7.3 &   6.2 &   5.0 &   5.5 &   8.2 & \\
-%532: $ugrizJHK_S$[3.6][4.5].. & ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... &   ... & \\ \hline
-%\end{tabular}
-%\caption{Same as table \ref{tab:filters_test_M67}, but for the M37 dataset. The `532' filter combination does not exist, as only $gri$ optical %photometry is available for M37. \label{tab:filters_test_M37}}
-%\end{table}
-%
-%At first glance, it is obvious that mass estimates are wildly inaccurate for mass ratios less than 0.3. Due to other considerations (described in \S\%ref{sec:minq}), these stars will be removed from the comparison, and so they are ignored in this test as well. There is a large jump in accuracy %between the `211' and `222' filter combinations, more than 5\% for some mass ratios. Using `222,' or a more stringent filter requirement will give %primary masses to better than 10\% and secondary masses to within 20\%. This level of accuracy is acceptable, and allows inclusion of clusters that %do not have full near-IR ($JHK_S$) photometry. Requiring more filters only marginally increases the accuracy (less than 2.5\% in M37), but excludes %more clusters from analysis.
-%
-%\begin{table} \centering
-%\begin{tabular}{|l|cc|} \hline
-% & \multicolumn{2}{c|}{\# of Stars} \\
-%Cluster & Original Dataset & `222' Trimmed \\ \hline \hline 
-%NGC 1960 (M36) & 58,011 & 7,012 \\
-%NGC 2168 (M35) & 53,196 & 7,607 \\
-%NGC 2099 (M37) & 39,405 & 3,373 \\
-%NGC 2420	   & 17,725 & 1,224 \\
-%NGC 2682 (M67) & 14,339 & 1,178 \\ \hline
-%\end{tabular}
-%\parbox{0.75\textwidth}{\caption{Comparison, for clusters in analysis set, of number of stars in original merged datasets to those which have the %requisite photometry. \label{tab:222starcounts}}}
-%\end{table}
-%
-%Original star counts, as well as the number of stars available after the `222' cut are shown for all clusters in the analysis set in table \ref{tab:22%2starcounts}. In many cases, the individual photometry datasets cover different areas around the cluster, only overlapping in smaller regions. These %extra sources, which have photometry from only one source, are removed after the filter cut. This effect is enhanced in M35, M36 and M37, which lie %in the plane of the galaxy. 
+\subsection{Number of Required Filters}\label{sec:filters_test}
+
+While a comprehensive sampling of the SED over all 12 filters ($UBVRI$ or $ugriz$, $J-$[8.0]) is ideal, it is often impractical to obtain quality photometry in this number of bands for every cluster we wish to study. In practice, the \binocs code will have to produce accurate results using a less-than-ideal number of filters. Requiring fewer filters to be ``good'' will reduce the mass accuracy of the \binocs code. For example, stars being matched to a model using all 12 possible filters should have better accuracy than a model that is only matched using 2 filters. While \binocs mass uncertainty should go down as more filters are required, the number of stars with the required photometry will also drop, limiting the usefulness of the analysis. A balance must be struck between the number of available stars, and the average uncertainty in mass.
+
+To test the mass uncertainty associated with a specific filter combination, the synthetic model library generated by the \binocs code was used as input. With known primary and secondary masses for each entry in the library, mass uncertainties can be easily calculated. To simulate real observation, the model stars in the input library were given observational uncertainties derived from the cluster's photometry. For each available filter in the cluster's photometric catalog, average magnitude uncertainties were calculated in bins of width 0.5 mag. Stars in the input library were then assigned magnitude errors equal to 2 $\times$ the uncertainty in the corresponding magnitude bin. The model stars' magnitudes were also randomly shifted using a gaussian error distribution with $\sigma =$ the magnitude's uncertainty.
+
+By overestimating the observational uncertainties for the model stars, the error in mass estimates will be similarly enhanced, providing generous upper bounds on the mass uncertainty of the observed data. Various filter combinations were tested, and the results are shown in table \ref{tab:filterTest} for several clusters in the sample. The number of stars in each cluster with the required photometry are also shown in table \ref{tab:filterTest}.
+
+\begin{table} \centering \small
+\begin{tabular}{|l|ccc|ccc|ccc|} \hline
+ & \multicolumn{3}{c|}{\textbf{NGC 2682 (M67)}} & \multicolumn{3}{c|}{\textbf{NGC 2099 (M37)}} & \multicolumn{3}{c|}{\textbf{NGC 1960 (M36)}} \\ \cline{2-10}
+ & & \multicolumn{2}{c|}{\% Error} & & \multicolumn{2}{c|}{\% Error} & & \multicolumn{2}{c|}{\% Error} \\
+\multicolumn{1}{|c|}{Filter Combinations} & \# Stars & M$_{pri}$ & M$_{sec}$ & \# Stars & M$_{pri}$ & M$_{sec}$ & \# Stars & M$_{pri}$ & M$_{sec}$ \\ \hline \hline
+101: $  .g......$[3.6]...     &  2218 &   1.5 &  16.1 &  7018 &   2.0 &  21.2 &  8047 &   1.6 &  38.9 \\
+111: $  .g...J..$[3.6]...     &  1319 &   1.3 &  13.7 &  6253 &   1.7 &  16.6 &  8016 &   1.4 &  31.2 \\
+202: $  .gr.....$[3.6][4.5].. &  2005 &   1.2 &  12.3 &  3434 &   1.6 &  16.3 &  7064 &   1.9 &  26.4 \\
+211: $  .gr..J..$[3.6]...     &  1294 &   1.1 &  12.0 &  6253 &   1.5 &  15.2 &  8016 &   1.5 &  26.8 \\
+222: $.gr..J.K_S$[3.6][4.5].. &  1175 &   1.0 &   9.5 &  3373 &   1.3 &  13.5 &  7012 &   2.1 &  17.8 \\
+322: $.gri.J.K_S$[3.6][4.5].. &  1123 &   1.0 &   8.5 &  3369 &   1.3 &  13.0 &  6976 &   2.2 &  16.2 \\
+332: $.gri.JHK_S$[3.6][4.5].. &  1119 &   0.9 &   8.1 &  3368 &   1.2 &  12.4 &  6912 &   2.3 &  15.2 \\
+532: $ugrizJHK_S$[3.6][4.5].. &   730 &   0.7 &   6.1 &   ... &   ... &   ... &   774 &   1.4 &   7.3 \\ \hline
+\end{tabular}
+\caption{Number of filters test results. For various filter combinations and clusters, the number of stars in the dataset with the necessary photometry are shown, as well as percent errors in derived primary and secondary masses. The `532' filter combination is not possible for M37, as only $gri$ optical photometry is available. \label{tab:filterTest}}
+\end{table}
+
+Table \ref{tab:filterTest} illustrates what was stated above: full SED sampling, while producing the lowest mass uncertainties, is not ideal in practice. The `532' filter combination has vastly reduced star counts in M67 and M36, and would complete exclude M37 from the analysis, as only $gri$ optical photometry is available. For less-than-complete filter combinations, there is little difference in the number of stars available for the `332', `322', and `222' filter combinations. The next jump in number of available stars occurs when the number of required near-IR filters drops below two. Along with the increase in the number of available stars for the `211' filter combination, secondary mass uncertainties have risen by 25-75\% above those for the `332' filter combination. 
+
+The vast increase in secondary mass uncertainty eliminates the `211' filter combination, and those with less filters. Since there is no appreciable change in the number of stars available between `222' and `332', the filter combination with the lowest mass uncertainty is selected as the best option. It is therefore required that 3 of 5 optical filters, all 3 near-IR filters, and 2 of the 4 mid-IR filters be matched between an observed star and a model.
 
 
 \subsection{Minimum Mass Ratio}\label{sec:minq}
