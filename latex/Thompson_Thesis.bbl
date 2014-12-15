@@ -1,8 +1,8 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{68}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Alexander \& Ferguson(1994)}]{1994ApJ...437..879A}
-Alexander, D.~R., \& Ferguson, J.~W. 1994, The Astrophysical Journal, 437, 879
+Alexander, D.~R. \& Ferguson, J.~W. 1994, The Astrophysical Journal, 437, 879
 
 \bibitem[{Allard {et~al.}(2012)Allard, Homeier, \&
   Freytag}]{2012RSPTA.370.2765A}
@@ -11,8 +11,9 @@ Allard, F., Homeier, D., \& Freytag, B. 2012, Philosophical Transactions of the
 
 \bibitem[{An {et~al.}(2009)An, Pinsonneault, Masseron, Delahaye, Johnson,
   Terndrup, Beers, Ivans, \& Ivezic}]{2009ApJ...700..523A}
-An, D., Pinsonneault, M.~H., Masseron, T., {et~al.} 2009, The Astrophysical
-  Journal, 700, 523
+An, D., Pinsonneault, M.~H., Masseron, T., Delahaye, F., Johnson, J.~A.,
+  Terndrup, D.~M., Beers, T.~C., Ivans, I.~I., \& Ivezic, Z. 2009, The
+  Astrophysical Journal, 700, 523
 
 \bibitem[{Balaguer-N{\'u}{\~n}ez {et~al.}(2004)Balaguer-N{\'u}{\~n}ez, Jordi,
   Galad{\'\i}-Enr{\'\i}quez, \& Zhao}]{2004AA...426..819B}
@@ -20,27 +21,34 @@ Balaguer-N{\'u}{\~n}ez, L., Jordi, C., Galad{\'\i}-Enr{\'\i}quez, D., \& Zhao,
   J.~L. 2004, Astronomy and Astrophysics, 426, 819
 
 \bibitem[{Barmby \& Huchra(2001)}]{2001AJ....122.2458B}
-Barmby, P., \& Huchra, J.~P. 2001, The Astronomical Journal, 122, 2458
+Barmby, P. \& Huchra, J.~P. 2001, The Astronomical Journal, 122, 2458
 
 \bibitem[{Benjamin {et~al.}(2003)Benjamin, Churchwell, Babler, Bania, Clemens,
   Cohen, Dickey, Indebetouw, Jackson, Kobulnicky, Lazarian, Marston, Mathis,
   Meade, Seager, Stolovy, Watson, Whitney, Wolff, \&
   Wolfire}]{2003PASP..115..953B}
-Benjamin, R.~A., Churchwell, E., Babler, B.~L., {et~al.} 2003, The Publications
-  of the Astronomical Society of the Pacific, 115, 953
+Benjamin, R.~A., Churchwell, E., Babler, B.~L., Bania, T.~M., Clemens, D.~P.,
+  Cohen, M., Dickey, J.~M., Indebetouw, R., Jackson, J.~M., Kobulnicky, H.~A.,
+  Lazarian, A., Marston, A.~P., Mathis, J.~S., Meade, M.~R., Seager, S.,
+  Stolovy, S.~R., Watson, C., Whitney, B.~A., Wolff, M.~J., \& Wolfire, M.~G.
+  2003, The Publications of the Astronomical Society of the Pacific, 115, 953
 
 \bibitem[{Bessell(1990)}]{1990PASP..102.1181B}
 Bessell, M.~S. 1990, Astronomical Society of the Pacific, 102, 1181
 
 \bibitem[{Binney \& Merrifield(1998)}]{Binney:ul}
-Binney, J., \& Merrifield, M. 1998, {Galactic Astronomy} (Princeton University
+Binney, J. \& Merrifield, M. 1998, {Galactic Astronomy} (Princeton University
   Press)
 
 \bibitem[{Bressan {et~al.}(2012)Bressan, Bressan, Marigo, Girardi, Salasnich,
   Salasnich, Dal~Cero, Dal~Cero, Rubele, Rubele, Nanni, \&
   Nanni}]{2012MNRAS.427..127B}
-Bressan, A., Bressan, A., Marigo, P., {et~al.} 2012, Monthly Notices of the
-  Royal Astronomical Society, 427, 127
+Bressan, A., Bressan, A., Marigo, P., Girardi, L., Salasnich, B., Salasnich,
+  B., Dal~Cero, C., Dal~Cero, C., Rubele, S., Rubele, S., Nanni, A., \& Nanni,
+  A. 2012, Monthly Notices of the Royal Astronomical Society, 427, 127
+
+\bibitem[{Bromm \& Larson(2003)}]{2004ARA&A..42...79B}
+Bromm, V. \& Larson, R.~B. 2003, arXiv.org, 79
 
 \bibitem[{Caffau {et~al.}(2011)Caffau, Ludwig, Steffen, Freytag, \&
   Bonifacio}]{2011SoPh..268..255C}
@@ -57,26 +65,26 @@ Carney, B.~W., Lee, J.-W., \& Dodson, B. 2005, The Astronomical Journal, 129,
   656
 
 \bibitem[{Carroll \& Ostlie(2006)}]{Carroll:UvmD7hOR}
-Carroll, B.~W., \& Ostlie, D.~A. 2006, {Introduction to Modern Astrophysics},
+Carroll, B.~W. \& Ostlie, D.~A. 2006, {Introduction to Modern Astrophysics},
   2nd edn.
 
 \bibitem[{Castelli \& Kurucz(2003)}]{2003IAUS..210P.A20C}
-Castelli, F., \& Kurucz, R.~L. 2003, Modelling of Stellar Atmospheres, 210
+Castelli, F. \& Kurucz, R.~L. 2003, Modelling of Stellar Atmospheres, 210
 
 \bibitem[{de~Grijs {et~al.}(2013)de~Grijs, Li, Zheng, Deng, Hu, Kouwenhoven, \&
   Wicker}]{2013ApJ...765....4D}
-de~Grijs, R., Li, C., Zheng, Y., {et~al.} 2013, The Astrophysical Journal, 765,
-  4
+de~Grijs, R., Li, C., Zheng, Y., Deng, L., Hu, Y., Kouwenhoven, M. B.~N., \&
+  Wicker, J.~E. 2013, The Astrophysical Journal, 765, 4
 
 \bibitem[{Dias {et~al.}(2002)Dias, Alessi, Moitinho, \&
   L{\'e}pine}]{2002AA...389..871D}
 Dias, W.~S., Alessi, B.~S., Moitinho, A., \& L{\'e}pine, J. R.~D. 2002,
   Astronomy and Astrophysics, 389, 871
 
-\bibitem[{Dotter {et~al.}(2007)Dotter, Chaboyer, Jevremovic, Baron, Ferguson,
-  Sarajedini, \& Anderson}]{Dotter:2007fh}
-Dotter, A., Chaboyer, B., Jevremovic, D., {et~al.} 2007, Astrophysical Journal,
-  0706.0847v1
+\bibitem[{Dziembowski {et~al.}(1992)Dziembowski, Pamiatnykh, \&
+  Sienkiewicz}]{1992AcA....42....5D}
+Dziembowski, W.~A., Pamiatnykh, A.~A., \& Sienkiewicz, R. 1992, Acta
+  Astronomica (ISSN 0001-5237), 42, 5
 
 \bibitem[{Elson {et~al.}(1998)Elson, Sigurdsson, Davies, Hurley, \&
   Gilmore}]{1998MNRAS.300..857E}
@@ -95,23 +103,31 @@ Fan, X. 1999, The Astronomical Journal, 117, 2528
   Stern, Gorjian, Bhattacharya, Carey, Nelson, Glaccum, Lacy, Lowrance, Laine,
   Reach, Stauffer, Surace, Wilson, Wright, Hoffman, Domingo, \&
   Cohen}]{2004ApJS..154...10F}
-Fazio, G.~G., Hora, J.~L., Allen, L.~E., {et~al.} 2004, The Astrophysical
-  Journal Supplement Series, 154, 10
+Fazio, G.~G., Hora, J.~L., Allen, L.~E., Ashby, M. L.~N., Barmby, P., Deutsch,
+  L.~K., Huang, J.~S., Kleiner, S., Marengo, M., Megeath, S.~T., Melnick,
+  G.~J., Pahre, M.~A., Patten, B.~M., Polizotti, J., Smith, H.~A., Taylor,
+  R.~S., Wang, Z., Willner, S.~P., Hoffmann, W.~F., Pipher, J.~L., Forrest,
+  W.~J., McMurty, C.~W., McCreight, C.~R., McKelvey, M.~E., McMurray, R.~E.,
+  Koch, D.~G., Moseley, S.~H., Arendt, R.~G., Mentzell, J.~E., Marx, C.~T.,
+  Losch, P., Mayman, P., Eichhorn, W., Krebs, D., Jhabvala, M., Gezari, D.~Y.,
+  Fixsen, D.~J., Flores, J., Shakoorzadeh, K., Jungo, R., Hakun, C., Workman,
+  L., Karpati, G., Kichak, R., Whitley, R., Mann, S., Tollestrup, E.~V.,
+  Eisenhardt, P., Stern, D., Gorjian, V., Bhattacharya, B., Carey, S., Nelson,
+  B.~O., Glaccum, W.~J., Lacy, M., Lowrance, P.~J., Laine, S., Reach, W.~T.,
+  Stauffer, J.~A., Surace, J.~A., Wilson, G., Wright, E.~L., Hoffman, A.,
+  Domingo, G., \& Cohen, M. 2004, The Astrophysical Journal Supplement Series,
+  154, 10
 
 \bibitem[{Ferguson {et~al.}(2005)Ferguson, Alexander, Allard, Barman, Bodnarik,
   Hauschildt, Heffner-Wong, \& Tamanai}]{2005ApJ...623..585F}
-Ferguson, J.~W., Alexander, D.~R., Allard, F., {et~al.} 2005, The Astrophysical
+Ferguson, J.~W., Alexander, D.~R., Allard, F., Barman, T., Bodnarik, J.~G.,
+  Hauschildt, P.~H., Heffner-Wong, A., \& Tamanai, A. 2005, The Astrophysical
   Journal, 623, 585
 
 \bibitem[{Fukugita {et~al.}(1996)Fukugita, Ichikawa, Gunn, Doi, Shimasaku, \&
   Schneider}]{1996AJ....111.1748F}
-Fukugita, M., Ichikawa, T., Gunn, J.~E., {et~al.} 1996, The Astronomical
-  Journal, 111, 1748
-
-\bibitem[{Geisler {et~al.}(2012)Geisler, Villanova, Carraro, Pilachowski,
-  Cummings, Johnson, \& Bresolin}]{2012ApJ...756L..40G}
-Geisler, D., Villanova, S., Carraro, G., {et~al.} 2012, The Astrophysical
-  Journal Letters, 756, L40
+Fukugita, M., Ichikawa, T., Gunn, J.~E., Doi, M., Shimasaku, K., \& Schneider,
+  D.~P. 1996, The Astronomical Journal, 111, 1748
 
 \bibitem[{Geller {et~al.}(2013)Geller, de~Grijs, Li, \&
   Hurley}]{2013ApJ...779...30G}
@@ -119,12 +135,12 @@ Geller, A.~M., de~Grijs, R., Li, C., \& Hurley, J.~R. 2013, The Astrophysical
   Journal, 779, 30
 
 \bibitem[{Geller \& Mathieu(2012)}]{2012AJ....144...54G}
-Geller, A.~M., \& Mathieu, R.~D. 2012, The Astronomical Journal, 144, 54
+Geller, A.~M. \& Mathieu, R.~D. 2012, The Astronomical Journal, 144, 54
 
 \bibitem[{Geller {et~al.}(2010)Geller, Mathieu, Braden, Meibom, Platais, \&
   Dolan}]{Geller:2010hn}
-Geller, A.~M., Mathieu, R.~D., Braden, E.~K., {et~al.} 2010, The Astronomical
-  Journal, 139, 1383
+Geller, A.~M., Mathieu, R.~D., Braden, E.~K., Meibom, S., Platais, I., \&
+  Dolan, C.~J. 2010, The Astronomical Journal, 139, 1383
 
 \bibitem[{Geller {et~al.}(2008)Geller, Mathieu, Harris, \&
   McClure}]{2008AJ....135.2264G}
@@ -137,8 +153,9 @@ Geller, A.~M., Mathieu, R.~D., Harris, H.~C., \& McClure, R.~D. 2008, The
 
 \bibitem[{Girardi {et~al.}(2002)Girardi, Bertelli, Bressan, Chiosi,
   Groenewegen, Marigo, Salasnich, \& Weiss}]{2002AA...391..195G}
-Girardi, L., Bertelli, G., Bressan, A., {et~al.} 2002, Astronomy and
-  Astrophysics, 391, 195
+Girardi, L., Bertelli, G., Bressan, A., Chiosi, C., Groenewegen, M. A.~T.,
+  Marigo, P., Salasnich, B., \& Weiss, A. 2002, Astronomy and Astrophysics,
+  391, 195
 
 \bibitem[{Gozzoli {et~al.}(1996)Gozzoli, Tosi, Marconi, \&
   Bragaglia}]{1996MNRAS.283...66G}
@@ -146,26 +163,27 @@ Gozzoli, E., Tosi, M., Marconi, G., \& Bragaglia, A. 1996, Monthly Notices of
   the Royal Astronomical Society, 283, 66
 
 \bibitem[{Grevesse \& Noels(1993)}]{1993PhST...47..133G}
-Grevesse, N., \& Noels, A. 1993, Physica Scripta T, 47, 133
+Grevesse, N. \& Noels, A. 1993, Physica Scripta T, 47, 133
 
 \bibitem[{Grevesse \& Sauval(1998)}]{1998SSRv...85..161G}
-Grevesse, N., \& Sauval, A.~J. 1998, Space Science Reviews, 85, 161
+Grevesse, N. \& Sauval, A.~J. 1998, Space Science Reviews, 85, 161
 
 \bibitem[{Hartman {et~al.}(2008)Hartman, Gaudi, Holman, McLeod, Stanek,
   Barranco, Pinsonneault, Meibom, \& Kalirai}]{2008ApJ...675.1233H}
-Hartman, J.~D., Gaudi, B.~S., Holman, M.~J., {et~al.} 2008, The Astrophysical
-  Journal, 675, 1233
+Hartman, J.~D., Gaudi, B.~S., Holman, M.~J., McLeod, B.~A., Stanek, K.~Z.,
+  Barranco, J.~A., Pinsonneault, M.~H., Meibom, S., \& Kalirai, J.~S. 2008, The
+  Astrophysical Journal, 675, 1233
 
 \bibitem[{Heggie(1975)}]{1975MNRAS.173..729H}
 Heggie, D.~C. 1975, Monthly Notices of the Royal Astronomical Society, 173, 729
 
 \bibitem[{Hole {et~al.}(2009)Hole, Geller, Mathieu, Platais, Meibom, \&
   Latham}]{2009AJ....138..159H}
-Hole, K.~T., Geller, A.~M., Mathieu, R.~D., {et~al.} 2009, The Astronomical
-  Journal, 138, 159
+Hole, K.~T., Geller, A.~M., Mathieu, R.~D., Platais, I., Meibom, S., \& Latham,
+  D.~W. 2009, The Astronomical Journal, 138, 159
 
 \bibitem[{Hurley \& Tout(1998)}]{1998MNRAS.300..977H}
-Hurley, J., \& Tout, C.~A. 1998, Monthly Notices of the Royal Astronomical
+Hurley, J. \& Tout, C.~A. 1998, Monthly Notices of the Royal Astronomical
   Society, 300, 977
 
 \bibitem[{Hurley {et~al.}(2005)Hurley, Pols, Aarseth, \&
@@ -179,7 +197,7 @@ Hurley, J.~R., Tout, C.~A., Aarseth, S.~J., \& Pols, O.~R. 2001, Monthly
   Notices of the Royal Astronomical Society, 323, 630
 
 \bibitem[{Iglesias \& Rogers(1993)}]{1993ApJ...412..752I}
-Iglesias, C.~A., \& Rogers, F.~J. 1993, Astrophysical Journal, 412, 752
+Iglesias, C.~A. \& Rogers, F.~J. 1993, Astrophysical Journal, 412, 752
 
 \bibitem[{Iglesias \& Rogers(1996)}]{1996ApJ...464..943I}
 ---. 1996, Astrophysical Journal v.464, 464, 943
@@ -188,12 +206,21 @@ Iglesias, C.~A., \& Rogers, F.~J. 1993, Astrophysical Journal, 412, 752
 Irwin, A.~W. 2004, Technical Report (http://freeeos.sourceforge.net)
 
 \bibitem[{Jones \& Prosser(1996)}]{1996AJ....111.1193J}
-Jones, B.~F., \& Prosser, C.~F. 1996, The Astronomical Journal, 111, 1193
+Jones, B.~F. \& Prosser, C.~F. 1996, The Astronomical Journal, 111, 1193
+
+\bibitem[{Kalirai {et~al.}(2001)Kalirai, Ventura, Richer, Fahlman, Durrell,
+  D'Antona, \& Marconi}]{2001AJ....122.3239K}
+Kalirai, J.~S., Ventura, P., Richer, H.~B., Fahlman, G.~G., Durrell, P.~R.,
+  D'Antona, F., \& Marconi, G. 2001, The Astronomical Journal, 122, 3239
 
 \bibitem[{Kippenhahn {et~al.}(1965)Kippenhahn, Thomas, \&
   Weigert}]{1965ZA.....61..241K}
 Kippenhahn, R., Thomas, H.~C., \& Weigert, A. 1965, Zeitschrift f{\"u}r
   Astrophysik, 61, 241
+
+\bibitem[{Lada \& Lada(2003)}]{2003ARA&A..41...57L}
+Lada, C.~J. \& Lada, E.~A. 2003, Annual Review of Astronomy {\&}Astrophysics,
+  41, 57
 
 \bibitem[{Lejeune {et~al.}(1998)Lejeune, Cuisinier, \&
   Buser}]{1998AAS..130...65L}
@@ -205,10 +232,10 @@ Li, C., de~Grijs, R., \& Deng, L. 2013, Monthly Notices of the Royal
   Astronomical Society, 436, 1497
 
 \bibitem[{Marigo \& Aringer(2009)}]{2009AA...508.1539M}
-Marigo, P., \& Aringer, B. 2009, Astronomy and Astrophysics, 508, 1539
+Marigo, P. \& Aringer, B. 2009, Astronomy and Astrophysics, 508, 1539
 
 \bibitem[{Mathieu \& Latham(1986)}]{1986AJ.....92.1364M}
-Mathieu, R.~D., \& Latham, D.~W. 1986, The Astronomical Journal, 92, 1364
+Mathieu, R.~D. \& Latham, D.~W. 1986, The Astronomical Journal, 92, 1364
 
 \bibitem[{Mathieu {et~al.}(1997)Mathieu, Latham, \& Milone}]{Mathieu:1997tk}
 Mathieu, R.~D., Latham, D.~W., \& Milone, A.~E. 1997, The Third Pacific Rim
@@ -222,29 +249,33 @@ Mihalas, D., Hummer, D.~G., Mihalas, B.~W., \& Daeppen, W. 1990, Astrophysical
 
 \bibitem[{Milliman {et~al.}(2014)Milliman, Mathieu, Geller, Gosnell, Meibom, \&
   Platais}]{2014AJ....148...38M}
-Milliman, K.~E., Mathieu, R.~D., Geller, A.~M., {et~al.} 2014, The Astronomical
-  Journal, 148, 38
+Milliman, K.~E., Mathieu, R.~D., Geller, A.~M., Gosnell, N.~M., Meibom, S., \&
+  Platais, I. 2014, The Astronomical Journal, 148, 38
 
 \bibitem[{Milone {et~al.}(2012)Milone, Piotto, Bedin, Aparicio, Anderson,
   Sarajedini, Marino, Moretti, Davies, Chaboyer, Dotter, Hempel,
   Mar{\'\i}n-Franch, Majewski, Paust, Reid, Rosenberg, \&
   Siegel}]{2012AA...540A..16M}
-Milone, A.~P., Piotto, G., Bedin, L.~R., {et~al.} 2012, Astronomy and
-  Astrophysics, 540, 16
+Milone, A.~P., Piotto, G., Bedin, L.~R., Aparicio, A., Anderson, J.,
+  Sarajedini, A., Marino, A.~F., Moretti, A., Davies, M.~B., Chaboyer, B.,
+  Dotter, A., Hempel, M., Mar{\'\i}n-Franch, A., Majewski, S., Paust, N. E.~Q.,
+  Reid, I.~N., Rosenberg, A., \& Siegel, M. 2012, Astronomy and Astrophysics,
+  540, 16
 
 \bibitem[{Moyano~Loyola \& Hurley(2013)}]{2013MNRAS.434.2509M}
-Moyano~Loyola, G. R.~I., \& Hurley, J.~R. 2013, Monthly Notices of the Royal
+Moyano~Loyola, G. R.~I. \& Hurley, J.~R. 2013, Monthly Notices of the Royal
   Astronomical Society, 434, 2509
 
 \bibitem[{Pandey {et~al.}(2007)Pandey, Sharma, Upadhyay, Ogura, Sandhu, Mito,
   \& Sagar}]{2007PASJ...59..547P}
-Pandey, A.~K., Sharma, S., Upadhyay, K., {et~al.} 2007, Publications of the
-  Astronomical Society of Japan, 59, 547
+Pandey, A.~K., Sharma, S., Upadhyay, K., Ogura, K., Sandhu, T.~S., Mito, H., \&
+  Sagar, R. 2007, Publications of the Astronomical Society of Japan, 59, 547
 
 \bibitem[{Piotto {et~al.}(2007)Piotto, Bedin, Anderson, King, Cassisi, Milone,
   Villanova, Pietrinferni, \& Renzini}]{2007ApJ...661L..53P}
-Piotto, G., Bedin, L.~R., Anderson, J., {et~al.} 2007, The Astrophysical
-  Journal, 661, L53
+Piotto, G., Bedin, L.~R., Anderson, J., King, I.~R., Cassisi, S., Milone,
+  A.~P., Villanova, S., Pietrinferni, A., \& Renzini, A. 2007, The
+  Astrophysical Journal, 661, L53
 
 \bibitem[{Platais {et~al.}(2003)Platais, Kozhurina-Platais, Mathieu, Girard, \&
   van Altena}]{2003AJ....126.2922P}
@@ -263,16 +294,21 @@ Sanner, J., Altmann, M., Brunzendorf, J., \& Geffert, M. 2000, Astronomy and
 
 \bibitem[{Sharma {et~al.}(2006)Sharma, Pandey, Ogura, Mito, Tarusawa, \&
   Sagar}]{2006AJ....132.1669S}
-Sharma, S., Pandey, A.~K., Ogura, K., {et~al.} 2006, The Astronomical Journal,
-  132, 1669
+Sharma, S., Pandey, A.~K., Ogura, K., Mito, H., Tarusawa, K., \& Sagar, R.
+  2006, The Astronomical Journal, 132, 1669
 
 \bibitem[{Skrutskie {et~al.}(2006)Skrutskie, Cutri, Stiening, Weinberg,
   Schneider, Carpenter, Beichman, Capps, Chester, Elias, Huchra, Liebert,
   Lonsdale, Monet, Price, Seitzer, Jarrett, Kirkpatrick, Gizis, Howard, Evans,
   Fowler, Fullmer, Hurt, Light, Kopan, Marsh, McCallon, Tam, Van~Dyk, \&
   Wheelock}]{2006AJ....131.1163S}
-Skrutskie, M.~F., Cutri, R.~M., Stiening, R., {et~al.} 2006, The Astronomical
-  Journal, 131, 1163
+Skrutskie, M.~F., Cutri, R.~M., Stiening, R., Weinberg, M.~D., Schneider, S.,
+  Carpenter, J.~M., Beichman, C., Capps, R., Chester, T., Elias, J., Huchra,
+  J., Liebert, J., Lonsdale, C., Monet, D.~G., Price, S., Seitzer, P., Jarrett,
+  T., Kirkpatrick, J.~D., Gizis, J.~E., Howard, E., Evans, T., Fowler, J.,
+  Fullmer, L., Hurt, R., Light, R., Kopan, E.~L., Marsh, K.~A., McCallon,
+  H.~L., Tam, R., Van~Dyk, S., \& Wheelock, S. 2006, The Astronomical Journal,
+  131, 1163
 
 \bibitem[{Stetson(1987)}]{1987PASP...99..191S}
 Stetson, P.~B. 1987, Astronomical Society of the Pacific, 99, 191
@@ -282,8 +318,13 @@ Stetson, P.~B. 1987, Astronomical Society of the Pacific, 99, 191
 Stetson, P.~B., McClure, R.~D., \& VandenBerg, D.~A. 2004, The Publications of
   the Astronomical Society of the Pacific, 116, 1012
 
+\bibitem[{Thompson {et~al.}(2014)Thompson, Frinchaboy, Kinemuchi, Sarajedini,
+  \& Cohen}]{2014AJ....148...85T}
+Thompson, B., Frinchaboy, P., Kinemuchi, K., Sarajedini, A., \& Cohen, R. 2014,
+  The Astronomical Journal, 148, 85
+
 \bibitem[{von Hippel \& Sarajedini(1998)}]{1998AJ....116.1789V}
-von Hippel, T., \& Sarajedini, A. 1998, The Astronomical Journal, 116, 1789
+von Hippel, T. \& Sarajedini, A. 1998, The Astronomical Journal, 116, 1789
 
 \bibitem[{Wright {et~al.}(2010)Wright, Eisenhardt, Mainzer, Mainzer, Ressler,
   Cutri, Jarrett, Kirkpatrick, Padgett, McMillan, Skrutskie, Stanford, Cohen,
@@ -291,17 +332,25 @@ von Hippel, T., \& Sarajedini, A. 1998, The Astronomical Journal, 116, 1789
   Blain, Mendez, Irace, Duval, Liu, Royer, Heinrichsen, Howard, Shannon,
   Kendall, Walsh, Larsen, Cardon, Schick, Schwalm, Abid, Fabinsky, Naes, \&
   Tsai}]{2010AJ....140.1868W}
-Wright, E.~L., Eisenhardt, P. R.~M., Mainzer, A.~K., {et~al.} 2010, The
-  Astronomical Journal, 140, 1868
+Wright, E.~L., Eisenhardt, P. R.~M., Mainzer, A.~K., Mainzer, A.~K., Ressler,
+  M.~E., Cutri, R.~M., Jarrett, T., Kirkpatrick, J.~D., Padgett, D., McMillan,
+  R.~S., Skrutskie, M., Stanford, S.~A., Cohen, M., Walker, R.~G., Mather,
+  J.~C., Leisawitz, D., Gautier, T. N.~I., Gautier, T. N.~I., McLean, I.,
+  Benford, D., Lonsdale, C.~J., Blain, A., Mendez, B., Irace, W.~R., Duval, V.,
+  Liu, F., Royer, D., Heinrichsen, I., Howard, J., Shannon, M., Kendall, M.,
+  Walsh, A.~L., Larsen, M., Cardon, J.~G., Schick, S., Schwalm, M., Abid, M.,
+  Fabinsky, B., Naes, L., \& Tsai, C.-W. 2010, The Astronomical Journal, 140,
+  1868
 
 \bibitem[{Yadav {et~al.}(2008)Yadav, Bedin, Piotto, Anderson, Cassisi,
   Villanova, Platais, Pasquini, Momany, \& Sagar}]{2008AA...484..609Y}
-Yadav, R. K.~S., Bedin, L.~R., Piotto, G., {et~al.} 2008, Astronomy and
-  Astrophysics, 484, 609
+Yadav, R. K.~S., Bedin, L.~R., Piotto, G., Anderson, J., Cassisi, S.,
+  Villanova, S., Platais, I., Pasquini, L., Momany, Y., \& Sagar, R. 2008,
+  Astronomy and Astrophysics, 484, 609
 
 \bibitem[{Yi {et~al.}(2001)Yi, Demarque, Kim, Lee, Ree, Lejeune, \&
   Barnes}]{2001ApJS..136..417Y}
-Yi, S., Demarque, P., Kim, Y.-C., {et~al.} 2001, The Astrophysical Journal
-  Supplement Series, 136, 417
+Yi, S., Demarque, P., Kim, Y.-C., Lee, Y.-W., Ree, C.~H., Lejeune, T., \&
+  Barnes, S. 2001, The Astrophysical Journal Supplement Series, 136, 417
 
 \end{thebibliography}

@@ -20,114 +20,192 @@ data "../data/ridgeline_mass/M37.yy.syn.rsd" read {yysm 1 yysc1 2 yysc2 3 yysc3 
 
 
 # Comparison to SYNTHETIC ATMOSPHERES
-ctype black expand 0.6 window -7 -100 1 75:100 box 0 2 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+ctype black expand 0.6 window -7 -100 1 80:100 box 0 2 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
 	ctype firebrick connect pcsc1 pcsm if (pcsc1 > -80)	ctype orange connect pvsc1 pvsm if (pvsc1 > -80)
 	ctype royalblue connect dmsc1 dmsm if (dmsc1 > -80)	ctype purple connect yysc1 yysm if (yysc1 > -80)
 	
-ctype black expand 0.6 window -7 -100 2 75:100 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+ctype black expand 0.6 window -7 -100 2 80:100 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
 	ctype firebrick connect pcsc2 pcsm if (pcsc2 > -80)	ctype orange connect pvsc2 pvsm if (pvsc2 > -80)
 	ctype royalblue connect dmsc2 dmsm if (dmsc2 > -80)	ctype purple connect yysc2 yysm if (yysc2 > -80)
 	
-ctype black expand 0.6 window -7 -100 3 75:100 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+ctype black expand 0.6 window -7 -100 3 80:100 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
 	ctype firebrick connect pcsc3 pcsm if (pcsc3 > -80)	ctype orange connect pvsc3 pvsm if (pvsc3 > -80)
 	ctype royalblue connect dmsc3 dmsm if (dmsc3 > -80)	ctype purple connect yysc3 yysm if (yysc3 > -80)
 	
-ctype black expand 0.6 window -7 -100 4 75:100 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+ctype black expand 0.6 window -7 -100 4 80:100 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
 	ctype firebrick connect pcsc4 pcsm if (pcsc4 > -80)	ctype orange connect pvsc4 pvsm if (pvsc4 > -80)
 	ctype royalblue connect dmsc4 dmsm if (dmsc4 > -80)	ctype purple connect yysc4 yysm if (yysc4 > -80)
 	
-ctype black expand 0.6 window -7 -100 5 75:100 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+ctype black expand 0.6 window -7 -100 5 80:100 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
 	ctype firebrick connect pcsc5 pcsm if (pcsc5 > -80)	ctype orange connect pvsc5 pvsm if (pvsc5 > -80)
 	ctype royalblue connect dmsc5 dmsm if (dmsc5 > -80)	ctype purple connect yysc5 yysm if (yysc5 > -80)
 	
-ctype black expand 0.6 window -7 -100 6 75:100 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+ctype black expand 0.6 window -7 -100 6 80:100 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
 	ctype firebrick connect pcsc6 pcsm if (pcsc6 > -80)	ctype orange connect pvsc6 pvsm if (pvsc6 > -80)
 	ctype royalblue connect dmsc6 dmsm if (dmsc6 > -80)	ctype purple connect yysc6 yysm if (yysc6 > -80)
 	
-ctype black expand 0.6 window -7 -100 7 75:100 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+ctype black expand 0.6 window -7 -100 7 80:100 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
 	ctype firebrick connect pcsc7 pcsm if (pcsc7 > -80)	ctype orange connect pvsc7 pvsm if (pvsc7 > -80)
 	ctype royalblue connect dmsc7 dmsm if (dmsc7 > -80)	ctype purple connect yysc7 yysm if (yysc7 > -80)
 	
 	
 	
 # Comparison to ATLAS9 ATMOSPHERES
-ctype black expand 0.6 window -7 -100 1 47:72 box 0 2 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+ctype black expand 0.6 window -7 -100 1 57:77 box 0 2 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
 	ctype firebrick connect pcac1 pcam if (pcac1 > -80)	ctype orange connect pvac1 pvam if (pvac1 > -80)
 	ctype royalblue connect dmac1 dmam if (dmac1 > -80)	ctype purple connect yyac1 yyam if (yyac1 > -80)
 	
-ctype black expand 0.6 window -7 -100 2 47:72 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+ctype black expand 0.6 window -7 -100 2 57:77 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
 	ctype firebrick connect pcac2 pcam if (pcac2 > -80)	ctype orange connect pvac2 pvam if (pvac2 > -80)
 	ctype royalblue connect dmac2 dmam if (dmac2 > -80)	ctype purple connect yyac2 yyam if (yyac2 > -80)
 	
-ctype black expand 0.6 window -7 -100 3 47:72 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+ctype black expand 0.6 window -7 -100 3 57:77 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
 	ctype firebrick connect pcac3 pcam if (pcac3 > -80)	ctype orange connect pvac3 pvam if (pvac3 > -80)
 	ctype royalblue connect dmac3 dmam if (dmac3 > -80)	ctype purple connect yyac3 yyam if (yyac3 > -80)
 	
-ctype black expand 0.6 window -7 -100 4 47:72 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+ctype black expand 0.6 window -7 -100 4 57:77 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
 	ctype firebrick connect pcac4 pcam if (pcac4 > -80)	ctype orange connect pvac4 pvam if (pvac4 > -80)
 	ctype royalblue connect dmac4 dmam if (dmac4 > -80)	ctype purple connect yyac4 yyam if (yyac4 > -80)
 	
-ctype black expand 0.6 window -7 -100 5 47:72 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+ctype black expand 0.6 window -7 -100 5 57:77 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
 	ctype firebrick connect pcac5 pcam if (pcac5 > -80)	ctype orange connect pvac5 pvam if (pvac5 > -80)
 	ctype royalblue connect dmac5 dmam if (dmac5 > -80)	ctype purple connect yyac5 yyam if (yyac5 > -80)
 	
-ctype black expand 0.6 window -7 -100 6 47:72 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+ctype black expand 0.6 window -7 -100 6 57:77 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
 #	ctype firebrick connect pcac6 pcam if (pcac6 > -80)	ctype orange connect pvac6 pvam if (pvac6 > -80)
 #	ctype royalblue connect dmac6 dmam if (dmac6 > -80)	ctype purple connect yyac6 yyam if (yyac6 > -80)
 	
-ctype black expand 0.6 window -7 -100 7 47:72 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+ctype black expand 0.6 window -7 -100 7 57:77 box 0 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
 #	ctype firebrick connect pcac7 pcam if (pcac7 > -80)	ctype orange connect pvac7 pvam if (pvac7 > -80)
 #	ctype royalblue connect dmac7 dmam if (dmac7 > -80)	ctype purple connect yyac7 yyam if (yyac7 > -80)
 	
 	
 	
 # Comparison to BT-SETTL ATMOSPHERES
-ctype black expand 0.6 window -7 -100 1 19:44 box 1 2 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+ctype black expand 0.6 window -7 -100 1 34:54 box 1 2 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
 	ctype firebrick connect pcbc1 pcbm if (pcbc1 > -80)	ctype orange connect pvbc1 pvbm if (pvbc1 > -80)
 	ctype royalblue connect dmbc1 dmbm if (dmbc1 > -80)	ctype purple connect yybc1 yybm if (yybc1 > -80)
 	
-ctype black expand 0.6 window -7 -100 2 19:44 box 1 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+ctype black expand 0.6 window -7 -100 2 34:54 box 1 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
 	ctype firebrick connect pcbc2 pcbm if (pcbc2 > -80)	ctype orange connect pvbc2 pvbm if (pvbc2 > -80)
 	ctype royalblue connect dmbc2 dmbm if (dmbc2 > -80)	ctype purple connect yybc2 yybm if (yybc2 > -80)
 	
-ctype black expand 0.6 window -7 -100 3 19:44 box 1 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+ctype black expand 0.6 window -7 -100 3 34:54 box 1 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
 	ctype firebrick connect pcbc3 pcbm if (pcbc3 > -80)	ctype orange connect pvbc3 pvbm if (pvbc3 > -80)
 	ctype royalblue connect dmbc3 dmbm if (dmbc3 > -80)	ctype purple connect yybc3 yybm if (yybc3 > -80)
 	
-ctype black expand 0.6 window -7 -100 4 19:44 box 1 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+ctype black expand 0.6 window -7 -100 4 34:54 box 1 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
 	ctype firebrick connect pcbc4 pcbm if (pcbc4 > -80)	ctype orange connect pvbc4 pvbm if (pvbc4 > -80)
 	ctype royalblue connect dmbc4 dmbm if (dmbc4 > -80)	ctype purple connect yybc4 yybm if (yybc4 > -80)
 	
-ctype black expand 0.6 window -7 -100 5 19:44 box 1 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+ctype black expand 0.6 window -7 -100 5 34:54 box 1 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
 	ctype firebrick connect pcbc5 pcbm if (pcbc5 > -80)	ctype orange connect pvbc5 pvbm if (pvbc5 > -80)
 	ctype royalblue connect dmbc5 dmbm if (dmbc5 > -80)	ctype purple connect yybc5 yybm if (yybc5 > -80)
 	
-ctype black expand 0.6 window -7 -100 6 19:44 box 1 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+ctype black expand 0.6 window -7 -100 6 34:54 box 1 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
 	ctype firebrick connect pcbc6 pcbm if (pcbc6 > -80)	ctype orange connect pvbc6 pvbm if (pvbc6 > -80)
 	ctype royalblue connect dmbc6 dmbm if (dmbc6 > -80)	ctype purple connect yybc6 yybm if (yybc6 > -80)
 	
-ctype black expand 0.6 window -7 -100 7 19:44 box 1 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
+ctype black expand 0.6 window -7 -100 7 34:54 box 1 0 ctype black ltype 2 relocate 0 -100 draw 0 100 ltype 0
 	ctype firebrick connect pcbc7 pcbm if (pcbc7 > -80)	ctype orange connect pvbc7 pvbm if (pvbc7 > -80)
 	ctype royalblue connect dmbc7 dmbm if (dmbc7 > -80)	ctype purple connect yybc7 yybm if (yybc7 > -80)
 	
 	
 	
 # Make LABELS
-window 1 1 1 1 limits 0 1 0 1 ctype black expand 0.8
-angle 0 relocate -0.05 0.87 angle 90 putlabel 5 Mass (M_\odot)
-angle 0 relocate -0.05 0.59 angle 90 putlabel 5 Mass (M_\odot)
-angle 0 relocate -0.05 0.31 angle 90 putlabel 5 Mass (M_\odot)
+window 1 -100 1 34:100 limits 0 1 0 1 ctype black expand 0.8
+angle 0 relocate -0.05 0.85 angle 90 putlabel 5 Mass (M_\odot)
+angle 0 relocate -0.05 0.50 angle 90 putlabel 5 Mass (M_\odot)
+angle 0 relocate -0.05 0.15 angle 90 putlabel 5 Mass (M_\odot)
 angle 0
 
-relocate 0.071 0.14 putlabel 5 \Delta g-r
-relocate 0.214 0.14 putlabel 5 \Delta g-i
-relocate 0.357 0.14 putlabel 5 \Delta g-K_S
-relocate 0.500 0.14 putlabel 5 \Delta J-K_s
-relocate 0.643 0.14 putlabel 5 \Delta H-K_S
-relocate 0.786 0.14 putlabel 5 \Delta g-[3.6]
-relocate 0.929 0.14 putlabel 5 \Delta g-[4.5]
+relocate 0.071 -0.06 putlabel 5 \Delta g-r
+relocate 0.214 -0.06 putlabel 5 \Delta g-i
+relocate 0.357 -0.06 putlabel 5 \Delta g-K_S
+relocate 0.500 -0.06 putlabel 5 \Delta J-K_s
+relocate 0.643 -0.06 putlabel 5 \Delta H-K_S
+relocate 0.786 -0.06 putlabel 5 \Delta g-[3.6]
+relocate 0.929 -0.06 putlabel 5 \Delta g-[4.5]
 
 expand 1.2
-angle 0 relocate 1.02 0.87 angle 270 putlabel 5 Original
-angle 0 relocate 1.02 0.59 angle 270 putlabel 5 ATLAS9
-angle 0 relocate 1.02 0.31 angle 270 putlabel 5 BT-Settl
+angle 0 relocate 1.02 0.85 angle 270 putlabel 5 Original
+angle 0 relocate 1.02 0.50 angle 270 putlabel 5 ATLAS9
+angle 0 relocate 1.02 0.15 angle 270 putlabel 5 BT-Settl
+angle 0
+
+
+
+
+ptype 1 0
+#### Cluster Parameters ########################
+set d = 10.71
+set ebv = 0.30
+set dmcl = 8.544
+set pvcl = 8.55
+set pccl = 8.55
+set yycl = 8.540
+################################################
+
+#### CMD Values
+# Extinction Values
+set AU = 4.725 * ebv set AB = 4.086 * ebv set AV = 3.086 * ebv set AR = 2.309 * ebv set AI = 1.488 * ebv set ASU = 4.917 * ebv 
+set ASG = 3.701 * ebv set ASR = 2.648 * ebv set ASI = 1.972 * ebv set ASZ = 1.417 * ebv set AJ = 0.870 * ebv set AH = 0.540 * ebv 
+set AK = 0.346 * ebv set AB1 = 0.194 * ebv set AB2 = 0.149 * ebv
+
+# Reddening Values
+set EUB =  0.639 * ebv set EUV =  1.639 * ebv set EUR =  2.417 * ebv set EUI =  3.238 * ebv set EUJ =  3.855 * ebv set EUH =  4.185 * ebv 
+set EUK =  4.380 * ebv set EUB1 =  4.532 * ebv set EUB2 =  4.577 * ebv set EBV =  1.000 * ebv set EBR =  1.778 * ebv set EBI =  2.599 * ebv 
+set EBJ =  3.216 * ebv set EBH =  3.546 * ebv set EBK =  3.741 * ebv set EBB1 =  3.893 * ebv set EBB2 =  3.938 * ebv set EVR =  0.778 * ebv 
+set EVI =  1.599 * ebv set EVJ =  2.216 * ebv set EVH =  2.546 * ebv set EVK =  2.741 * ebv set EVB1 =  2.893 * ebv set EVB2 =  2.938 * ebv 
+set ERI =  0.821 * ebv set ERJ =  1.438 * ebv set ERH =  1.769 * ebv set ERK =  1.963 * ebv set ERB1 =  2.115 * ebv set ERB2 =  2.160 * ebv 
+set EIJ =  0.617 * ebv set EIH =  0.948 * ebv set EIK =  1.142 * ebv set EIB1 =  1.294 * ebv set EIB2 =  1.339 * ebv set ESUSG =  1.216 * ebv 
+set ESUSR =  2.269 * ebv set ESUSI =  2.944 * ebv set ESUSZ =  3.500 * ebv set ESUJ =  4.046 * ebv set ESUH =  4.377 * ebv set ESUK =  4.571 * ebv 
+set ESUB1 =  4.723 * ebv set ESUB2 =  4.768 * ebv set ESGSR =  1.052 * ebv set ESGSI =  1.728 * ebv set ESGSZ =  2.284 * ebv set ESGJ =  2.830 * ebv 
+set ESGH =  3.160 * ebv set ESGK =  3.355 * ebv set ESGB1 =  3.507 * ebv set ESGB2 =  3.552 * ebv set ESRSI =  0.676 * ebv set ESRSZ =  1.231 * ebv 
+set ESRJ =  1.778 * ebv set ESRH =  2.108 * ebv set ESRK =  2.302 * ebv set ESRB1 =  2.455 * ebv set ESRB2 =  2.499 * ebv set ESISZ =  0.556 * ebv 
+set ESIJ =  1.102 * ebv set ESIH =  1.432 * ebv set ESIK =  1.627 * ebv set ESIB1 =  1.779 * ebv set ESIB2 =  1.823 * ebv set ESZJ =  0.546 * ebv 
+set ESZH =  0.877 * ebv set ESZK =  1.071 * ebv set ESZB1 =  1.223 * ebv set ESZB2 =  1.268 * ebv set EJH =  0.330 * ebv set EJK =  0.525 * ebv 
+set EJB1 =  0.677 * ebv set EJB2 =  0.722 * ebv set EHK =  0.194 * ebv set EHB1 =  0.347 * ebv set EHB2 =  0.391 * ebv set EKB1 =  0.152 * ebv 
+set EKB2 =  0.197 * ebv set EB1B2 =  0.045 * ebv
+#######################
+
+data "../data/NGC2099.Trimmed.txt" read {g 16 r 18 j 24 k 28}
+data "../data/isochrones/new/iso_p008.pc.syn.dat" read {pcage 1 pcg 14 pcr 15 pcj 18 pck 20}
+data "../data/isochrones/new/iso_p008.pv.syn.dat" read {pvage 1 pvg 14 pvr 15 pvj 18 pvk 20}
+data "../data/isochrones/dartmouth/iso_p007.syn.dat" read {dmage 1 dmg 14 dmr 15 dmj 18 dmk 20}
+
+ctype black expand 0.8 window -5 -100 2 1:26 limits -0.2 2.4 26 10 ticksize 0.1 0.5 0.5 2
+xlabel g-r
+ylabel g
+box 1 2
+lweight 2 points (g-r) g
+	lweight 3
+	ctype firebrick connect (pcg-pcr+ESGSR) (pcg+d+ASG) if (pcage == pccl)
+	ctype orange    connect (pvg-pvr+ESGSR) (pvg+d+ASG) if (pvage == pvcl)
+#	ctype purple    connect (yyg-yyr+ESGSR) (yyg+d+ASG) if (yyage == yycl)
+	ctype royalblue connect (dmg-dmr+ESGSR) (dmg+d+ASG) if (dmage == dmcl)
+	lweight 2
+
+
+ctype black expand 0.8 window -5 -100 3 1:26 limits 0.2 7.7 26 10 ticksize 0.2 1.0 0.5 2
+xlabel g-K
+box 1 0
+lweight 2 points (g-k) g
+	lweight 3
+	ctype firebrick connect (pcg-pck+ESGK) (pcg+d+ASG) if (pcage == pccl)
+	ctype orange    connect (pvg-pvk+ESGK) (pvg+d+ASG) if (pvage == pvcl)
+#	ctype purple    connect (yyg-yyk+ESGK) (yyg+d+ASG) if (yyage == yycl)
+	ctype royalblue connect (dmg-dmk+ESGK) (dmg+d+ASG) if (dmage == dmcl)
+	lweight 2
+
+
+ctype black expand 0.8 window -5 -100 4 1:26 limits -0.1 1.6 26 10 ticksize 0.1 0.5 0.5 2
+xlabel J-K
+box 1 0
+lweight 2 points (j-k) g if (j < 80)
+	lweight 3
+	ctype firebrick connect (pcj-pck+EJK) (pcg+d+ASG) if (pcage == pccl)
+	ctype orange    connect (pvj-pvk+EJK) (pvg+d+ASG) if (pvage == pvcl)
+#	ctype purple    connect (yyj-yyk+EJK) (yyg+d+ASG) if (yyage == yycl)
+	ctype royalblue connect (dmj-dmk+EJK) (dmg+d+ASG) if (dmage == dmcl)
+	lweight 2

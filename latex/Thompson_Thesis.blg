@@ -1,55 +1,57 @@
-This is BibTeX, Version 0.99d (TeX Live 2010)
+This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Thompson_Thesis.aux
 The style file: apj.bst
 Database file #1: Thompson_Thesis.bib.bib
 Warning--string name "n/a" is undefined
---line 123 of file Thompson_Thesis.bib.bib
+--line 112 of file Thompson_Thesis.bib.bib
 Warning--string name "n/a" is undefined
---line 437 of file Thompson_Thesis.bib.bib
+--line 428 of file Thompson_Thesis.bib.bib
 Warning--string name "n/a" is undefined
 --line 540 of file Thompson_Thesis.bib.bib
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--string name "n/a" is undefined
+--line 1912 of file Thompson_Thesis.bib.bib
+Warning--I didn't find a database entry for "Dotter:2007fh"
 Warning--empty publisher in Carroll:UvmD7hOR
-You've used 65 entries,
-            3086 wiz_defined-function locations,
-            1057 strings with 20199 characters,
-and the built_in function-call counts, 33258 in all, are:
-= -- 2692
-> -- 2661
-< -- 22
-+ -- 895
-- -- 972
-* -- 2936
-:= -- 6325
-add.period$ -- 65
-call.type$ -- 65
-change.case$ -- 472
-chr.to.int$ -- 68
-cite$ -- 66
-duplicate$ -- 1229
-empty$ -- 1846
-format.name$ -- 1057
-if$ -- 6524
+You've used 68 entries,
+            2947 wiz_defined-function locations,
+            1091 strings with 21018 characters,
+and the built_in function-call counts, 40196 in all, are:
+= -- 3086
+> -- 3687
+< -- 24
++ -- 1352
+- -- 1284
+* -- 3867
+:= -- 7726
+add.period$ -- 68
+call.type$ -- 68
+change.case$ -- 702
+chr.to.int$ -- 71
+cite$ -- 69
+duplicate$ -- 1281
+empty$ -- 1851
+format.name$ -- 1514
+if$ -- 7493
 int.to.chr$ -- 1
-int.to.str$ -- 0
-missing$ -- 65
-newline$ -- 199
-num.names$ -- 260
-pop$ -- 521
+int.to.str$ -- 1
+missing$ -- 68
+newline$ -- 208
+num.names$ -- 272
+pop$ -- 751
 preamble$ -- 1
-purify$ -- 470
+purify$ -- 700
 quote$ -- 0
-skip$ -- 1017
+skip$ -- 1082
 stack$ -- 0
-substring$ -- 1350
+substring$ -- 1411
 swap$ -- 2
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 579
+type$ -- 606
 warning$ -- 1
-while$ -- 246
+while$ -- 269
 width$ -- 0
-write$ -- 651
-(There were 4 warnings)
+write$ -- 680
+(There were 6 warnings)

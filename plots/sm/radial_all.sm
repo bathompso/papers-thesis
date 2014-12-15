@@ -69,11 +69,11 @@ relocate 0.77 0.037 putlabel 6 90 stars / bin
 
 
 # Make arrows
-relocate 0.19 0.97 draw 0.19 0.92 draw 0.21 0.94 relocate 0.19 0.92 draw 0.17 0.94
-relocate 0.24 0.77 draw 0.24 0.72 draw 0.26 0.74 relocate 0.24 0.72 draw 0.22 0.74
-relocate 0.41 0.57 draw 0.41 0.52 draw 0.43 0.54 relocate 0.41 0.52 draw 0.39 0.54
-relocate 0.45 0.39 draw 0.45 0.34 draw 0.47 0.36 relocate 0.45 0.34 draw 0.43 0.36
-relocate 0.54 0.19 draw 0.54 0.14 draw 0.56 0.16 relocate 0.54 0.14 draw 0.52 0.16
+#relocate 0.19 0.97 draw 0.19 0.92 draw 0.21 0.94 relocate 0.19 0.92 draw 0.17 0.94
+#relocate 0.24 0.77 draw 0.24 0.72 draw 0.26 0.74 relocate 0.24 0.72 draw 0.22 0.74
+#relocate 0.41 0.57 draw 0.41 0.52 draw 0.43 0.54 relocate 0.41 0.52 draw 0.39 0.54
+#relocate 0.45 0.39 draw 0.45 0.34 draw 0.47 0.36 relocate 0.45 0.34 draw 0.43 0.36
+#relocate 0.54 0.19 draw 0.54 0.14 draw 0.56 0.16 relocate 0.54 0.14 draw 0.52 0.16
 
 
 

@@ -1,0 +1,29 @@
+device postencap ../eps/distribution_m36.eps
+xtcolors
+ptype 24 3
+add_ctype grey 190 190 190
+
+data "../data/distribution_m36.dat" read {mass 1 q 2 weight 3}
+set size = sqrt(weight) / 2
+expand 0.9 window -2 2 1 2 limits -0.1 4.8 -0.05 1.05 box 1 2
+DO i=0,DIMEN(mass)-1 {
+	if (mass[$i] > 1) { ctype black } else { ctype grey }
+	expand size[$i]
+	points (mass[$i]) (q[$i])
+}
+
+data "../data/distribution_normal_m36.dat" read {mass 1 q 2 weight 3}
+set size = sqrt(weight) / 3
+expand 0.9 window -2 2 2 2 limits -0.1 4.8 -0.05 1.05 box 1 0
+DO i=0,DIMEN(mass)-1 {
+	if (mass[$i] > 1) { ctype black } else { ctype grey }
+	expand size[$i]
+	points (mass[$i]) (q[$i])
+}
+
+expand 1.1 window 1 1 1 1 limits 0 1 0 1
+relocate 0.25 1.02 putlabel 5 Absolute Percentage
+relocate 0.75 1.02 putlabel 5 Normalized per Mass Bin
+relocate 0.5 0.5 putlabel 5 Primary Mass (M_\odot)
+relocate -0.07 0.785 angle 90 putlabel 5 Mass Ratio
+angle 0 

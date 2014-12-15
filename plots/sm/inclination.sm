@@ -1,0 +1,30 @@
+device postencap ../eps/inclination.eps
+xtcolors
+ptype 50 3
+add_ctype grey 150 150 150
+
+expand 1 window -3 -3 1 3 limits 0 1 0 1 ticksize 2 4 2 4 lweight 1 box 0 0
+lweight 6 relocate 0 0.5 draw 1 0.5
+ctype grey relocate 0.5 0.5 draw 0.1 0.5 draw 0.17 0.55 relocate 0.1 0.5 draw 0.17 0.45
+lweight 3 expand 1.2 relocate 0.3 0.58 putlabel 5 v_r
+relocate 0.3 0.42 putlabel 5 v
+ctype black expand 5 points (0.5) (0.5)
+expand 0.9 relocate 0.95 0.05 putlabel 4 inclination = 0^\circ
+
+expand 1 window -3 -3 2 3 limits 0 1 0 1 ticksize 2 4 2 4 lweight 1 box 0 0
+lweight 6 relocate 0 0.25 draw 1 0.75
+ctype grey relocate 0.5 0.5 draw 0.154 0.33 draw 0.2 0.4 relocate 0.154 0.33 draw 0.24 0.32
+relocate 0.5 0.5 draw 0.154 0.5 draw 0.22 0.55 relocate 0.154 0.5 draw 0.22 0.45
+lweight 3 expand 1.2 relocate 0.35 0.58 putlabel 5 v_r
+relocate 0.35 0.35 putlabel 5 v
+ctype black expand 5 points (0.5) (0.5)
+expand 0.9 relocate 0.95 0.05 putlabel 4 inclination = 30^\circ
+
+expand 1 window -3 -3 3 3 limits 0 1 0 1 ticksize 2 4 2 4 lweight 1 box 0 0
+lweight 6 relocate 0 -0.366 draw 1 1.366
+ctype grey relocate 0.5 0.5 draw 0.3 0.154 draw 0.29 0.23 relocate 0.3 0.154 draw 0.38 0.19
+relocate 0.5 0.5 draw 0.3 0.5 draw 0.35 0.55 relocate 0.3 0.5 draw 0.35 0.45
+lweight 3 expand 1.2 relocate 0.4 0.58 putlabel 5 v_r
+relocate 0.45 0.28 putlabel 5 v
+ctype black expand 5 points (0.5) (0.5)
+expand 0.9 relocate 0.95 0.05 putlabel 4 inclination = 60^\circ

@@ -1,0 +1,26 @@
+device postencap ../eps/imf_m35.eps
+xtcolors
+add_ctype grey 150 150 150
+
+data "../data/NGC2168.332.txt--results.txt" read {mpri 23 msec 25}
+set gpri = mpri if (mpri > 0)
+set bpri = mpri if (msec > 0)
+set bsec = msec if (msec > 0)
+get_hist gpri xall yall 0 5 0.2
+get_hist bpri xpri ypri 0 5 0.2
+get_hist bsec xsec ysec 0 5 0.2
+
+set fall = 2000 * xall**-2.6 * 0.2
+set fpri = 1250 * xpri**-2.6 * 0.2
+set fsec = 500 * xsec**-2.6 * 0.2
+
+expand 1.1 window 1 2 1 2 limits -0.05 3.4 0 800 ticksize 0.1 0.5 50 200
+xlabel Mass (M_\odot)
+ylabel \#
+lweight 3 ltype 0 histogram xall yall
+lweight 3 ltype 2 ctype black connect xall fall
+lweight 3 ltype 0 ctype firebrick histogram xpri ypri
+lweight 3 ltype 2 ctype firebrick connect xpri fpri
+lweight 3 ltype 0 ctype royalblue histogram xsec ysec
+lweight 3 ltype 2 ctype royalblue connect xsec fsec
+lweight 2 ltype 0 ctype black box 1 2

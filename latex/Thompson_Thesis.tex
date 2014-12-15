@@ -1,83 +1,52 @@
-\documentclass[11pt, final]{article}
-\usepackage{color}
-\usepackage{fancyhdr}
-\usepackage{setspace}
+\documentclass[12pt]{tcuthesis_report}
+%%%% Remove the lines below and add any custom packages or commands you need in your manuscript
 \usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{subfig}
-\usepackage{cite}
-\usepackage{url}
-\usepackage[pdftex]{graphicx}
-\setlength\parindent{.3in}
-\usepackage{mdwlist}
-\usepackage{tabularx}
-\usepackage{wrapfig}
 \usepackage{multirow}
-\usepackage{natbib}
-\usepackage{appendix}
-\usepackage{rotating}
-
-\setcounter{secnumdepth}{3}
-
-\setlength {\textwidth}{6.5in}
-\hoffset=-1.0in
-\oddsidemargin=1.00in
-\marginparsep=0.0in
-\marginparwidth=0.0in
- 
-\setlength {\textheight}{8.5in}
-\voffset=-1.00in
-\topmargin=1.00in
-\headheight=0.00in
-\headsep=0.00in
-\footskip=0.40in
-
-\pagestyle{fancy}
-
-\renewcommand{\headrulewidth}{0pt}
-\citestyle{aa}
-
-\fancyhead{}
-\fancyfoot{}
-
-\bibpunct{(}{)}{,}{a}{}{;}
- 
-\lfoot[]{Ben Thompson -- Thesis}
-\rfoot[]{\thepage}
+\usepackage{url}
 \newcommand{\binocs}[0]{\textsc{binocs}\ }
-
-\title{Exploring Binary Population Evolution in Open Star Clusters}
-\author{Benjamin A Thompson}
+\renewcommand{\thempfootnote}{\arabic{mpfootnote}}
 
 \begin{document}
-\maketitle\newpage
-\tableofcontents\newpage
 
+%%%%% THESIS TEMPLATE INFORMATION --- Fill all of these entries in!  %%%%%%%%
+\title{Binary Information from Open Clusters using SEDs (binocs) Project}   % Title of dissertation or thesis
+\author{Benjamin A Thompson}                                                % Your full name + middle initial
+\hometown{Fort Worth, TX}                                                   % Hometown or current city
+\department{Department of Physics and Astronomy}                            % TCU Department
+\degreename{Doctor of Philosophy}                                           % Resulting degree (MS or PHD)
+\bach{Bachelor of Arts, 2010\\Ohio Wesleyan University\\Delaware, Ohio}     % Description of bachelor's degree. Put line breaks before uni. name and city
+\mast{}                                                                     % Description of master's degree (if applicable). Format same as bachelors
+\degreedate{May 2015}                                                       % Expected graduation date. Month must be Dec, May or Aug
+\commone{Peter Frinchaboy}                                            		% First member of your thesis committee (probably your advisor)
+\commtwo{Kat Barger}                                              			% Second member of your thesis committee
+\commthree{Doug Ingram} 	                                           		% Third member of your thesis committee
+\commfour{Rhiannon Mayne}                                           		% Fourth member of your thesis committee
+\copyright{  }                                                              % Any necessary copyright information. Can include line breaks
+\advisor{Peter M. Frinchaboy III, Assistant Professor of Physics}           % Full name and title of your advisor
+
+\frontmatter 
+\acknowledgements{Acknowledgements.tf}  % Document which contains the text of your acknowledgements
+\tableofcontents
+\clearpage \listoffigures
+\clearpage \listoftables
+	
+\mainmatter                             % Remove the following \input commands and change them to the files containing the text of your document
 \input{sec_intro.tf}
-
 \input{sec_questions.tf}
-
 \input{sec_binocs.tf}
-
 \input{sec_data.tf}
-
 \input{sec_isochrones.tf}
-
 \input{sec_test.tf}
-
 \input{sec_radial.tf}
+\input{sec_primordial.tf}
+\input{sec_future.tf}
 
-%\input{sec_primordial.tf}
-
-%\input{sec_future.tf}
-
-\appendix
+\appendix                               % Use \input statements to include any necessary appendices
 \input{app_ridgelines.tf}
 
-\newpage
-\bibliographystyle{apj}
+\backmatter 
 \bibliography{Thompson_Thesis.bib}
-
-
+\vita{vita.tf}                          % Document which contains the text or tabular with your vita information
+\abstract{abstract.tf}                  % Document which contains the text of your abstract
 
 \end{document}

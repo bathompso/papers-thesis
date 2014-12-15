@@ -1,6 +1,6 @@
 device postencap ../eps/cluster_distribution.eps
 xtcolors
-add_ctype grey 100 100 100
+add_ctype grey 150 150 150
 lweight 3
 ptype 24 0
 

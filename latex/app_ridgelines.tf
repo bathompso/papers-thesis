@@ -1,6 +1,6 @@
-\newpage \section{Empirical Ridgelines} \label{app:ridgelines}
+\newpage \chapter{Empirical Ridgelines} \label{app:ridgelines}
 
-\begin{table}[h] \centering \small
+\begin{table}[h] \centering \scriptsize
 \begin{tabular}{|c|ccccccccc|} \hline
 $K$ & $U-V$ & $B-V$ & $V-R$ & $V-I$ & $V-K_S$ & $J-K_S$ & $H-K_S$ & $V-$[3.6] & $V-$[4.5] \\ \hline \hline
 10.0 & 0.20 & 0.10 & 0.10 & 0.24 & 0.50 & 0.05 & 0.02 & 0.50 & 0.50 \\ 
@@ -37,11 +37,11 @@ $K$ & $U-V$ & $B-V$ & $V-R$ & $V-I$ & $V-K_S$ & $J-K_S$ & $H-K_S$ & $V-$[3.6] & 
 16.2 &      &      &      &      &      & 1.00 & 0.35 &      &      \\ 
 16.4 &      &      &      &      &      & 1.00 & 0.35 &      &      \\ \hline 
 \end{tabular}
-\caption{Empirical ridgelines for M36. \label{tab:m36ridge}}
+\caption[Empirical ridgelines for M36]{Empirical ridgelines for M36. \label{tab:m36ridge}}
 \end{table}
 
 
-\begin{table} \centering \small
+\begin{table} \centering \scriptsize
 \begin{tabular}{|c|ccccccccc|} \hline
 $V$ & $U-V$ & $B-V$ & $V-R$ & $V-I$ & $V-K_S$ & $J-K_S$ & $H-K_S$ & $V-$[3.6] & $V-$[4.5] \\ \hline \hline
 11.0 & -0.35 &      & 0.06 & 0.16 & 0.25 & 0.03 & -0.04 & 0.34 & 0.30 \\ 
@@ -86,11 +86,11 @@ $V$ & $U-V$ & $B-V$ & $V-R$ & $V-I$ & $V-K_S$ & $J-K_S$ & $H-K_S$ & $V-$[3.6] & 
 18.8 &      & 1.60 &      & 2.04 & 4.30 & 1.02 & 0.24 & 4.48 & 4.44 \\ 
 19.0 &      & 1.65 &      & 2.16 & 4.40 & 1.01 & 0.25 & 4.60 & 4.65 \\ \hline
 \end{tabular}
-\caption{Empirical ridgelines for M35. \label{tab:m35ridge}}
+\caption[Empirical ridgelines for M35]{Empirical ridgelines for M35. \label{tab:m35ridge}}
 \end{table}
 
 
-\begin{table} \centering \small
+\begin{table} \centering \scriptsize
 \begin{tabular}{|c|ccccccc|} \hline
 $r$ & $g-r$ & $g-i$ & $g-K_S$ & $J-K_S$ & $H-K_S$ & $g-$[3.6] & $g-$[4.5] \\ \hline \hline
 12.1 & 0.02 & 0.10 & 1.00 & 0.15 & 0.07 & 1.03 & 1.04 \\ 
@@ -142,11 +142,11 @@ $r$ & $g-r$ & $g-i$ & $g-K_S$ & $J-K_S$ & $H-K_S$ & $g-$[3.6] & $g-$[4.5] \\ \hl
 21.3 & 1.75 & 3.25 &      & 1.07 & 0.49 & 6.50 & 6.50 \\ 
 21.5 & 1.76 & 3.30 &      & 1.06 & 0.50 & 6.56 & 6.60 \\  \hline
 \end{tabular}
-\caption{Empirical ridgelines for M37. \label{tab:m37ridge}}
+\caption[Empirical ridgelines for M37]{Empirical ridgelines for M37. \label{tab:m37ridge}}
 \end{table}
 
 
-\begin{table} \centering \small
+\begin{table} \centering \scriptsize
 \begin{tabular}{|c|ccccccccc|} \hline
 $r$ & $u-g$ & $g-r$ & $g-i$ & $g-z$ & $g-K_S$ & $J-K_S$ & $H-K_S$ & $g-$[3.6] & $g-$[4.5] \\ \hline \hline
 13.5 & 1.25 & 0.37 &      & 0.50 &      &      & 0.07 & 0.40 & 1.70 \\ 
@@ -188,11 +188,11 @@ $r$ & $u-g$ & $g-r$ & $g-i$ & $g-z$ & $g-K_S$ & $J-K_S$ & $H-K_S$ & $g-$[3.6] & 
 20.7 &      & 1.49 & 2.71 & 3.42 & 5.68 & 0.89 & 0.28 & 5.92 & 6.01 \\ 
 20.9 &      & 1.50 & 2.68 & 3.33 & 5.74 & 0.88 & 0.28 & 5.99 & 6.09 \\ \hline
 \end{tabular}
-\caption{Empirical ridgelines for M67. $ugriz$ ridgelines copied from \citep{2009ApJ...700..523A}. \label{tab:m67ridge}}
+\caption[Empirical ridgelines for M67]{Empirical ridgelines for M67. $ugriz$ ridgelines copied from \citep{2009ApJ...700..523A}. \label{tab:m67ridge}}
 \end{table}
 
 
-\begin{table} \centering \small
+\begin{table} \centering \scriptsize
 \begin{tabular}{|c|ccccccccc|} \hline
 $r$ & $u-g$ & $g-r$ & $g-i$ & $g-z$ & $g-K_S$ & $J-K_S$ & $H-K_S$ & $g-$[3.6] & $g-$[4.5] \\ \hline \hline
 14.5 & 1.13 & 0.24 & 0.30 & 0.29 & 1.30 & 0.26 & 0.06 & 1.30 & 1.30 \\ 
@@ -231,7 +231,7 @@ $r$ & $u-g$ & $g-r$ & $g-i$ & $g-z$ & $g-K_S$ & $J-K_S$ & $H-K_S$ & $g-$[3.6] & 
 21.1 &      & 1.46 & 2.35 & 2.85 & 5.00 & 0.86 & 0.40 &      &      \\ 
 21.3 &      & 1.46 & 2.39 & 2.93 & 5.08 & 0.86 & 0.41 &      &      \\ \hline
 \end{tabular}
-\caption{Empirical ridgelines for NGC 2420. $ugriz$ ridgelines copied from \citep{2009ApJ...700..523A}. \label{tab:n2420ridge}}
+\caption[Empirical ridgelines for NGC 2420]{Empirical ridgelines for NGC 2420. $ugriz$ ridgelines copied from \citep{2009ApJ...700..523A}. \label{tab:n2420ridge}}
 \end{table}
 
 
