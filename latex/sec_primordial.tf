@@ -50,7 +50,7 @@ Mass (M$_\odot$) & M36 & M35 & M37 \\ \hline \hline
 \caption[Mass ratio distribution analysis]{Percent changes in IQR of binary mass ratio bin percentages. \label{tab:massratioIQR}}
 \end{table}
 
-IQR percentages are displayed for each cluster and primary mass in table \ref{tab:massratioIQR}. While figures \ref{fig:distribution_m36} - \ref{fig:distribution_m37} show fairly uniform bubble sizes, the IQR percentages indicate that the distribution is highly inhomogeneous. The lowest IQR percentage is a 12\% difference, with most primary masses having a 30\%$+$ IQR spread.
+IQR percentages are displayed for each cluster and primary mass in table \ref{tab:massratioIQR}. While figures \ref{fig:distribution_m36} - \ref{fig:distribution_m37} show fairly uniform bubble sizes, the IQR percentages indicate that the distribution is highly inhomogeneous. The lowest IQR percentage is a 12\% difference, with most primary masses having a 30\% or higher IQR spread.
 
 For a large range of primary masses, between 1.4 - 2.4 M$_\odot$, low mass ratio systems are much more prevalent than high mass ones. Due to the fact that the difference in number of systems for each mass ratio is so large, cluster N-Body simulations must be re-run to analyze what affect this may have on ejection results.
 
