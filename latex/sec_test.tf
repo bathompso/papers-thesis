@@ -35,7 +35,7 @@ The \binocs code was run on this input for various values of the threshold. Afte
 \parbox{0.75\textwidth}{\caption[\binocs threshold test results]{\% contamination and \% of stars missed in M67 synthetic dataset, for various threshold levels. \label{fig:threshold_test_M67}}}
 \end{figure}
 
-The test was run using the M67 synthetic dataset. Results are shown in figure \ref{fig:threshold_test_M67}. The threshold with the minimum total error is 10, which is chosen to be the optimal threshold for science runs.
+The test was run using the M67 synthetic dataset. Results are shown in figure \ref{fig:threshold_test_M67}. The threshold with the minimum total error is 7, which is chosen to be the optimal threshold for science runs.
 
 
 \section{Number of Required Filters}\label{sec:filters_test}
