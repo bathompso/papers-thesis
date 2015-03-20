@@ -3,7 +3,7 @@ xtcolors
 lweight 3
 add_ctype grey 150 150 150
 
-data "../data/rv_n6819.txt" read {id 1 mq 3 mqe 4 tq 5 bing 6 binr 7}
+data "../data/rv_n6819.txt" read {id 1 mq 3 mqe 4 tq 5 bing 6 binr 7 flag 8}
 data "../data/NGC6819.KIC.txt" read {g 6 r 8}
 data "../data/isochrones/new/iso_p008.pc.syn.dat" read {iage 1 ig 14 ir 15}
 
@@ -19,7 +19,8 @@ box 1 2
 ptype 1 0 ctype grey points (g-r) g
 ctype black connect (ig-ir+ebv) (ig+cld+ebv/0.324) if (iage == 9.45)
 ltype 2 ctype black connect (ig-ir+ebv*1.0525) (ig+cld+ebv/0.324*1.0525-0.753) if (iage == 9.45) ltype 0
-ptype 24 0 ctype black points (bing-binr) binr
+ptype 24 0 ctype red points (bing-binr) binr if (flag == 1)
+ptype 24 0 ctype black points (bing-binr) binr if (flag == 0)
 
 
 
@@ -33,6 +34,7 @@ ptype 24 3
 expand 1.3 points (id+0.5) tq
 ctype grey points (id+0.5) mq
 error_y (id+0.5) mq mqe
+ptype 24 0 ctype red points (id+0.5) mq if (flag == 1)
 
 # Put in star labels
 ctype black expand 0.8 window -100 1 35:100 1 limits 1 9 0 1

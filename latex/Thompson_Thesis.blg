@@ -6,52 +6,51 @@ Database file #1: Thompson_Thesis.bib.bib
 Warning--string name "n/a" is undefined
 --line 112 of file Thompson_Thesis.bib.bib
 Warning--string name "n/a" is undefined
---line 428 of file Thompson_Thesis.bib.bib
+--line 438 of file Thompson_Thesis.bib.bib
 Warning--string name "n/a" is undefined
---line 540 of file Thompson_Thesis.bib.bib
+--line 550 of file Thompson_Thesis.bib.bib
 Warning--string name "n/a" is undefined
---line 1912 of file Thompson_Thesis.bib.bib
-Warning--I didn't find a database entry for "Dotter:2007fh"
+--line 1938 of file Thompson_Thesis.bib.bib
 Warning--empty publisher in Carroll:UvmD7hOR
-You've used 68 entries,
+You've used 75 entries,
             2947 wiz_defined-function locations,
-            1091 strings with 21018 characters,
-and the built_in function-call counts, 40196 in all, are:
-= -- 3086
-> -- 3687
-< -- 24
-+ -- 1352
-- -- 1284
-* -- 3867
-:= -- 7726
-add.period$ -- 68
-call.type$ -- 68
-change.case$ -- 702
-chr.to.int$ -- 71
-cite$ -- 69
-duplicate$ -- 1281
-empty$ -- 1851
-format.name$ -- 1514
-if$ -- 7493
+            1138 strings with 27235 characters,
+and the built_in function-call counts, 53389 in all, are:
+= -- 3860
+> -- 5610
+< -- 25
++ -- 2069
+- -- 1994
+* -- 5462
+:= -- 10305
+add.period$ -- 75
+call.type$ -- 75
+change.case$ -- 965
+chr.to.int$ -- 78
+cite$ -- 76
+duplicate$ -- 1442
+empty$ -- 2106
+format.name$ -- 2245
+if$ -- 9765
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 68
-newline$ -- 208
-num.names$ -- 272
-pop$ -- 751
+missing$ -- 73
+newline$ -- 229
+num.names$ -- 302
+pop$ -- 1023
 preamble$ -- 1
-purify$ -- 700
+purify$ -- 963
 quote$ -- 0
-skip$ -- 1082
+skip$ -- 1235
 stack$ -- 0
-substring$ -- 1411
-swap$ -- 2
+substring$ -- 1656
+swap$ -- 26
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 606
+type$ -- 669
 warning$ -- 1
-while$ -- 269
+while$ -- 304
 width$ -- 0
-write$ -- 680
-(There were 6 warnings)
+write$ -- 753
+(There were 5 warnings)

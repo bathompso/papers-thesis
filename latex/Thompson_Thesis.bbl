@@ -1,5 +1,74 @@
-\begin{thebibliography}{68}
+\begin{thebibliography}{75}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Abazajian {et~al.}(2009)Abazajian, Adelman-McCarthy, Ag{\"u}eros,
+  Allam, Allende~Prieto, An, Anderson, Anderson, Annis, Bahcall, Bailer-Jones,
+  Barentine, Bassett, Becker, Beers, Bell, Belokurov, Berlind, Berman,
+  Bernardi, Bickerton, Bizyaev, Blakeslee, Blanton, Bochanski, Boroski,
+  Brewington, Brinchmann, Brinkmann, Brunner, Budavari, Carey, Carliles, Carr,
+  Castander, Cinabro, Connolly, Csabai, Cunha, Czarapata, Davenport, de~Haas,
+  Dilday, Doi, Eisenstein, Evans, Evans, Fan, Friedman, Frieman, Fukugita,
+  G{\"a}nsicke, Gates, Gillespie, Gilmore, Gonzalez, Gonzalez, Grebel, Gunn,
+  Gy{\"o}ry, Hall, Harding, Harris, Harvanek, Hawley, Hayes, Heckman, Hendry,
+  Hennessy, Hindsley, Hoblitt, Hogan, Hogg, Holtzman, Hyde, Ichikawa, Ichikawa,
+  Im, Ivezic, Jester, Jiang, Johnson, Jorgensen, Juri{\'c}, Kent, Kessler,
+  Kleinman, Knapp, Konishi, Kron, Krzesinski, Kuropatkin, Lampeitl, Lebedeva,
+  Lee, Lee, French~Leger, L{\'e}pine, Li, Lima, Lin, Long, Loomis, Loveday,
+  Lupton, Magnier, Malanushenko, Malanushenko, Mandelbaum, Margon, Marriner,
+  Mart{\'\i}nez-Delgado, Matsubara, McGehee, McKay, Meiksin, Morrison,
+  Mullally, Munn, Murphy, Nash, Nebot, Neilsen, Newberg, Newman, Nichol,
+  Nicinski, Nieto-Santisteban, Nitta, Okamura, Oravetz, Ostriker, Owen,
+  Padmanabhan, Pan, Park, Pauls, Peoples, Percival, Pier, Pope, Pourbaix,
+  Price, Purger, Quinn, Raddick, Re~Fiorentin, Richards, Richmond, Riess, Rix,
+  Rockosi, Sako, Schlegel, Schneider, Scholz, Schreiber, Schwope, Seljak,
+  Sesar, Sheldon, Shimasaku, Sibley, Simmons, Sivarani, Allyn~Smith, Smith,
+  Smol{\v c}i{\'c}, Snedden, Stebbins, Steinmetz, Stoughton, Strauss, SubbaRao,
+  Suto, Szalay, Szapudi, Szkody, Tanaka, Tegmark, Teodoro, Thakar, Tremonti,
+  Tucker, Uomoto, vanden Berk, Vandenberg, Vidrih, Vogeley, Voges, Vogt,
+  Wadadekar, Watters, Weinberg, West, White, Wilhite, Wonders, Yanny, Yocum,
+  York, Zehavi, Zibetti, \& Zucker}]{2009ApJS..182..543A}
+Abazajian, K.~N., Adelman-McCarthy, J.~K., Ag{\"u}eros, M.~A., Allam, S.~S.,
+  Allende~Prieto, C., An, D., Anderson, K. S.~J., Anderson, S.~F., Annis, J.,
+  Bahcall, N.~A., Bailer-Jones, C. A.~L., Barentine, J.~C., Bassett, B.~A.,
+  Becker, A.~C., Beers, T.~C., Bell, E.~F., Belokurov, V., Berlind, A.~A.,
+  Berman, E.~F., Bernardi, M., Bickerton, S.~J., Bizyaev, D., Blakeslee, J.~P.,
+  Blanton, M.~R., Bochanski, J.~J., Boroski, W.~N., Brewington, H.~J.,
+  Brinchmann, J., Brinkmann, J., Brunner, R.~J., Budavari, T., Carey, L.~N.,
+  Carliles, S., Carr, M.~A., Castander, F.~J., Cinabro, D., Connolly, A.~J.,
+  Csabai, I., Cunha, C.~E., Czarapata, P.~C., Davenport, J. R.~A., de~Haas, E.,
+  Dilday, B., Doi, M., Eisenstein, D.~J., Evans, M.~L., Evans, N.~W., Fan, X.,
+  Friedman, S.~D., Frieman, J.~A., Fukugita, M., G{\"a}nsicke, B.~T., Gates,
+  E., Gillespie, B., Gilmore, G., Gonzalez, B., Gonzalez, C.~F., Grebel, E.~K.,
+  Gunn, J.~E., Gy{\"o}ry, Z., Hall, P.~B., Harding, P., Harris, F.~H.,
+  Harvanek, M., Hawley, S.~L., Hayes, J. J.~E., Heckman, T.~M., Hendry, J.~S.,
+  Hennessy, G.~S., Hindsley, R.~B., Hoblitt, J., Hogan, C.~J., Hogg, D.~W.,
+  Holtzman, J.~A., Hyde, J.~B., Ichikawa, S.-i., Ichikawa, T., Im, M., Ivezic,
+  Z., Jester, S., Jiang, L., Johnson, J.~A., Jorgensen, A.~M., Juri{\'c}, M.,
+  Kent, S.~M., Kessler, R., Kleinman, S.~J., Knapp, G.~R., Konishi, K., Kron,
+  R.~G., Krzesinski, J., Kuropatkin, N., Lampeitl, H., Lebedeva, S., Lee,
+  M.~G., Lee, Y.~S., French~Leger, R., L{\'e}pine, S., Li, N., Lima, M., Lin,
+  H., Long, D.~C., Loomis, C.~P., Loveday, J., Lupton, R.~H., Magnier, E.,
+  Malanushenko, O., Malanushenko, V., Mandelbaum, R., Margon, B., Marriner,
+  J.~P., Mart{\'\i}nez-Delgado, D., Matsubara, T., McGehee, P.~M., McKay,
+  T.~A., Meiksin, A., Morrison, H.~L., Mullally, F., Munn, J.~A., Murphy, T.,
+  Nash, T., Nebot, A., Neilsen, E. H.~J., Newberg, H.~J., Newman, P.~R.,
+  Nichol, R.~C., Nicinski, T., Nieto-Santisteban, M., Nitta, A., Okamura, S.,
+  Oravetz, D.~J., Ostriker, J.~P., Owen, R., Padmanabhan, N., Pan, K., Park,
+  C., Pauls, G., Peoples, J.~J., Percival, W.~J., Pier, J.~R., Pope, A.~C.,
+  Pourbaix, D., Price, P.~A., Purger, N., Quinn, T., Raddick, M.~J.,
+  Re~Fiorentin, P., Richards, G.~T., Richmond, M.~W., Riess, A.~G., Rix, H.-W.,
+  Rockosi, C.~M., Sako, M., Schlegel, D.~J., Schneider, D.~P., Scholz, R.-D.,
+  Schreiber, M.~R., Schwope, A.~D., Seljak, U., Sesar, B., Sheldon, E.,
+  Shimasaku, K., Sibley, V.~C., Simmons, A.~E., Sivarani, T., Allyn~Smith, J.,
+  Smith, M.~C., Smol{\v c}i{\'c}, V., Snedden, S.~A., Stebbins, A., Steinmetz,
+  M., Stoughton, C., Strauss, M.~A., SubbaRao, M., Suto, Y., Szalay, A.~S.,
+  Szapudi, I., Szkody, P., Tanaka, M., Tegmark, M., Teodoro, L. F.~A., Thakar,
+  A.~R., Tremonti, C.~A., Tucker, D.~L., Uomoto, A., vanden Berk, D.~E.,
+  Vandenberg, J., Vidrih, S., Vogeley, M.~S., Voges, W., Vogt, N.~P.,
+  Wadadekar, Y., Watters, S., Weinberg, D.~H., West, A.~A., White, S. D.~M.,
+  Wilhite, B.~C., Wonders, A.~C., Yanny, B., Yocum, D.~R., York, D.~G., Zehavi,
+  I., Zibetti, S., \& Zucker, D.~B. 2009, The Astrophysical Journal Supplement,
+  182, 543
 
 \bibitem[{Alexander \& Ferguson(1994)}]{1994ApJ...437..879A}
 Alexander, D.~R. \& Ferguson, J.~W. 1994, The Astrophysical Journal, 437, 879
@@ -47,9 +116,6 @@ Bressan, A., Bressan, A., Marigo, P., Girardi, L., Salasnich, B., Salasnich,
   B., Dal~Cero, C., Dal~Cero, C., Rubele, S., Rubele, S., Nanni, A., \& Nanni,
   A. 2012, Monthly Notices of the Royal Astronomical Society, 427, 127
 
-\bibitem[{Bromm \& Larson(2003)}]{2004ARA&A..42...79B}
-Bromm, V. \& Larson, R.~B. 2003, arXiv.org, 79
-
 \bibitem[{Caffau {et~al.}(2011)Caffau, Ludwig, Steffen, Freytag, \&
   Bonifacio}]{2011SoPh..268..255C}
 Caffau, E., Ludwig, H.~G., Steffen, M., Freytag, B., \& Bonifacio, P. 2011,
@@ -71,6 +137,11 @@ Carroll, B.~W. \& Ostlie, D.~A. 2006, {Introduction to Modern Astrophysics},
 \bibitem[{Castelli \& Kurucz(2003)}]{2003IAUS..210P.A20C}
 Castelli, F. \& Kurucz, R.~L. 2003, Modelling of Stellar Atmospheres, 210
 
+\bibitem[{Chapman {et~al.}(2008)Chapman, Mundy, Lai, \&
+  Evans~II}]{2009ApJ...690..496C}
+Chapman, N.~L., Mundy, L.~G., Lai, S.-P., \& Evans~II, N.~J. 2008, arXiv.org,
+  496
+
 \bibitem[{de~Grijs {et~al.}(2013)de~Grijs, Li, Zheng, Deng, Hu, Kouwenhoven, \&
   Wicker}]{2013ApJ...765....4D}
 de~Grijs, R., Li, C., Zheng, Y., Deng, L., Hu, Y., Kouwenhoven, M. B.~N., \&
@@ -80,6 +151,11 @@ de~Grijs, R., Li, C., Zheng, Y., Deng, L., Hu, Y., Kouwenhoven, M. B.~N., \&
   L{\'e}pine}]{2002AA...389..871D}
 Dias, W.~S., Alessi, B.~S., Moitinho, A., \& L{\'e}pine, J. R.~D. 2002,
   Astronomy and Astrophysics, 389, 871
+
+\bibitem[{Dotter {et~al.}(2007)Dotter, Chaboyer, Jevremovi{\'c}, Baron,
+  Ferguson, Sarajedini, \& Anderson}]{2007AJ....134..376D}
+Dotter, A., Chaboyer, B., Jevremovi{\'c}, D., Baron, E., Ferguson, J.~W.,
+  Sarajedini, A., \& Anderson, J. 2007, The Astronomical Journal, 134, 376
 
 \bibitem[{Dziembowski {et~al.}(1992)Dziembowski, Pamiatnykh, \&
   Sienkiewicz}]{1992AcA....42....5D}
@@ -167,6 +243,12 @@ Grevesse, N. \& Noels, A. 1993, Physica Scripta T, 47, 133
 
 \bibitem[{Grevesse \& Sauval(1998)}]{1998SSRv...85..161G}
 Grevesse, N. \& Sauval, A.~J. 1998, Space Science Reviews, 85, 161
+
+\bibitem[{Gunn {et~al.}(2006)Gunn, Siegmund, \& al}]{2006AJ....131.2332G}
+Gunn, J.~E., Siegmund, W.~A., \& al, E. J. M.~e. 2006, arXiv.org, 2332
+
+\bibitem[{Harris(1996)}]{1996AJ....112.1487H}
+Harris, W.~E. 1996, Astronomical Journal v.112, 112, 1487
 
 \bibitem[{Hartman {et~al.}(2008)Hartman, Gaudi, Holman, McLeod, Stanek,
   Barranco, Pinsonneault, Meibom, \& Kalirai}]{2008ApJ...675.1233H}
@@ -282,6 +364,17 @@ Piotto, G., Bedin, L.~R., Anderson, J., King, I.~R., Cassisi, S., Milone,
 Platais, I., Kozhurina-Platais, V., Mathieu, R.~D., Girard, T.~M., \& van
   Altena, W.~F. 2003, The Astronomical Journal, 126, 2922
 
+\bibitem[{Probst {et~al.}(2004)Probst, Gaughan, Abraham, Andrew, Daly, Hileman,
+  Hunten, Liang, Merrill, Repp, \& Shaw}]{2004SPIE.5492.1716P}
+Probst, R.~G., Gaughan, N., Abraham, M., Andrew, J., Daly, P., Hileman, E.,
+  Hunten, M., Liang, M., Merrill, K.~M., Repp, R., \& Shaw, R. 2004, in
+  Ground-based Instrumentation for Astronomy. Edited by Alan F. M. Moorwood and
+  Iye Masanori. Proceedings of the SPIE, ed. A.~F.~M. Moorwood \& M.~Iye,
+  National Optical Astronomy Observatory, USA (SPIE), 1716--1724
+
+\bibitem[{Raghavan \& McAlister(2009)}]{2009AAS...21333004R}
+Raghavan, D. \& McAlister, H.~A. 2009, American Astronomical Society, 213, 387
+
 \bibitem[{Rogers {et~al.}(1996)Rogers, Swenson, \&
   Iglesias}]{1996ApJ...456..902R}
 Rogers, F.~J., Swenson, F.~J., \& Iglesias, C.~A. 1996, Astrophysical Journal
@@ -291,6 +384,13 @@ Rogers, F.~J., Swenson, F.~J., \& Iglesias, C.~A. 1996, Astrophysical Journal
   Geffert}]{2000AA...357..471S}
 Sanner, J., Altmann, M., Brunzendorf, J., \& Geffert, M. 2000, Astronomy and
   Astrophysics, 357, 471
+
+\bibitem[{Sawyer {et~al.}(2010)Sawyer, Daly, Howell, Hunten, \&
+  Schweiker}]{2010SPIE.7735E..3AS}
+Sawyer, D.~G., Daly, P.~N., Howell, S.~B., Hunten, M.~R., \& Schweiker, H.
+  2010, in Proceedings of the SPIE, ed. I.~S. McLean, S.~K. Ramsay, \&
+  H.~Takami, National Optical Astronomy Observatory, United States (SPIE),
+  77353A--77353A--12
 
 \bibitem[{Sharma {et~al.}(2006)Sharma, Pandey, Ogura, Mito, Tarusawa, \&
   Sagar}]{2006AJ....132.1669S}

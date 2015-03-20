@@ -1,5 +1,5 @@
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1.1}{\ignorespaces List of standard filter centers and wavelengths}}{6}
+\contentsline {table}{\numberline {1.1}{\ignorespaces List of standard filter centers and wavelengths}}{8}
 \contentsline {table}{\numberline {1.2}{\ignorespaces Extinction values}}{15}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -7,21 +7,24 @@
 \contentsline {table}{\numberline {4.1}{\ignorespaces Dataset cluster parameters}}{48}
 \contentsline {table}{\numberline {4.2}{\ignorespaces MOSAIC transformation coefficients}}{55}
 \contentsline {table}{\numberline {4.3}{\ignorespaces NEWFIRM observing log}}{59}
-\contentsline {table}{\numberline {4.4}{\ignorespaces NEWFIRM transformation coefficients}}{61}
+\contentsline {table}{\numberline {4.4}{\ignorespaces NEWFIRM transformation coefficients}}{62}
 \contentsline {table}{\numberline {4.5}{\ignorespaces Available data for cluster sample}}{67}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Possible analysis for each cluster in sample}}{68}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Isochrone input physics}}{71}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Sample of BT-Settl color-temperature grid}}{75}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Isochrone input physics}}{72}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Sample of BT-Settl color-temperature grid}}{76}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Number of filters test results}}{91}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Number of filters test results}}{92}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Confusion matrix between RV and \textsc {binocs}\ results for M35}}{96}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Confusion matrix between RV and \textsc {binocs}\ results for M67}}{97}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Spectral class mass ranges}}{107}
+\contentsline {table}{\numberline {7.1}{\ignorespaces Overall binary fractions for analyzed clusters}}{102}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {8.1}{\ignorespaces Mass ratio distribution analysis}}{118}
+\contentsline {table}{\numberline {8.1}{\ignorespaces Spectral class mass ranges}}{114}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Empirical ridgelines for M36}}{124}
-\contentsline {table}{\numberline {A.2}{\ignorespaces Empirical ridgelines for M35}}{125}
-\contentsline {table}{\numberline {A.3}{\ignorespaces Empirical ridgelines for M37}}{126}
-\contentsline {table}{\numberline {A.4}{\ignorespaces Empirical ridgelines for M67}}{127}
-\contentsline {table}{\numberline {A.5}{\ignorespaces Empirical ridgelines for NGC 2420}}{128}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Empirical ridgelines for M36}}{125}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Empirical ridgelines for M35}}{126}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Empirical ridgelines for M37}}{127}
+\contentsline {table}{\numberline {A.4}{\ignorespaces Empirical ridgelines for M67}}{128}
+\contentsline {table}{\numberline {A.5}{\ignorespaces Empirical ridgelines for NGC 2420}}{129}

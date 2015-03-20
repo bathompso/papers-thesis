@@ -5,7 +5,7 @@ ptype 24 3
 add_ctype grey 150 150 150
 
 data "../data/radial_m36.dat" read {allr 1 allq 2 alle 3 kr 4 kq 5 ke 6 gr 7 gq 8 ge 9 fr 10 fq 11 fe 12 ar 13 aq 14 ae 15}
-limits 0 15 0.15 0.99 ticksize 0.5 2 0.05 0.2
+limits 0 16 0.15 0.99 ticksize 0.5 2 0.05 0.2
 
 expand 1.1 window 1 -5 1 5 box 0 2
 	ctype grey error_y allr allq alle
@@ -31,9 +31,12 @@ box 0 0
 expand 0.9
 window 1 1 1 1 limits 0 1 0 1
 relocate 0.77 0.97 putlabel 6 All SED Members
+relocate 0.77 0.937 putlabel 6 156 stars / bin
 
 relocate 0.77 0.77 putlabel 6 A Stars
 relocate 0.77 0.737 putlabel 6 1.6 - 2.5 M_\odot
+relocate 0.77 0.704 putlabel 6 18 stars / bin
 
 relocate 0.77 0.57 putlabel 6 F Stars
 relocate 0.77 0.537 putlabel 6 1.1 - 1.6 M_\odot
+relocate 0.77 0.504 putlabel 6 102 stars / bin

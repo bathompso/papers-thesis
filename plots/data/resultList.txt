@@ -1,0 +1,8 @@
+M35/run_thesis2/M35.0.txt 						0.13	-0.21	60.5  9.37
+M36/run_thesis2/M36.0.txt 						0.03	+9.99	66.0  9.81
+M37/run_thesis2/M37.0.txt 						0.35	+0.08	47.5  9.88
+M67/run_thesis2/M67.0.txt 						3.50	+0.01	44.4  9.11
+N188/NGC188.332.txt--results.txt 				6.30	-0.02	44.4  9.54
+N2158/NGC2158.Trimmed.txt--results.txt 			1.10	-0.23	48.5  13.56
+N2420/run_thesis2/N2420.0.txt 					2.00	-0.23	40.6  10.81
+N6791/NGC6791.Trimmed.txt--results.txt 			8.00	+0.38	39.1  8.11

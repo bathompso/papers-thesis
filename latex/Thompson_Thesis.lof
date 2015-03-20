@@ -14,40 +14,40 @@
 \contentsline {figure}{\numberline {4.4}{\ignorespaces SDSS telescope and camera}}{50}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Example MOSAIC image}}{52}
 \contentsline {figure}{\numberline {4.6}{\ignorespaces MOSAIC photometric quality plots}}{53}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces MOSAIC transformation residuals}}{55}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces MOSAIC transformation residuals}}{56}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces 2MASS instrumentation diagram}}{56}
 \contentsline {figure}{\numberline {4.9}{\ignorespaces NEWFIRM 4Q-mode description}}{58}
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Example NEWFIRM images}}{58}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces NEWFIRM photometric quality plots}}{60}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces NEWFIRM photometric quality plots}}{61}
 \contentsline {figure}{\numberline {4.12}{\ignorespaces IRAC-to-WISE residuals}}{64}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Comparison of isochrone systems to M37}}{72}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Example of empirical ridgelines}}{77}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Isochrone-to-empirical ridgeline residuals for M37}}{78}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Isochrone-to-empirical ridgeline residuals for NGC 2420}}{81}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Isochrone-to-empirical ridgeline residuals for M67}}{83}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Comparison of isochrone systems to M37}}{73}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Example of empirical ridgelines}}{78}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Isochrone-to-empirical ridgeline residuals for M37}}{79}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Isochrone-to-empirical ridgeline residuals for NGC 2420}}{82}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Isochrone-to-empirical ridgeline residuals for M67}}{84}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces \textsc {binocs}\ iterations test results}}{87}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces \textsc {binocs}\ threshold test results}}{89}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces \textsc {binocs}\ minimum mass ratios for M37}}{93}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces \textsc {binocs}\ minimum mass ratios for M67}}{93}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Comparison of RV and \textsc {binocs}\ results for M35}}{94}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Comparison of RV and \textsc {binocs}\ results for M67}}{95}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Comparison of \textsc {binocs}\ and RV-derived mass ratios for NGC 188}}{97}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Comparison of \textsc {binocs}\ and RV-derived mass ratios for NGC 6819}}{98}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces \textsc {binocs}\ iterations test results}}{89}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces \textsc {binocs}\ threshold test results}}{91}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces \textsc {binocs}\ minimum mass ratios for M37}}{94}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces \textsc {binocs}\ minimum mass ratios for M67}}{95}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Comparison of RV and \textsc {binocs}\ results for M35}}{96}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Comparison of RV and \textsc {binocs}\ results for M67}}{97}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Comparison of \textsc {binocs}\ and RV-derived mass ratios for NGC 188}}{100}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Comparison of \textsc {binocs}\ and RV-derived mass ratios for NGC 6819}}{101}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Previous NGC 1818 results}}{101}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces N-Body simulation binary radial profiles}}{102}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces \textsc {binocs}\ derived binary radial distributions for all clusters}}{106}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces \textsc {binocs}\ binary radial distributions in M36}}{107}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces \textsc {binocs}\ binary radial distributions in M35}}{108}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces \textsc {binocs}\ binary radial distributions in M37}}{109}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces \textsc {binocs}\ binary radial distributions in NGC 2420}}{111}
-\contentsline {figure}{\numberline {7.8}{\ignorespaces \textsc {binocs}\ binary radial distributions in M67}}{112}
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Comparison of \textsc {binocs}\ results in M37 to NGC 1818}}{113}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Binary fraction versus cluster age}}{103}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Binary fraction versus cluster metallicity}}{104}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Binary fraction versus cluster R$_{gc}$}}{105}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Binary distribution in M36}}{117}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Binary distribution in M35}}{117}
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Binary distribution in M37}}{118}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Previous NGC 1818 results}}{109}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces N-Body simulation binary radial profiles}}{110}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces \textsc {binocs}\ derived binary radial distributions for all clusters}}{113}
+\contentsline {figure}{\numberline {8.4}{\ignorespaces \textsc {binocs}\ binary radial distributions in M36}}{115}
+\contentsline {figure}{\numberline {8.5}{\ignorespaces \textsc {binocs}\ binary radial distributions in M35}}{116}
+\contentsline {figure}{\numberline {8.6}{\ignorespaces \textsc {binocs}\ binary radial distributions in M37}}{116}
+\contentsline {figure}{\numberline {8.7}{\ignorespaces \textsc {binocs}\ binary radial distributions in M67}}{118}
+\contentsline {figure}{\numberline {8.8}{\ignorespaces Comparison of \textsc {binocs}\ results in M37 to NGC 1818 \citeauthor {1998MNRAS.300..857E} results}}{119}
+\contentsline {figure}{\numberline {8.9}{\ignorespaces Comparison of \textsc {binocs}\ results in M37 to NGC 1818 \citeauthor {2013ApJ...765....4D} results}}{119}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

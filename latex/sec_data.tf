@@ -22,7 +22,7 @@ To prepare a science image for analysis, the following corrections must first be
 
 \noindent \textbf{Dark Current [CCD, IR]:} The detector is usually cooled to liquid nitrogen temperatures, but this still leaves some thermal energy that can excite an electron within the detector to the conduction band. Additionally, there may be defects on the chip that cause some pixels to register large counts regardless of where they are pointed, called \emph{hot pixels}.
 
-To correct for this, an image is taken with the shutter closed. Because no light from the sky hits the chip, all the detected counts are from the electronics themselves. Averaging several of these \emph{dark frames}, after subtracting bias counts, will determine the average thermal excitation counts for each pixel as well as other electronic defects. Dark frames are subtracted from all images. \\
+To correct for this, an image is taken with the shutter closed, ideally of the same exposure length as the science images. Because no light from the sky hits the chip, all the detected counts are from the electronics themselves. Averaging several of these \emph{dark frames}, after subtracting bias counts, will determine the average thermal excitation counts for each pixel as well as other electronic defects. Dark frames are subtracted from all images. \\
 
 \noindent \textbf{Flat Fielding [CCD, IR]:} When a photon strikes a pixel of the detector, an electron will not always be excited and recorded for that pixel. The percent chance that an incoming photon will register a count with the detector is called the \emph{quantum efficiency}. The quantum efficiency of a CCD detector is usually above 90\%, but it is not always the same for each pixel. In addition, the filter being used may not be manufactured perfectly or there may be dust grains lying on the various surfaces of the telescope. Imperfections of the filter may cause light to be refracted in unintended ways, limiting the effectiveness of certain pixels on the chip. This effect is lumped into each pixels' overall efficiency.
 
@@ -65,11 +65,11 @@ PSF parameters are determined by fitting a PSF profile to the pruned list of tem
 
 
 \section{Cluster Sample}
-In total, 18 clusters will be analyzed using our techniques. The distribution of cluster parameters for our sample is shown in table \ref{tab:clusterParameters}, and visually in figure \ref{fig:clusterParameters}.
+In total, 16 clusters were targeted for use in this work. The distribution of cluster parameters for our targeted sample is shown in table \ref{tab:clusterParameters}, and visually in figure \ref{fig:clusterParameters}.
 
 \begin{figure} \centering
 \includegraphics[trim= 0mm 120mm 0mm 0mm, clip, width=0.7\textwidth]{../plots/eps/cluster_distribution.eps}
-\parbox{0.85\textwidth}{\caption[Distribution of cluster sample ages and metallicities]{Distribution of 18 project clusters in age and [Fe/H] \citep{2002AA...389..871D}. X's represent clusters which do not have any published metallicity information. Points in grey correspond to clusters with ages $< 500$ Myr, usable for primordial binary studies. \label{fig:clusterParameters}}}
+\parbox{0.85\textwidth}{\caption[Distribution of cluster sample ages and metallicities]{Distribution of 16 targeted clusters in age and [Fe/H] \citep{2002AA...389..871D}. X's represent clusters which do not have any published metallicity information. Points in grey correspond to clusters with ages $< 500$ Myr, usable for primordial binary studies. \label{fig:clusterParameters}}}
 \end{figure}
 
 \begin{table} \centering \small
@@ -98,12 +98,12 @@ Collinder 261  & 8.90 & -0.02 & 3160 & 0.00 \\ \hline
 The cluster sample covers a large area of the parameter space: ages range from 25 Myr to 9 Gyr while [Fe/H] varies from $-0.38$ to $+0.32$ --- 40\% to 200\% the Iron content of the Sun. Exploiting this parameter range is critical in answering the posed science questions. In reference to science question 1, there are five clusters with ages $< 500$ Myr. Using \binocs results from these five clusters, an understanding of the primordial cluster binary population can be conceived.
 
 
-\section{Available Data}
+\section{Available Data} \label{sec:photData}
 Data that will be used in this project were compiled from a number of sources.
 
-\subsection{Optical Data Sources [0.3 -- 1.0 $\mu$m]}
+\subsection{Optical Data Sources [0.3 -- 1.0 $\mu$m]} \label{sec:optData}
 
-\noindent \textbf{Sloan Digital Sky Survey (SDSS):} Beginning operations in 2000, the SDSS Legacy Survey aimed to provide uniform and well-calibrated photometry for much of the northern sky. Observations were taken using the SDSS 2.5m telescope at Apache Point Observatory (APO). To efficiently cover large contiguous areas of sky, SDSS observations were taken using a technique called \emph{drift scanning}. In drift scanning, the telescope is kept stationary as the stars move horizontally across the chip over time. The CCD chip is read out at exactly the same speed as the stars move across a single pixel, allowing for the electrons from a star to track with it. While a star may only be located on a single pixel for less than a second, the final image will have an integrated exposure length of almost a minute.
+\noindent \textbf{Sloan Digital Sky Survey (SDSS):} Beginning operations in 2000, the SDSS Legacy Survey aimed to provide uniform and well-calibrated photometry for much of the northern sky. Observations were taken using the Sloan 2.5m telescope at Apache Point Observatory (APO) \citep{2006AJ....131.2332G}. To efficiently cover large contiguous areas of sky, SDSS observations were taken using a technique called \emph{drift scanning}. In drift scanning, the telescope is kept stationary as the stars move horizontally across the chip over time. The CCD chip is read out at exactly the same speed as the stars move across a single pixel, allowing for the electrons from a star to track with it. While a star may only be located on a single pixel for less than a second, the final image will have an integrated exposure length of almost a minute.
 
 SDSS imaged the sky using five different filters, $ugriz$, and to do so built one of the most complex cameras in all of astronomy, shown in figure \ref{fig:SDSSCam}. Each column of the camera contains 5 CCD chips, each with a different SDSS filter above it. A star would move across the column of chips (top to bottom in the figure), being imaged through each of the five filters in quick succession. To cover large areas of sky at a time, the camera contained six of these filter columns.
 
@@ -117,11 +117,11 @@ SDSS imaged the sky using five different filters, $ugriz$, and to do so built on
 \addtocounter{footnote}{1}
 \footnotetext[\value{footnote}]{http://www.sdss.org/dr3/instruments/imager/faceplat.gif}
 
-From 2000 to 2008, the SDSS Legacy Survey imaged more than 8200 square degrees of sky, covering several of the clusters in this project. Magnitudes released from SDSS were measured using aperture photometry; such a large area of sky required the least computationally costly approach. Most of the region imaged by the Legacy Survey was in the low density halo of the Milky Way, where aperture photometry works accurately.
+From 2000 to 2008, the SDSS Legacy Survey imaged more than 8200 square degrees of sky, covering several of the clusters in this project \citep{2009ApJS..182..543A}. Magnitudes released from SDSS were measured using aperture photometry; such a large area of sky required the least computationally costly approach. Most of the region imaged by the Legacy Survey was in the low density halo of the Milky Way, where aperture photometry works accurately.
 
 Magnitudes for stars in the densely packed globular and open clusters in the imaged region were unable to be measured accurately by the aperture photometry technique. \citet{2009ApJ...700..523A} re-derived magnitudes for several globular and open clusters within the Legacy Survey region using PSF photometry. The open clusters NGC 2682 (M67), NGC 2420 and NGC 6791 were included in this imaged area, with PSF magnitudes measured down to $g$ $\sim 23$. \\
 
-\noindent \textbf{MOSAIC:} The MOSAIC instrument, outfitted with $UBVRI$ filters, contains an array of eight 2048-by-4096 pixel CCD chips to create a single 8192-by-8192 pixel image. While it has been attached previously to the 4-m telescope at Kitt Peak National Observatory (KPNO), the data used in this project is from the WIYN 0.9-m telescope at KPNO. With roughly a square degree field of view, the MOSAIC images will allow us to analyze the entire spatial extent of any cluster observed.
+\noindent \textbf{MOSAIC:} The MOSAIC instrument \citep{2010SPIE.7735E..3AS}, outfitted with $UBVRI$ filters, contains an array of eight 2048-by-4096 pixel CCD chips to create a single 8192-by-8192 pixel image. While it has been attached previously to the 4-m telescope at Kitt Peak National Observatory (KPNO), the data used in this project is from the WIYN 0.9-m telescope at KPNO. With roughly a square degree field of view, the MOSAIC images will allow us to analyze the entire spatial extent of any cluster observed.
 
 Images of several open clusters were obtained with MOSAIC over several nights in Feb 2000 (Sarajedini \& Kinemuchi, \emph{private comminucation}). $UBVI$ photometry was obtained on five clusters in the same set: M35, M36, M37, M38, M67. For all clusters, both short and long sequences of images were taken. Short images had exposure lengths of 25s, 8s, 5s, 5s in $UBVI$, respectively. Four images of the same exposure length were taken in each filter. Long sequence images, also four per filter, had 10 times the exposure length of the short set: 250s, 80s, 50s, 50s. Using both sequences together allows for photometry of the brightest and faintest stars within the cluster.
 
@@ -195,7 +195,7 @@ Each 2MASS telescope utilized a custom camera in order to efficiently image the 
 
 While 2MASS provides near-IR photometry for all of the clusters in our study, the data set is \emph{shallow} --- it only contains fairly bright stars --- with limiting magnitudes in $JHK_S$ of 16, 15, and 14.5, respectively. These magnitude cut-offs limit the effectiveness of 2MASS for low-mass stars within clusters, and for distant clusters. 2MASS photometry must be supplemented by other, deeper, near-IR data. \\
 
-\noindent \textbf{NOAO Extremely Wide Field Infrared Imager (NEWFIRM):} NEWFIRM is a 1-2.4 $\mu$m IR camera, containing 2MASS $JHK_S$ filters, and located on the Mayall 4-m telescope at KPNO. NEWFIRM consists of a grid of four 2048-by-2048 InSb detectors to create a 4096-by-4096 image, as shown in the left panel of figure \ref{fig:newfirm_image}. While NEWFIRM's field of view is only a quarter of a square degree (half degree on each side), only covering a portion of some of the largest clusters within the sample. To cover the total spatial extent of the cluster, NEWFIRM images were taken in ``4Q'' mode, which takes four images of the cluster with the center of the cluster located in the center of each chip. A diagram of the four pointings for ``4Q'' mode is shown in figure \ref{fig:newfirm_4q}. ``4Q'' mode increases the imaged spatial extent to 43$^\prime$ on each side, enough to cover the large clusters in the sample.
+\noindent \textbf{NOAO Extremely Wide Field Infrared Imager (NEWFIRM):} NEWFIRM is a 1-2.4 $\mu$m IR camera, containing 2MASS $JHK_S$ filters, and located on the Mayall 4-m telescope at KPNO \citep{2004SPIE.5492.1716P}. NEWFIRM consists of a grid of four 2048-by-2048 InSb detectors to create a 4096-by-4096 image, as shown in the left panel of figure \ref{fig:newfirm_image}. NEWFIRM's field of view is a quarter of a square degree (half degree on each side), however this only covers a portion of some of the largest clusters within the sample. To cover the total spatial extent of the cluster, NEWFIRM images were taken in ``4Q'' mode, which takes four images of the cluster with the center of the cluster located in the center of each chip. A diagram of the four pointings for ``4Q'' mode is shown in figure \ref{fig:newfirm_4q}. ``4Q'' mode increases the imaged spatial extent to 43$^\prime$ on each side, enough to cover the large clusters in the sample.
 
 \begin{figure} \centering
 \includegraphics[width=0.5\textwidth]{../plots/jpg/newfirm_4q.jpg}
@@ -298,7 +298,7 @@ Due to the width of telescope (4m) and exposure time (60s), many of the very bri
 
 \noindent \textbf{Infrared Side Port Imager (ISPI):} Dr. Frinchaboy, along with collaborator Karen Kinemuchi, obtained deep near-IR data of the clusters IC 4651 and Collinder 261 taken with ISPI on the Blanco 4-m telescope at CTIO. ISPI consists of a 2048-by-2048 HgCdTe IR detector with a 10 arcminute field of view. Due to the small field of view, images cover only the core of each cluster. Photometry has been completed (Kinemuchi, \emph{private communication}), yielding magnitudes down to $J \sim 18$.
 
-\subsection{Mid-Infrared Data [2.5 -- 10 $\mu$m]}
+\subsection{Mid-Infrared Data [2.5 -- 10 $\mu$m]} \label{sec:mirData}
 \noindent \textbf{Wide-Field Infrared Survey Explorer (WISE):} Analogous to SDSS in the optical and 2MASS in the near-IR, WISE is an all-sky survey in the mid-IR, from $2-22$ $\mu$m \citep{2010AJ....140.1868W}. Mentioned in \S\ref{sec:introFilterSystems}, atmospheric absorption beyond 2.5 $\mu$m becomes too strong to attempt observations from the ground, so the WISE telescope is located in space. Throughout its main mission lifetime, from Jan 2010 to Aug 2010, WISE imaged the entire sky in each of its four mid-IR filters: [3.4][4.6][12.0][22.0]. 
 
 To image the entire sky in such a short amount of time, the 0.4m WISE telescope had a large 47$^\prime\times$47$^\prime$ field of view. The WISE detector is a 1024$\times$1024 SiAs detector, giving WISE a relatively large spatial resolution of 6$^{\prime\prime}$ (or worse for higher wavelength filters). For accurate mappings of stars within dense environments, a high resolution data source is needed. \\
@@ -334,13 +334,14 @@ Because PM studies rely on imaging, not spectroscopy, and because they rely upon
 
 
 \subsection{Data Overview}
-Table \ref{table:clusters} summarizes the available data for use in this project, from the sources listed above, as well as from literature. 2MASS, WISE, and IRAC data are available for all clusters and are therefore not listed in table \ref{table:clusters}. Data sources in italics are not yet reduced, and not currently available for analysis.
+Table \ref{tab:clusters} summarizes the available data for use in this project, from the sources listed above, as well as from literature. 2MASS, WISE, and IRAC data are available for all clusters and are therefore not listed in table \ref{tab:clusters}. Data sources in italics are not yet reduced, and not currently available for analysis.
 
 \begin{table} \centering \scriptsize
 \begin{tabular}{| l | c  c  c |} \hline
 \textbf{Cluster} & \textbf{Visual Data} & \textbf{Near-IR Data} & \textbf{Membership Data} \\ \hline \hline
 Berkeley 39					& 								& \emph{NEWFIRM}	 				&								\\ \hline
 Collinder 261				& \citet{1996MNRAS.283...66G}	& ISPI								&								\\ \hline
+IC 4651						&								& ISPI								&								\\ \hline
 Melotte 66					& 								& ISPI								&								\\ \hline
 \multirow{2}{*}{NGC 188}	& \citet{1998AJ....116.1789V}	& \multirow{2}{*}{\emph{NEWFIRM}}	& \citet{2008AJ....135.2264G}	\\
 							& \citet{2004PASP..116.1012S}	& 									& \citet{2003AJ....126.2922P}	\\ \hline
@@ -352,12 +353,38 @@ NGC 2099 (M37)				& \citet{2008ApJ...675.1233H}	& NEWFIRM							& 								\\ \hl
 NGC 2158					& MOSAIC						& \emph{NEWFIRM}					& 								\\ \hline
 NGC 2168 (M35)				& MOSAIC						& NEWFIRM							& \citet{Geller:2010hn}			\\ \hline
 NGC 2420					& \citet{2009ApJ...700..523A}	& NEWFIRM							&								\\ \hline
-\multirow{2}{*}{NGC 2682}	& \citet{2009ApJ...700..523A}	& \multirow{2}{*}{NEWFIRM}			& \citet{Mathieu:1997tk}		\\
+\multirow{2}{*}{NGC 2682 (M67)}	& \citet{2009ApJ...700..523A}	& \multirow{2}{*}{NEWFIRM}			& \citet{Mathieu:1997tk}		\\
 							& \citet{2008AA...484..609Y}	&									& \citet{2008AA...484..609Y}	\\ \hline
 NGC 6791					& \citet{2009ApJ...700..523A}	& \citet{2005AJ....129..656C}		& 								\\ \hline
 NGC 6819					& \citet{2009AJ....138..159H}	&									& \citet{2009AJ....138..159H}	\\ \hline
 \end{tabular}
-\caption[Available data for cluster sample]{Available data for all clusters in this project. Names in italics represent observed data that has not yet been reduced. \label{table:clusters}}
+\caption[Available data for cluster sample]{Available data for all clusters in this project. Names in italics represent observed data that has not yet been reduced. \label{tab:clusters}}
+\end{table}
+
+Each of the cluster datasets in table \ref{tab:clusters} have different levels of completeness, which will dictate which analysis projects the cluster can be included in. Clusters with complete photometry, although some may only have shallow 2MASS near-IR magnitudes, can have bulk binary population parameters determined, while complete deep photometry is necessary for the more detailed radial distribution analysis. 16 clusters were targeted for this project, but only 8 have the full wavelength coverage necessary for global binary population statistics. Clusters such as Collinder 261 and M34 have data sets in all wavelength ranges, but some photometry is too shallow, or too sparse to be useful for analysis. Of the 8 clusters with complete photometry, 4 have wide-field, \emph{deep} data sets available, which are needed for detailed analysis of the binary populations themselves. A list of clusters, and the analysis possible for each, is shown in table \ref{tab:analysis}.
+
+\begin{table} \centering \scriptsize
+\begin{tabular}{| l | c c c |} \hline
+	& \textbf{Complete} & \textbf{Bulk} & \textbf{Detailed} \\
+\textbf{Cluster} & \textbf{Photometry} & \textbf{Binaries} & \textbf{Analysis} \\ \hline \hline
+Berkeley 39		&   &   &   \\
+Collinder 261	& X &   &   \\
+IC 4651			&   &   &   \\
+Melotte 66		&   &   &   \\
+NGC 188			& X & X &   \\
+NGC 1039 (M34)	& X &   &   \\
+NGC 1817		&   &   &   \\
+NGC 1912 (M38)	& X &   &   \\
+NGC 1960 (M36)	& X & X & X \\
+NGC 2099 (M37)	& X & X & X \\
+NGC 2158		& X & X &   \\
+NGC 2168 (M35)	& X & X & X \\
+NGC 2420		& X & X &   \\
+NGC 2682 (M67)	& X & X & X \\
+NGC 6791		& X & X &   \\
+NGC 6819		& X &   &   \\ \hline
+\end{tabular}
+\caption[Possible analysis for each cluster in sample]{Possible analysis avenues for each cluster in targeted sample. Bulk binary parameters will be discussed in \S\ref{sec:Results}, while detailed binary analysis will be explored in \S\ref{sec:Radial}. \label{tab:analysis}}
 \end{table}
 
 While this project's main focus is on the \binocs routine and binary detection, its contribution to open cluster photometry should not be understated. Despite being very important astronomical objects, there is a dearth of published photometric data on open clusters. While many of these clusters have been observed dozens of times in the optical, the only IR photometry available is from 2MASS and WISE, which barely reaches below the turn-off. Providing deep, wide-field photometry, especially in the IR, for these standard open clusters will aid many avenues of research in the astronomical community.

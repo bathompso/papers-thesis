@@ -5,7 +5,7 @@ ptype 24 3
 add_ctype grey 150 150 150
 
 data "../data/elson.dat" read {er 1 eq 2 ee 3}
-data "../data/radial_m37_elson.dat" read {allr 1 allq 2 alle 3 kr 4 kq 5 ke 6 gr 7 gq 8 ge 9 fr 10 fq 11 fe 12 ar 13 aq 14 ae 15}
+data "../data/radial_elson_m37.dat" read {allr 1 allq 2 alle 3 kr 4 kq 5 ke 6 gr 7 gq 8 ge 9 fr 10 fq 11 fe 12 ar 13 aq 14 ae 15}
 
 expand 1.4 window 1 -100 1 50:100 limits 0 3 0.05 0.5  ticksize 0.1 0.5 0.05 0.1
 ylabel Binary Fraction
