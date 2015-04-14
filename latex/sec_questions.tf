@@ -4,7 +4,7 @@ This work will attempt to answer three fundamental questions about binary popula
 \begin{enumerate}
 \item \emph{How is the binary population affected by cluster parameters?}
 
-Star clusters form when some outside force (other cluster passing through the disk, supernova, etc.) shocks a large cloud of gas. Small perturbations in density within the cloud form into single and binary cluster stars. How the distribution of pre-binary density perturbations change with metallicity and overall cluster mass has not been well studied, nor has how the binary fraction of a cluster changes with time. Using a large sample of clusters, trends between binary fraction and intrinsic cluster parameters can be understood.
+Star clusters form when some outside force (other cluster passing through the Galactic disk, supernova, etc.) shocks a large cloud of gas. Small perturbations in density within the cloud form into single and binary cluster stars. How the distribution of pre-binary density perturbations change with metallicity and overall cluster mass has not been well studied, nor has how the binary fraction of a cluster changes with time. Using a large sample of clusters, trends between binary fraction and intrinsic cluster parameters can be understood.
 
 \item \emph{How do binaries affect the dynamical evolution of a cluster?}
 

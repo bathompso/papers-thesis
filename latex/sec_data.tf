@@ -109,7 +109,7 @@ SDSS imaged the sky using five different filters, $ugriz$, and to do so built on
 
 \begin{figure} \centering
 \includegraphics[width=0.9\textwidth]{../plots/jpg/SDSSCam.jpg}
-\caption[SDSS telescope and camera]{\emph{Left:} SDSS 2.5m telescope at APO.$^1$ \emph{Right:} SDSS Legacy Survey camera.$^2$ \label{fig:SDSSCam}}
+\parbox{0.8\textwidth}{\caption[SDSS telescope and camera]{\emph{Left:} SDSS 2.5m telescope at APO.$^1$ \emph{Right:} SDSS Legacy Survey camera.$^2$ \label{fig:SDSSCam}}}
 \end{figure}
 
 \addtocounter{footnote}{1}

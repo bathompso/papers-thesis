@@ -36,7 +36,7 @@ KE = \kappa = \frac{1}{2}mv^2 \to v = \sqrt{2\kappa/m}
 \begin{figure} \centering
 \includegraphics[trim = 0mm 85mm 0mm 0mm, clip, width=0.48\textwidth]{../plots/eps/elson.eps}
 \includegraphics[trim = 0mm 85mm 0mm 0mm, clip, width=0.48\textwidth]{../plots/eps/degrijs.eps}
-\caption[Previous NGC 1818 results]{\emph{Left:} Reproduction of figure 4 in \citet{1998MNRAS.300..857E}, which shows mass segregation within the cluster. \emph{Right:} Reproduction of figure 3 in \citet{2013ApJ...765....4D}, showing the . Note that \citeauthor{2013ApJ...765....4D}'s results are cumulative binary fractions. \label{fig:ngc1818}}
+\caption[Previous NGC 1818 results]{\emph{Left:} Adaptation of figure 4 in \citet{1998MNRAS.300..857E}, which shows mass segregation within the cluster. \emph{Right:} Adaptation of figure 3 in \citet{2013ApJ...765....4D}, showing the inverse trend. Note that \citeauthor{2013ApJ...765....4D}'s results are cumulative binary fractions. \label{fig:ngc1818}}
 \end{figure}
 
 Following the release of these conflicting observations, N-Body simulations of a young, massive cluster were published in \citet{2013ApJ...779...30G}. \citeauthor{2013ApJ...779...30G} found that the radial binary distributions of clusters are not always mass segregated, but instead evolve through a series of qualitatively different phases, best illustrated by figure 2 of their paper, reproduced here in figure \ref{fig:nbody_n1818}.
@@ -99,7 +99,7 @@ K & 0.2 - 0.8 & 6 - 8 \\ \hline
 \caption[\binocs binary radial distributions in M36]{Binary radial distributions for various spectral classes in M36. \label{fig:radial_m36}}
 \end{figure}
 
-Binary radial distributions for young open cluster M36 (30 Myr), as well as for individual spectral classes within the cluster, are shown in figure \ref{fig:radial_m35}. The overall binary distribution of M36, as well as that for A- and F-class stars, matches closely to that of a young, un-segregated cluster. Except for the most centrally located bin, binary percentage slowly increases with radius. Overall, M36 appears to validate the results of \citet{2013ApJ...765....4D}, with young clusters exhibiting an increasing binary fraction with radius.
+Binary radial distributions for young open cluster M36 (30 Myr), as well as for individual spectral classes within the cluster, are shown in figure \ref{fig:radial_m36}. The overall binary distribution of M36, as well as that for A- and F-class stars, matches closely to that of a young, un-segregated cluster. Except for the most centrally located bin, binary percentage slowly increases with radius. Overall, M36 appears to validate the results of \citet{2013ApJ...765....4D}, with young clusters exhibiting an increasing binary fraction with radius.
 
 
 \subsection{NGC 2168 (M35)}
@@ -119,7 +119,7 @@ The cluster M35 is slightly older than M36, and the radial distributions shown i
 \caption[\binocs binary radial distributions in M37]{Binary radial distributions for various spectral classes in M37. \label{fig:radial_m37}}
 \end{figure}
 
-Binary distributions for M37, which is even more evolved than M36 and M35, is shown in figure \ref{fig:radial_m37}. \citet{2001AJ....122.3239K} determined the relaxation time of M37 to be $\sim 300$ Myr, giving M37 an age of 2.33 $t_{rh}(0)$, which qualitatively matches with the overall M37 distribution as determined by \binocs. The individual mass ranges, however, show varying distributions.
+Binary distributions for M37, which is even more evolved than M36 and M35, are shown in figure \ref{fig:radial_m37}. \citet{2001AJ....122.3239K} determined the relaxation time of M37 to be $\sim 300$ Myr, giving M37 an age of 2.33 $t_{rh}(0)$, which qualitatively matches with the overall M37 distribution as determined by \binocs. The individual mass ranges, however, show varying distributions.
 
 The A-class star distribution matches more closely to a 3 $t_{rh}(0)$ distribution, with the central concetration of binaries higher than that on the edge. The F-class star distribution is slightly younger, matching a 2 $t_{rh}(0)$ distribution, with the edge binary frequency matching that of the central region. Lastly, the G-class star distribution matches much more closely to the young distributions seen in M36 and M35. A majority of the G-class star distribution has increasing binary frequency with radius.
 

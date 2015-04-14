@@ -5,31 +5,47 @@ ptype 24 3
 add_ctype grey 150 150 150
 
 data "../data/radial_m37.dat" read {allr 1 allq 2 alle 3 kr 4 kq 5 ke 6 gr 7 gq 8 ge 9 fr 10 fq 11 fe 12 ar 13 aq 14 ae 15}
-limits 0 7 0.15 0.95 ticksize 0.2 1 0.05 0.2
+limits 0 9 0.15 0.95 ticksize 0.2 1 0.05 0.2
 
-limits 0 7.5 0.32 0.62 ticksize 0.2 1 0.05 0.1
+limits 0 9 0.32 0.62 ticksize 0.2 1 0.05 0.1
 expand 1.1 window 1 -5 1 5 box 0 2
-	ctype grey error_y allr allq alle
-	ctype black expand 1.2 points allr allq
-	ltype 2 connect allr allq if (allr > 0) ltype 0
+ctype grey error_y allr allq alle ctype black
+relocate 0.000 0 draw 0.000 0.513 draw 1.456 0.513 draw 1.456 0 
+relocate 1.456 0 draw 1.456 0.479 draw 2.189 0.479 draw 2.189 0 
+relocate 2.189 0 draw 2.189 0.435 draw 2.864 0.435 draw 2.864 0 
+relocate 2.864 0 draw 2.864 0.484 draw 3.560 0.484 draw 3.560 0 
+relocate 3.560 0 draw 3.560 0.425 draw 4.335 0.425 draw 4.335 0 
+relocate 4.335 0 draw 4.335 0.545 draw 6.640 0.545 draw 6.640 0 
 	
-limits 0 7.5 0.25 0.90 ticksize 0.2 1 0.05 0.2
+limits 0 9 0.25 0.90 ticksize 0.2 1 0.05 0.2
 expand 1.1 window 1 -5 1 4 box 0 2
-	ctype grey error_y ar aq ae
-	ctype black expand 1.2 points ar aq
-	ltype 2 connect ar aq if (ar > 0) ltype 0
+ctype grey error_y ar aq ae ctype black
+relocate 0.000 0 draw 0.000 0.640 draw 0.943 0.640 draw 0.943 0 
+relocate 0.943 0 draw 0.943 0.650 draw 1.524 0.650 draw 1.524 0 
+relocate 1.524 0 draw 1.524 0.648 draw 2.284 0.648 draw 2.284 0 
+relocate 2.284 0 draw 2.284 0.590 draw 3.027 0.590 draw 3.027 0 
+relocate 3.027 0 draw 3.027 0.531 draw 3.769 0.531 draw 3.769 0 
+relocate 3.769 0 draw 3.769 0.638 draw 5.260 0.638 draw 5.260 0 
 	
-limits 0 7.5 0.31 0.75 ticksize 0.2 1 0.05 0.1
+limits 0 9 0.31 0.75 ticksize 0.2 1 0.05 0.1
 expand 1.1 window 1 -5 1 3 box 0 2
-	ctype grey error_y fr fq fe
-	ctype black expand 1.2 points fr fq
-	ltype 2 connect fr fq if (fr > 0) ltype 0
+ctype grey error_y fr fq fe ctype black
+relocate 0.000 0 draw 0.000 0.606 draw 1.474 0.606 draw 1.474 0 
+relocate 1.474 0 draw 1.474 0.578 draw 2.366 0.578 draw 2.366 0 
+relocate 2.366 0 draw 2.366 0.453 draw 3.034 0.453 draw 3.034 0 
+relocate 3.034 0 draw 3.034 0.510 draw 3.812 0.510 draw 3.812 0 
+relocate 3.812 0 draw 3.812 0.422 draw 4.676 0.422 draw 4.676 0 
+relocate 4.676 0 draw 4.676 0.649 draw 6.674 0.649 draw 6.674 0 
 	
-limits 0 7.5 0.20 0.55 ticksize 0.2 1 0.05 0.1
+limits 0 9 0.20 0.55 ticksize 0.2 1 0.05 0.1
 expand 1.1 window 1 -5 1 2 box 1 2
-	ctype grey error_y gr gq ge
-	ctype black expand 1.2 points gr gq
-	ltype 2 connect gr gq if (gr > 0) ltype 0
+ctype grey error_y gr gq ge ctype black
+relocate 0.000 0 draw 0.000 0.338 draw 1.659 0.338 draw 1.659 0 
+relocate 1.659 0 draw 1.659 0.349 draw 2.323 0.349 draw 2.323 0 
+relocate 2.323 0 draw 2.323 0.329 draw 2.965 0.329 draw 2.965 0 
+relocate 2.965 0 draw 2.965 0.403 draw 3.628 0.403 draw 3.628 0 
+relocate 3.628 0 draw 3.628 0.390 draw 4.351 0.390 draw 4.351 0 
+relocate 4.351 0 draw 4.351 0.437 draw 6.183 0.437 draw 6.183 0 
 	
 	
 expand 1.1

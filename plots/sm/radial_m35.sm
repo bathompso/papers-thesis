@@ -8,19 +8,30 @@ data "../data/radial_m35.dat" read {allr 1 allq 2 alle 3 kr 4 kq 5 ke 6 gr 7 gq 
 limits 0 11.5 0.43 0.78 ticksize 0.2 1 0.05 0.1
 
 expand 1.1 window 1 -5 1 5 box 0 2
-	ctype grey error_y allr allq alle
-	ctype black expand 1.2 points allr allq
-	ltype 2 connect allr allq if (allr > 0) ltype 0
+ctype grey error_y allr allq alle ctype black
+relocate 0.000 0 draw 0.000 0.605 draw 2.116 0.605 draw 2.116 0 
+relocate 2.116 0 draw 2.116 0.527 draw 3.208 0.527 draw 3.208 0 
+relocate 3.208 0 draw 3.208 0.530 draw 4.274 0.530 draw 4.274 0 
+relocate 4.274 0 draw 4.274 0.566 draw 5.394 0.566 draw 5.394 0 
+relocate 5.394 0 draw 5.394 0.618 draw 6.805 0.618 draw 6.805 0 
+relocate 6.805 0 draw 6.805 0.692 draw 8.500 0.692 draw 8.500 0 
 	
 expand 1.1 window 1 -5 1 4 box 0 2
-	ctype grey error_y fr fq fe
-	ctype black expand 1.2 points fr fq
-	ltype 2 connect fr fq if (fr > 0) ltype 0
+ctype grey error_y fr fq fe ctype black
+relocate 0.000 0 draw 0.000 0.556 draw 2.234 0.556 draw 2.234 0 
+relocate 2.234 0 draw 2.234 0.533 draw 3.467 0.533 draw 3.467 0 
+relocate 3.467 0 draw 3.467 0.572 draw 4.597 0.572 draw 4.597 0 
+relocate 4.597 0 draw 4.597 0.598 draw 5.746 0.598 draw 5.746 0 
+relocate 5.746 0 draw 5.746 0.576 draw 6.934 0.576 draw 6.934 0 
+relocate 6.934 0 draw 6.934 0.709 draw 8.476 0.709 draw 8.476 0
 	
 expand 1.1 window 1 -5 1 3 box 1 2
-	ctype grey error_y gr gq ge
-	ctype black expand 1.2 points gr gq
-	ltype 2 connect gr gq if (gr > 0) ltype 0
+ctype grey error_y gr gq ge ctype black
+relocate 0.000 0 draw 0.000 0.540 draw 2.507 0.540 draw 2.507 0 
+relocate 2.507 0 draw 2.507 0.508 draw 3.649 0.508 draw 3.649 0 
+relocate 3.649 0 draw 3.649 0.502 draw 4.771 0.502 draw 4.771 0 
+relocate 4.771 0 draw 4.771 0.536 draw 5.899 0.536 draw 5.899 0 
+relocate 5.899 0 draw 5.899 0.605 draw 7.302 0.605 draw 7.302 0 
 	
 expand 1.1
 window 1 -5 1 3:5 limits 0 1 0 1 ticksize 2 4 2 4

@@ -8,24 +8,30 @@ data "../data/radial_m67.dat" read {allr 1 allq 2 alle 3 kr 4 kq 5 ke 6 gr 7 gq 
 limits 0 7 0.15 0.75 ticksize 0.2 1 0.05 0.2
 
 expand 1.1 window 1 -5 1 5 box 0 2
-	ctype grey error_y allr allq alle
-	ctype black expand 1.2 points allr allq
-	ltype 2 connect allr allq if (allr > 0) ltype 0
-	
-#expand 1.1 window 1 -5 1 4 box 0 2
-#	ctype grey error_y fr fq fe
-#	ctype black expand 1.2 points fr fq
-#	ltype 2 connect fr fq if (fr > 0) ltype 0
+ctype grey error_y allr allq alle ctype black
+relocate 0.000 0 draw 0.000 0.558 draw 0.928 0.558 draw 0.928 0 
+relocate 0.928 0 draw 0.928 0.450 draw 1.486 0.450 draw 1.486 0 
+relocate 1.486 0 draw 1.486 0.347 draw 2.056 0.347 draw 2.056 0 
+relocate 2.056 0 draw 2.056 0.423 draw 2.726 0.423 draw 2.726 0 
+relocate 2.726 0 draw 2.726 0.487 draw 3.476 0.487 draw 3.476 0 
+relocate 3.476 0 draw 3.476 0.426 draw 5.720 0.426 draw 5.720 0 
 	
 expand 1.1 window 1 -5 1 4 box 0 2
-	ctype grey error_y gr gq ge
-	ctype black expand 1.2 points gr gq
-	ltype 2 connect gr gq if (gr > 0) ltype 0
+ctype grey error_y gr gq ge ctype black
+relocate 0.000 0 draw 0.000 0.558 draw 1.104 0.558 draw 1.104 0 
+relocate 1.104 0 draw 1.104 0.360 draw 1.680 0.360 draw 1.680 0 
+relocate 1.680 0 draw 1.680 0.374 draw 2.428 0.374 draw 2.428 0 
+relocate 2.428 0 draw 2.428 0.422 draw 3.137 0.422 draw 3.137 0 
+relocate 3.137 0 draw 3.137 0.470 draw 3.920 0.470 draw 3.920 0 
 	
 expand 1.1 window 1 -5 1 3 box 1 2
-	ctype grey error_y kr kq ke
-	ctype black expand 1.2 points kr kq
-	ltype 2 connect kr kq if (kr > 0) ltype 0
+ctype grey error_y kr kq ke ctype black
+relocate 0.000 0 draw 0.000 0.463 draw 0.861 0.463 draw 0.861 0 
+relocate 0.861 0 draw 0.861 0.379 draw 1.476 0.379 draw 1.476 0 
+relocate 1.476 0 draw 1.476 0.366 draw 1.919 0.366 draw 1.919 0 
+relocate 1.919 0 draw 1.919 0.329 draw 2.653 0.329 draw 2.653 0 
+relocate 2.653 0 draw 2.653 0.437 draw 3.428 0.437 draw 3.428 0 
+relocate 3.428 0 draw 3.428 0.400 draw 5.221 0.400 draw 5.221 0 
 	
 expand 1.1
 window 1 -5 1 3:5 limits 0 1 0 1 ticksize 2 4 2 4
@@ -37,9 +43,6 @@ expand 0.9
 window 1 1 1 1 limits 0 1 0 1
 relocate 0.77 0.97 putlabel 6 All SED Members
 relocate 0.77 0.937 putlabel 6 106 stars / bin
-
-#relocate 0.77 0.77 putlabel 6 F Stars
-#relocate 0.77 0.737 putlabel 6 1.1 - 1.6 M_\odot
 
 relocate 0.77 0.77 putlabel 6 G Stars
 relocate 0.77 0.737 putlabel 6 0.8 - 1.1 M_\odot

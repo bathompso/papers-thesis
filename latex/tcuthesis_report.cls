@@ -864,7 +864,9 @@
   \begin{center}
   {\large VITA} \\
   \end{center}
+  \addcontentsline{toc}{chapter}{Vita}
   \input{#1}
+  \pagenumbering{gobble}
 }
 
 \renewcommand{\abstract}[1]{
@@ -877,6 +879,7 @@
     Texas Christian University \\[5mm]
     \@advisor
   \end{center}
+  \addcontentsline{toc}{chapter}{Abstract}
   \begin{spacing}{2}
   \input{#1}
   \end{spacing}
