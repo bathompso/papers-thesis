@@ -1,4 +1,4 @@
-\begin{thebibliography}{75}
+\begin{thebibliography}{76}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Abazajian {et~al.}(2009)Abazajian, Adelman-McCarthy, Ag{\"u}eros,
@@ -209,6 +209,10 @@ Fukugita, M., Ichikawa, T., Gunn, J.~E., Doi, M., Shimasaku, K., \& Schneider,
   Hurley}]{2013ApJ...779...30G}
 Geller, A.~M., de~Grijs, R., Li, C., \& Hurley, J.~R. 2013, The Astrophysical
   Journal, 779, 30
+
+\bibitem[{Geller {et~al.}(2015)Geller, de~Grijs, Li, \&
+  Hurley}]{2015arXiv150305198G}
+---. 2015, arXiv.org, 5198
 
 \bibitem[{Geller \& Mathieu(2012)}]{2012AJ....144...54G}
 Geller, A.~M. \& Mathieu, R.~D. 2012, The Astronomical Journal, 144, 54

@@ -1,23 +1,27 @@
 device postencap ../eps/binary_distribution.eps
 xtcolors
 lweight 3
+add_ctype grey 150 150 150
 
-data "../data/resultList.txt" read {age 2 feh 3 fbin 4 rgc 5}
+data "../data/resultList.txt" read {age 2 feh 3 fbin 4 rgc 5 nstars 6}
 
 expand 0.9 window -100 3 1:60 3 limits -0.3 8.5 0.3 0.7 ticksize 0.2 1 0.02 0.1
 xlabel Cluster Age (Gyr)
 ylabel Binary Fraction
 box 1 2
 ptype 24 3 expand 2.5 points age (fbin/100)
+ctype grey lweight 5 error_y age (fbin/100) (fbin/100*(1-(fbin/100))/sqrt(nstars)) ctype black lweight 3
 
 expand 0.9 window -100 3 1:60 2 limits -0.25 0.45 0.3 0.7 ticksize 0.05 0.2 0.02 0.1
 xlabel [Fe/H]
 ylabel Binary Fraction
 box 1 2
 ptype 24 3 expand 2.5 points feh (fbin/100)
+ctype grey lweight 5 error_y feh (fbin/100) (fbin/100*(1-(fbin/100))/sqrt(nstars)) ctype black lweight 3
 
 expand 0.9 window -100 3 1:60 1 limits 7.0 14.5 0.3 0.7 ticksize 0.5 2 0.02 0.1
 xlabel Galactocentric Radius (kpc)
 ylabel Binary Fraction
 box 1 2
 ptype 24 3 expand 2.5 points rgc (fbin/100)
+ctype grey lweight 5 error_y rgc (fbin/100) (fbin/100*(1-(fbin/100))/sqrt(nstars)) ctype black lweight 3

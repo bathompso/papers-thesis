@@ -22,7 +22,7 @@ NGC 6791		 & 0.39 			 & 8.0  			& +0.38				& 8.11				& 524  					& 0.89 - 1.16 \
 
 \begin{figure} \centering
 \includegraphics[width=0.7\textwidth, trim= 0mm 133mm 60mm 0mm, clip]{../plots/eps/binary_distribution.eps}
-\caption[Binary fraction versus cluster age]{Overall cluster binary fraction, as a function of cluster age. \label{fig:fbinvage}}
+\parbox{0.8\textwidth}{\caption[Binary fraction versus cluster age]{Overall cluster binary fraction, as a function of cluster age. Uncertainties are from Poisson counting statistics. \label{fig:fbinvage}}}
 \end{figure}
 
 One of the main science questions of this work is how the binary population of a cluster evolves over time. The trend of overall binary fraction with cluster age is shown in figure \ref{fig:fbinvage}. Overall, there seems to be a decreasing trend with age. Gravitational interactions between stars can easily disrupt some binary systems, while creating binaries from two single stars is much less common. It appears the majority of binary disruption occurs quickly during the first 200 Myr of a cluster's lifetime, after which the binary fraction becomes fairly constant.
@@ -35,7 +35,7 @@ Completing an analysis such as the one in figure \ref{fig:fbinvage} using only R
 
 \begin{figure} \centering
 \includegraphics[width=0.7\textwidth, trim= 0mm 69mm 60mm 69mm, clip]{../plots/eps/binary_distribution.eps}
-\caption[Binary fraction versus cluster metallicity]{Overall cluster binary fraction, as a function of cluster [Fe/H]. \label{fig:fbinvfeh}}
+\parbox{0.8\textwidth}{\caption[Binary fraction versus cluster metallicity]{Overall cluster binary fraction, as a function of cluster [Fe/H]. Uncertainties are from Poisson counting statistics. \label{fig:fbinvfeh}}}
 \end{figure}
 
 It is not well-understood how differences in metallicity of a pre-cluster cloud may affect the formation of binary systems. The distribution of binary fractions as a function of metallicity is shown in figure \ref{fig:fbinvfeh}. There are only 7 clusters shown in figure \ref{fig:fbinvfeh} due to the fact that M36 does not have a published metallicity value.
@@ -48,7 +48,7 @@ Similarly to the distribution with age, more data points can be added to this pl
 
 \begin{figure} \centering
 \includegraphics[width=0.7\textwidth, trim= 0mm 8mm 60mm 133mm, clip]{../plots/eps/binary_distribution.eps}
-\caption[Binary fraction versus cluster R$_{gc}$]{Overall cluster binary fraction, as a function of cluster R$_{gc}$. \label{fig:fbinvrgc}}
+\parbox{0.8\textwidth}{\caption[Binary fraction versus cluster R$_{gc}$]{Overall cluster binary fraction, as a function of cluster R$_{gc}$. Uncertainties are from Poisson counting statistics. \label{fig:fbinvrgc}}}
 \end{figure}
 
 The above two comparisons have linked binary fraction to intrinsic cluster parameters, but clusters are not isolated systems, and the galactic environment plays a large part in cluster evolution. Clusters that are born near the center of the Galaxy experience a higher rate of tidal stripping events and other interactions which may alter the binary population. Figure \ref{fig:fbinvrgc} shows the overall binary fraction of clusters as a function of galactocentric radius (R$_{gc}$; the distance the cluster is from the center of the galaxy).
