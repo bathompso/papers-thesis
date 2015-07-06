@@ -113,7 +113,7 @@ RV & Single & Binary & Non-Member \\ \hline
 \multirow{2}{*}{Single} & \multirow{2}{*}{113 (45\%)} & \multirow{2}{*}{98 (39\%)} & \multirow{2}{*}{40 (16\%)} \\ & & & \\
 \multirow{2}{*}{Binary} & \multirow{2}{*}{8 (18\%)}  & \multirow{2}{*}{31 (69\%)} & \multirow{2}{*}{6 (13\%)} \\ & & & \\ \hline
 \end{tabular}
-\caption[Confusion matrix between RV and \binocs results for M35]{Confusion matrix between RV and \binocs results for M35, as shown in figure \ref{fig:rv_M35}.\label{tab:rv_M35}}
+\parbox{0.8\textwidth}{\caption[Confusion matrix between RV and \binocs results for M35]{Confusion matrix between RV and \binocs results for M35, as shown in figure \ref{fig:rv_M35}.\label{tab:rv_M35}}}
 \end{table}
 
 \begin{figure}

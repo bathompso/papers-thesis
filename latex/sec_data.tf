@@ -175,10 +175,10 @@ Cluster & Filter & Length & a & b \\ \hline \hline
 \caption[MOSAIC transformation coefficients]{Transformation coefficients for MOSAIC photometry.\label{tab:mosaic_coeffs}}
 \end{table}
 
-Here, lowercase filter letters indicate instrumental (ALLSTAR-derived) magnitudes, while uppercase filters are those of the standard photometry. The transformation coefficients for each cluster and filter are located in table \ref{tab:mosaic_coeffs}. Transformations were done separately for the short and long exposure sequences. Residuals for these transformations are shown in figure \ref{fig:mosaic_resid}. Once the instrumental magnitude were calibrated to the standard system, all photometry was combined into a single master catalog. \\
+Here, lowercase filter letters indicate instrumental (ALLSTAR-derived) magnitudes, while uppercase filters are those of the standard photometry. The transformation coefficients for each cluster and filter are located in table \ref{tab:mosaic_coeffs}. Transformations were done separately for the short and long exposure sequences. Residuals for these transformations are shown in figure \ref{fig:mosaic_resid}. Once the instrumental magnitude were calibrated to the standard system, all photometry was combined into a single master catalog. 
 
 \begin{figure} \centering
-\includegraphics[width=0.69\textwidth]{../plots/eps/mosaic_resid.eps}
+\includegraphics[width=0.6\textwidth]{../plots/eps/mosaic_resid.eps}
 \parbox{0.7\textwidth}{\caption[MOSAIC transformation residuals]{Residuals from transformation to standard system for M36 MOSAIC photometry. \label{fig:mosaic_resid}}}
 \end{figure}
 

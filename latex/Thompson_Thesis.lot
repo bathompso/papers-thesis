@@ -1,30 +1,31 @@
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1.1}{\ignorespaces List of standard filter centers and wavelengths}}{9}
+\contentsline {table}{\numberline {1.1}{\ignorespaces List of standard filter centers and wavelengths}}{7}
 \contentsline {table}{\numberline {1.2}{\ignorespaces Extinction values}}{16}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Dataset cluster parameters}}{49}
-\contentsline {table}{\numberline {4.2}{\ignorespaces MOSAIC transformation coefficients}}{56}
-\contentsline {table}{\numberline {4.3}{\ignorespaces NEWFIRM observing log}}{60}
-\contentsline {table}{\numberline {4.4}{\ignorespaces NEWFIRM transformation coefficients}}{63}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Available data for cluster sample}}{68}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Possible analysis for each cluster in sample}}{69}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Dataset cluster parameters}}{50}
+\contentsline {table}{\numberline {4.2}{\ignorespaces MOSAIC transformation coefficients}}{57}
+\contentsline {table}{\numberline {4.3}{\ignorespaces NEWFIRM observing log}}{61}
+\contentsline {table}{\numberline {4.4}{\ignorespaces NEWFIRM transformation coefficients}}{64}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Available data for cluster sample}}{70}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Possible analysis for each cluster in sample}}{71}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Isochrone input physics}}{73}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Sample of BT-Settl color-temperature grid}}{77}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Isochrone input physics}}{74}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Sample of BT-Settl color-temperature grid}}{78}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Number of filters test results}}{93}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Confusion matrix between RV and \textsc {binocs}\ results for M35}}{97}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Number of filters test results}}{94}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Confusion matrix between RV and \textsc {binocs}\ results for M35}}{98}
 \contentsline {table}{\numberline {6.3}{\ignorespaces Confusion matrix between RV and \textsc {binocs}\ results for M67}}{98}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Overall binary fractions for analyzed clusters}}{103}
+\contentsline {table}{\numberline {7.1}{\ignorespaces Overall binary fractions for analyzed clusters}}{105}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {8.1}{\ignorespaces Spectral class mass ranges}}{115}
+\contentsline {table}{\numberline {8.1}{\ignorespaces Spectral class mass ranges}}{117}
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {9.1}{\ignorespaces Comparison of classified stars in RV studies to \textsc {binocs}\ }}{125}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Empirical ridgelines for M36}}{126}
-\contentsline {table}{\numberline {A.2}{\ignorespaces Empirical ridgelines for M35}}{127}
-\contentsline {table}{\numberline {A.3}{\ignorespaces Empirical ridgelines for M37}}{128}
-\contentsline {table}{\numberline {A.4}{\ignorespaces Empirical ridgelines for M67}}{129}
-\contentsline {table}{\numberline {A.5}{\ignorespaces Empirical ridgelines for NGC 2420}}{130}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Empirical ridgelines for M36}}{129}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Empirical ridgelines for M35}}{130}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Empirical ridgelines for M37}}{131}
+\contentsline {table}{\numberline {A.4}{\ignorespaces Empirical ridgelines for M67}}{132}
+\contentsline {table}{\numberline {A.5}{\ignorespaces Empirical ridgelines for NGC 2420}}{133}
